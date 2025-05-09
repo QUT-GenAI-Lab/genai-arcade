@@ -1,48 +1,20 @@
 name: Context Window Sync to Hugging Face Space
-
 on:
   push:
-    branches:
-      - "(main)-widget-context-window"  # Change this to your specific branch name
+    branches: [(main)-widget-context-window]
+
+  # to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  sync-to-huggingface:
+  sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch all history for all branches and tags
-
-      - name: Push to Hugging Face Space
+          fetch-depth: 0
+          lfs: true
+      - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_USERNAME: ${{ secrets.HF_USERNAME }}  # Your Hugging Face username
-          HF_SPACE_NAME: context_window_POC  # Your Hugging Face space name
-        run: |
-          # Configure git
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          
-          # Clone the HF space repository (if it exists)
-          echo "Cloning Hugging Face space repository..."
-          git clone https://huggingface.co/spaces/$HF_USERNAME/$HF_SPACE_NAME huggingface-space || (
-            echo "Space doesn't exist or couldn't be cloned. Creating a new one..."
-            mkdir -p huggingface-space
-            cd huggingface-space
-            git init
-            git remote add origin "https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$HF_SPACE_NAME"
-            cd ..
-          )
-          
-          # Copy all files from the GitHub repo to the HF space folder
-          echo "Copying files to Hugging Face space..."
-          rsync -av --exclude='.git/' --exclude='.github/' --exclude='huggingface-space/' ./ huggingface-space/
-          
-          # Commit and push changes to Hugging Face
-          cd huggingface-space
-          git add .
-          git commit -m "Sync from GitHub repository" || echo "No changes to commit"
-          
-          echo "Pushing to Hugging Face space..."
-          git push -u origin main
+        run: git push https://willsh1997:$HF_TOKEN@huggingface.co/spaces/willsh1997/context_window_POC main
