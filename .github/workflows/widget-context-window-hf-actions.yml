@@ -3,7 +3,7 @@ name: Context Window Sync to Hugging Face Space
 on:
   push:
     branches:
-      - (main)-widget-context-window  # Change this to your specific branch name
+      - "(main)-widget-context-window"  # Change this to your specific branch name
 
 jobs:
   sync-to-huggingface:
