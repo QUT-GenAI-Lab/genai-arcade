@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "second post"
+title:  "context window"
 date:   2024-10-11 17:25:25 +1000
-categories: dunno
+categories: widget
 ---
-
-
-this is a test of things.
 
 context window stuff.
 
