@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title:  "context window"
-date:   2024-10-11 17:25:25 +1000
-categories: widget
+tags: widgets
 ---
 
 context window stuff.

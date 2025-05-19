@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title:  "linkedin generator"
-date:   2024-10-11 17:25:25 +1000
-categories: widget
+tags: widgets
 ---
 
 linkedin generator stuff.
