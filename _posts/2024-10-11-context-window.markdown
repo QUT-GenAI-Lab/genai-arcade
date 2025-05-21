@@ -4,7 +4,7 @@ title:  "context window"
 tags: widgets
 ---
 
-context window stuff.
+Context window stuff.
 
 <iframe
 	src="https://willsh1997-context-window-poc.hf.space"
