@@ -3,7 +3,7 @@ layout: default
 title:  "context window"
 tags: widgets
 ---
-### Context Windows
+## Context Windows
 
 Ever tried writing a story with AI, only to find it keeps forgetting your character’s hair colour halfway through?
 
@@ -30,7 +30,7 @@ What happens when it’s longer?
 
 ---
 
-#### Questions to Think About:
+## Questions to Think About:
 - Did the model forget anything you told it earlier?
 - What kinds of things did it remember best?
 - What surprised you about how it handled longer vs. shorter inputs?
@@ -42,7 +42,7 @@ What happens when it’s longer?
 	height="450"
 ></iframe>
 
-### So What?
+## So What?
 
 This experiment shows that LLMs don’t have long-term memory — they only work with what’s in their current context window.
 
@@ -54,7 +54,7 @@ But not so great for:
 
 ---
 
-#### What do you think?
+### What do you think?
 - What kinds of tasks would be hard for an AI with a short memory?
 
 ### can this be a textbox that saves input? 
