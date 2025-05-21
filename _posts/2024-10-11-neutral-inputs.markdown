@@ -6,17 +6,17 @@ tags: widgets
 
 ## How Are LLMs and Stable Diffusion Related?
 
-Even though large language models (LLMs) like ChatGPT generate text, and models like Stable Diffusion generate images, they’re built on some of the same ideas — especially the **transformer architecture**.
+Even though large language models (LLMs) like ChatGPT generate text, and models like Stable Diffusion generate images, they’re built on some of the same ideas especially the **transformer architecture**.
 
 Put simply:
 
 > **Transformers are pattern-spotters.**  
-> They learn from huge amounts of data and get very good at guessing what comes next — whether that’s a word in a sentence or a shape in an image.
+> They learn from huge amounts of data and get very good at guessing what comes next, whether that’s a word in a sentence or a shape in an image.
 
 - In LLMs, the model learns to guess the next word based on the words that came before.
 - In Stable Diffusion, the model learns to guess what an image should look like, based on patterns in its training data.
 
-Stable Diffusion also uses a process called **diffusion**, where it starts with random noise and gradually turns it into a clear image — guided by what it has learnt.
+Stable Diffusion also uses a process called **diffusion**, where it starts with random noise and gradually turns it into a clear image, guided by what it has learnt.
 
 But underneath it all, both systems use **transformers** to understand and generate patterns. That’s what connects them.
 
@@ -24,9 +24,9 @@ But underneath it all, both systems use **transformers** to understand and gener
 
 ## Training Data Explorer
 
-What happens when you ask an image model to generate a picture — but give it no prompt at all?
+What happens when you ask an image model to generate a picture but give it no prompt at all?
 
-In this widget, we’ve stripped down a Stable Diffusion model so that it always uses an **empty prompt**. That means it’s not being told what to generate — it’s just drawing from the centre of its training data.
+In this widget, we’ve stripped down a Stable Diffusion model so that it always uses an **empty prompt**. That means it’s not being told what to generate. It’s just drawing from the centre of its training data.
 
 This “neutral point” is like the average of everything the model has seen. When you generate an image from here, you’re seeing what the model thinks is most *typical* or *common*.
 
@@ -45,7 +45,7 @@ You can:
 
 ---
 
-## Questions to Think About:
+## Reflections:
 - What kinds of images come up most often?
 - Are there certain styles, subjects, or colours that repeat?
 - What does this say about the training data the model was fed?
