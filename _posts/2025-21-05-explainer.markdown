@@ -1,4 +1,8 @@
-
+---
+layout: default
+title:  "Explainer"
+tags: instructions
+---
 ### How Does a Large Language Model Create Text?
 
 Imagine you're playing a really smart guessing game.
