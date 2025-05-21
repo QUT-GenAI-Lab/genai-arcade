@@ -1,0 +1,19 @@
+---
+layout: default
+title:  "read me"
+tags: instructions
+---
+# Welcome to the GenAI Arcade 
+
+Do what you want. There will be some filler text here to explain how best to engage with the content. 
+
+## The GenAI Arcade
+**[About the Arcade and why it matters](https://qut-genai-lab.github.io/genai-arcade/20241011/test-instructions)**
+
+**[How the space works](https://qut-genai-lab.github.io/genai-arcade/20250521/explainer)**
+
+## Widgets: Explore, Play and Understand AI with the Arcade
+**[List of Widgets to follow with link](https://qut-genai-lab.github.io/genai-arcade/20241011/test-instructions)**
+
+
+
