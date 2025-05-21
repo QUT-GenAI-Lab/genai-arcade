@@ -3,8 +3,6 @@ layout: default
 title:  "GenAI Arcade"
 tags: instructions
 ---
-
-
 # Fellow Lizzards 🦎
 ## GenAI Arcade: Explore, Play, and Understand AI
 
