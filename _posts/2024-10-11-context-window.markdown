@@ -3,6 +3,7 @@ layout: default
 title:  "context window"
 tags: widgets
 ---
+
 ## Context Windows
 
 Ever tried writing a story with AI, only to find it keeps forgetting your character’s hair colour halfway through?
