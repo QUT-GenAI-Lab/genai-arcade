@@ -3,7 +3,7 @@ layout: default
 title:  "Explainer"
 tags: instructions
 ---
-### How Does a Large Language Model Create Text?
+## How Does a Large Language Model Create Text?
 
 Imagine you're playing a really smart guessing game.
 
@@ -21,7 +21,7 @@ It’s kind of like autocomplete on your phone — but way more powerful.
 
 ---
 
-### What Does That Mean for Facts?
+## What Does That Mean for Facts?
 
 Because LLMs create text by guessing what words are likely to come next, they don’t actually *know* what’s true or false.  
 They’ve seen lots of patterns in language — including how facts are usually written — so they can sound very confident. But they’re still just making predictions based on probability.
@@ -48,7 +48,7 @@ Knowing how the model works helps you know when to trust it — and when to doub
 
 ---
 
-### What You See Isn’t Always What You Get
+## What You See Isn’t Always What You Get
 
 Sometimes, AI seems smarter than it really is — and that’s because companies quietly add extra tools behind the scenes to help it out.
 
