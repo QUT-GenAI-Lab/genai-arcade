@@ -4,7 +4,7 @@ title:  "Probable Facts - Examples"
 tags: widgets
 ---
 
-##Probable Facts
+## Probable Facts
 
 This widget helps you explore how large language models (LLMs), and other systems, decide what counts as a fact.
 
