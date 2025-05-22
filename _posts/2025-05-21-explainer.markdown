@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Explainer"
+title:  "AI Explainer"
 tags: genai-arcade
 ---
 ## How Does a Large Language Model Create Text?
