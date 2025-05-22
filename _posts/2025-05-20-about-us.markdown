@@ -32,4 +32,4 @@ Our goal is to empower the public to become active participants in the developme
 
 Learn more about our work at the [QUT Generative AI Lab](https://research.qut.edu.au/gen) 
 
-If you want to learn more about this tool, contact kevin.witzenberger@qut.edu.au 
+If you want to learn more about the GenAI Arcade tool, contact Dr Kevin Witzenberger <kevin.witzenberger[at]qut.edu.au>, Research Fellow at QUT's GenAI Lab OR William He <william.he[at]qut.edu.au>, Machine Learning Engineer at QUT's GenAI Lab. 
