@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Explainer"
-tags: instructions
+tags: genai-arcade
 ---
 ## How Does a Large Language Model Create Text?
 
