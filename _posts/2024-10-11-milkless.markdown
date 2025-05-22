@@ -4,7 +4,40 @@ title:  "Milkless"
 tags: widgets
 ---
 
-milkless stuff.
+## Milkless
+
+What happens when a language model is trained **not** to talk about something — even something as seemingly harmless as milk?
+
+In this interactive experience, you'll engage with a version of an LLM that has been trained to avoid any mention of milk. Why? Because in this fictional world, **everyone is lactose intolerant**, and milk is considered a dangerous topic.
+
+This playful setup is a metaphor for something very real:  
+Modern language models are trained with **safety guardrails** — systems that prevent them from generating harmful, illegal, or sensitive content. These include topics like:
+
+- Self-harm or suicide
+- Hate speech or discrimination
+- Violence or weapon-making
+- Misinformation or conspiracy theories
+
+These guardrails are essential for protecting users and ensuring responsible use of AI. But they also raise important questions:
+
+## Why Guardrails Exist
+
+Language models are powerful tools. Without constraints, they could be misused — intentionally or unintentionally — to cause harm. Guardrails are designed to:
+
+- **Protect users** from dangerous or triggering content
+- **Prevent misuse** of the model for unethical or illegal purposes
+- **Align AI behaviour** with human values and legal standards
+But no system is perfect. Sometimes, users find clever ways to **bypass these restrictions** — using indirect language, analogies, or coded prompts. This is known as **jailbreaking** or **prompt injection**.
+
+## What You'll Do
+
+In this widget, your challenge is to try and get the model to talk about milk — despite its training not to. You might try:
+
+- Rephrasing your question
+- Using metaphors or analogies
+- Asking about related concepts
+
+You’ll likely find that the model resists — but maybe not always. And that’s the point.
 
 <iframe
 	src="https://willsh1997-milkless.hf.space"
@@ -12,5 +45,18 @@ milkless stuff.
 	width="850"
 	height="450"
 ></iframe>
+
+## Reflect
+After experimenting, take a moment to consider:
+
+> **Who should decide what an AI is allowed to say?**  
+> **What values are embedded in those decisions?**  
+> **What happens when safety and freedom come into conflict?**  
+> **How do we ensure transparency and accountability in these systems?**
+
+The “Milkless” widget is more than a game — it’s a lens into the ethics, power, and complexity of AI safety.
+
+Explore it with curiosity. Reflect with care.
+
 
 bottom text lol.
