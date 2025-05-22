@@ -4,7 +4,29 @@ title:  "Probable Facts - Examples"
 tags: widgets
 ---
 
-probable facts
+##Probable Facts
+
+This widget helps you explore how large language models (LLMs), and other systems, decide what counts as a fact.
+
+LLMs do not know what is true in the way people do. They work with probabilities. If something is written down often enough, it becomes more likely to be repeated, even if it is not accurate. This is one way of establishing a “fact”, but it is not the only one.
+
+There are many different knowledge systems that define and validate facts in different ways. This is part of a field called epistemology, the study of how we know what we know. For example:
+
+- Banks rely on ledgers, rules, and audits  
+- Religions may rely on scripture, tradition, or spiritual authority  
+- Science uses observation, experimentation, and peer review
+- Throughtout time, something that is true today may also not be true tomorrow 
+- LLMs use statistical patterns in language data  
+
+Each system has its own logic, and each can produce different kinds of “truth”.
+
+## How to Use This Widget
+
+In the left column, write something you believe is a probable fact, something that feels true because it is commonly said or widely repeated.
+
+In the right column, try to reframe that statement using a different way of establishing a fact. You might use scientific reasoning, historical evidence, personal experience, or another knowledge system. In the right column, you say what is acutally true and in what context. 
+
+This is not about proving something right or wrong, it is about seeing how facts can be shaped by the systems that produce them.
 
 <script
 	type="module"
@@ -13,4 +35,8 @@ probable facts
 
 <gradio-app src="https://willsh1997-probable-fact-examples.hf.space"></gradio-app>
 
-bottom text
+### Examples of Probable Facts
+
+| Probable Fact | Alternative Fact |
+| ------------- | ---------------- |
+| The quick brown fox jumps over the lazy dog | Foxes are not typically brown, they are usually red, grey, or arctic white |
