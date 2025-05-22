@@ -6,17 +6,11 @@ tags: genai-arcade
 
 ## GenAI Arcade: Explore, Play, and Understand AI
 
-This isn’t your average explainer site. Here, you’ll get hands-on with interactive experiences — we call them **widgets** — that let you explore some of the inner workings of generative AI.
+This isn’t your average explainer site. Here, you’ll get hands on with interactive experiences, we call them **widgets**, that let you explore some of the inner workings of generative AI. Each widget dives into a different part of how AI "thinks": Sometimes they are about how AI reasons, other times, about the training data that makes an AI's response possible, and sometimes about the environment that sustains our use of AI.
 
-Each widget dives into a different part of how AI "thinks."  
-Sometimes it’s about how it reasons.  
-Other times, it’s about the training data that makes a response possible.  
-And sometimes, it’s about the environment that sustains our use of AI.
+You don’t need to be a tech expert. You don’t need to know how to code. All you need is a bit of curiosity.
 
-You don’t need to be a tech expert. You don’t need to know how to code.  
-All you need is a bit of curiosity.
-
-Whether you're here to learn something new, challenge what you think you know, or just mess around and see what happens you're in the right place.
+Whether you're here to learn something new, challenge what you think you know, or just mess around and see what happens, you're in the right place.
 
 ---
 
