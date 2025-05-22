@@ -10,8 +10,6 @@ What happens when a language model is trained **not** to talk about something, e
 
 In this interactive experience, you'll engage with a version of an LLM that has been trained to avoid any mention of milk. Why? Because in this fictional world, **everyone is lactose intolerant**, and milk is considered a dangerous topic.
 
-![Milkless](imgs/melk)
-
 This playful setup is a metaphor for something very real:  
 Modern language models are trained with **safety guardrails**, systems that prevent them from generating harmful, illegal, or sensitive content. These include topics like:
 
