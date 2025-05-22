@@ -55,6 +55,3 @@ After experimenting, take a moment to consider:
 - **How do we ensure transparency and accountability in these systems?**
 
 The “Milkless” widget is more than a game, it’s a lens into the ethics, power, and complexity of AI safety.
-
-Explore it with curiosity. Reflect with care.
-
