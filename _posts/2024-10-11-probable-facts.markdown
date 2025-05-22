@@ -40,3 +40,12 @@ This is not about proving something right or wrong, it is about seeing how facts
 | Probable Fact | Alternative Fact |
 | ------------- | ---------------- |
 | The quick brown fox jumps over the lazy dog | Foxes are not typically brown, they are usually red, grey, or arctic white |
+| Goldfish have a three-second memory | Goldfish can remember things for months and can even be trained |
+| Humans only use 10 percent of their brains | Brain imaging shows we use virtually every part of the brain, even when at rest |
+| Bats are blind | Bats can see quite well, and some species even have excellent night vision |
+| Lightning never strikes the same place twice | It often does, tall structures like the Empire State Building are struck many times a year |
+| Vikings wore horned helmets | There is no historical evidence for this, it was popularised by nineteenth-century opera costumes |
+| You swallow eight spiders a year in your sleep | There is no scientific basis for this, spiders tend to avoid humans |
+| Sugar makes kids hyperactive | Multiple studies have shown no consistent link between sugar intake and hyperactivity |
+| Shaving makes hair grow back thicker | Shaving does not change the thickness, colour, or rate of hair growth |
+| Cracking your knuckles causes arthritis | There is no evidence linking knuckle cracking to arthritis |
