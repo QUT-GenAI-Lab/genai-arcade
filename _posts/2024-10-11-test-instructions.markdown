@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "GenAI Arcade"
-tags: instructions
+tags: genai-arcade
 ---
 
 ## GenAI Arcade: Explore, Play, and Understand AI
