@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "LLM calculator"
+title:  "Sort of Calculator"
 tags: widgets
 ---
 

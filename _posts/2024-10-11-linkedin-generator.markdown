@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "linkedin generator"
+title:  "LinkedIn Generator"
 tags: widgets
 ---
 

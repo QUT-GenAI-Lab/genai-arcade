@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "neutral input"
+title:  "Neutral Input"
 tags: widgets
 ---
 

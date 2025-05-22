@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "multilingual LLM"
+title:  "Multilingual LLM"
 tags: widgets
 ---
 
