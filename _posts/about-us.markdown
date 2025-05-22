@@ -1,0 +1,35 @@
+---
+layout: default
+title:  "About Us - GenAI Lab"
+tags: genai-arcade
+---
+
+## About Us
+
+This site was created by the **Generative AI Lab** at **Queensland University of Technology (QUT)**.
+
+The QUT Generative AI Lab is a specialist research initiative focused on the emerging social and cultural challenges and possibilities of generative AI.
+
+Led by **Distinguished Professor Jean Burgess**, the lab is home to a multidisciplinary team with expertise in engineering, computer science, media and cultural studies, education, and science and technology studies.
+
+We take a holistic approach to generative AI. That means we never treat it as just a technical tool we always consider how it’s used, who it affects, and what it means in the real world.
+
+### Why We Built This
+
+We created this site to help people explore how generative AI works, what it can and can’t do, and why that matters. 
+
+Generative AI is often presented as magical or mysterious. But when you understand how it works, you can ask better questions, use it more effectively, and think more critically about its role in society.
+
+This site is part of our mission to make AI literacy accessible, engaging, and empowering.
+
+### What We Do
+
+We believe the future of generative AI isn’t just about how powerful the models are, it’s also about how people use them.
+
+At the GenAI Lab, we focus on reimagining human skills and machine capabilities together. We research new ways of working with generative AI, and we design interactive tools, workshops, and explainers to help people understand and shape these technologies.
+
+Our goal is to empower the public to become active participants in the development and use of AI, not just passive users. We want people to see themselves as part of the future of generative technologies.
+
+Learn more about our work at the [QUT Generative AI Lab](https://research.qut.edu.au/gen) 
+
+If you want to learn more about this tool, contact [Kevin Witzenberger](kevin.witzenberger@qut.edu.au) 
