@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "About Us - GenAI Lab"
+title:  "About Us"
 tags: genai-arcade
 ---
 
