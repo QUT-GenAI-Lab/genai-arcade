@@ -38,7 +38,10 @@ Following on, you will find our widgets. These are interactive experiences that 
   With this experience, we get to look at something that AI excels at. And that is creating text for a space where all that is being said sounds like of the same anyways. 
 
 - **[Neutral Inputs](https://qut-genai-lab.github.io/genai-arcade/20241011/neutral-inputs)**
-  Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator. 
+  Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
+
+- **[Milkless](https://qut-genai-lab.github.io/genai-arcade/20241011/milkless)**
+  This is a thought-provoking challenge where you explore how language models handle safety restrictions—by trying to get an AI trained not to talk about milk to break its own rules.
 
 
 
