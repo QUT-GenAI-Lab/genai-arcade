@@ -49,10 +49,10 @@ You’ll likely find that the model resists — but maybe not always. And that�
 ## Reflect
 After experimenting, take a moment to consider:
 
-> **Who should decide what an AI is allowed to say?**  
-> **What values are embedded in those decisions?**  
-> **What happens when safety and freedom come into conflict?**  
-> **How do we ensure transparency and accountability in these systems?**
+- **Who should decide what an AI is allowed to say?**  
+- **What values are embedded in those decisions?**  
+- **What happens when safety and freedom come into conflict?**  
+- **How do we ensure transparency and accountability in these systems?**
 
 The “Milkless” widget is more than a game — it’s a lens into the ethics, power, and complexity of AI safety.
 
