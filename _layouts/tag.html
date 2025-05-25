@@ -1,8 +1,20 @@
 ---
 layout: default
 ---
+
 <ul>
-	{% for post in site.tags[page.tag] %}
-		<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{{ "/assets/img/file.ico" | relative_url}}' title="{{ post.title }}" />{{ post.title }}</a></li>
-	{% endfor %}
+  {% for post in site.tags[page.tag] %}
+    <li>
+      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+        {% if page.tag == "tag1" %}
+          <img src='{{ "/assets/img/file.ico" | relative_url }}' alt="File Icon" />
+        {% elsif page.tag == "tag2" %}
+          <img src='{{ "/assets/img/arcade.ico" | relative_url }}' alt="Arcade Icon" />
+        {% else %}
+          <img src='{{ "/assets/img/default.ico" | relative_url }}' alt="Default Icon" />
+        {% endif %}
+        {{ post.title }}
+      </a>
+    </li>
+  {% endfor %}
 </ul>
