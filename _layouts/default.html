@@ -31,7 +31,7 @@
         {% include topbar.html %}
         <div class="tag_list">
             <ul id="tag-list">
-                <li><a href="{{ '/' | relative_url }}" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a>
+                <li><a href="{{ site.baseurl }}/tag/genai-arcade/" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a> <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
                     <ul>
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
@@ -50,18 +50,21 @@
         <div class="post_list">
             {% unless page.date%}
 				{% if page.title == 'About' or page.title == '404...' %}
-					<ul>
+					<!-- <ul>
 						{% for post in site.posts %}
 						<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src="{{  '/assets/img/file.ico'  | relative_url }}" title="{{ post.title }}" />{{ post.title }}</a></li>
 						{% endfor %}
-					</ul>
+					</ul> -->
 				{% else %}
 					{{ content }}
 				{% endif %}
 			{% else %}
+                {% assign current_tag = page.tags[0] %}
 				<ul>
 					{% for post in site.posts %}
-					<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{{ "/assets/img/file.ico" | relative_url}}' title="{{ post.title }}" />{{ post.title }}</a></li>
+                        {% if post.tags[0] == current_tag %}
+        					<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "widgets" %} {{ "/assets/img/arcade.ico" | relative_url}} {% else %} {{ "/assets/img/file.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
+                        {% endif %}
 					{% endfor %}
 				</ul>
 			{% endunless %}
