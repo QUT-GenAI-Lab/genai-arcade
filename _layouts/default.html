@@ -59,9 +59,12 @@
 					{{ content }}
 				{% endif %}
 			{% else %}
+                {% assign current_tag = page.tags[0] %}
 				<ul>
 					{% for post in site.posts %}
-					<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{{ "/assets/img/file.ico" | relative_url}}' title="{{ post.title }}" />{{ post.title }}</a></li>
+                        {% if post.tags[0] == current_tag %}
+        					<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{{ "/assets/img/file.ico" | relative_url}}' title="{{ post.title }}" />{{ post.title }}</a></li>
+                        {% endif %}
 					{% endfor %}
 				</ul>
 			{% endunless %}
