@@ -63,7 +63,7 @@
 				<ul>
 					{% for post in site.posts %}
                         {% if post.tags[0] == current_tag %}
-        					<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{{ "/assets/img/file.ico" | relative_url}}' title="{{ post.title }}" />{{ post.title }}</a></li>
+        					<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "widgets" %} {{ "/assets/img/arcade.ico" | relative_url}} {% else %} {{ "/assets/img/file.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li>
                         {% endif %}
 					{% endfor %}
 				</ul>
