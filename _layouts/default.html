@@ -31,7 +31,7 @@
         {% include topbar.html %}
         <div class="tag_list">
             <ul id="tag-list">
-                <li><a href="{{ '/' | relative_url }}" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a>
+                <li><a href="{{ site.baseurl }}/tag/genai-arcade/" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a> <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
                     <ul>
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
@@ -50,11 +50,11 @@
         <div class="post_list">
             {% unless page.date%}
 				{% if page.title == 'About' or page.title == '404...' %}
-					<ul>
+					<!-- <ul>
 						{% for post in site.posts %}
 						<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src="{{  '/assets/img/file.ico'  | relative_url }}" title="{{ post.title }}" />{{ post.title }}</a></li>
 						{% endfor %}
-					</ul>
+					</ul> -->
 				{% else %}
 					{{ content }}
 				{% endif %}
