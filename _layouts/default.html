@@ -37,15 +37,32 @@ type: default
             <ul id="tag-list">
                 <li><a href="{{ '/' | relative_url}}" ><img src="{{ '/assets/img/home.png' | relative_url }}" />Home</a> <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
                     <ul>
+                        <!-- hardcoding some links to stuff -->
+                        <li>
+                            <a href="{{ '/20250521/explainer'  | relative_url  }}" title="AI explainer">
+                                <img src="{{ '/assets/img/file.ico' | relative_url }}" />
+                                AI explainer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ '20250520/about-us'  | relative_url  }}" title="About us">
+                                <img src="{{ '/assets/img/file.ico' | relative_url }}" />
+                                About us
+                            </a>
+                        </li>
+
+                        
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
                             {% assign tag_name = tag[0] %}
-                            <li>
-                                <a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/" title="{{ tag_name | replace:'-', ' ' }}">
-                                    <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                                    {{ tag_name | replace:'-', ' ' }}
-                                </a>
-                            </li>
+                                {% if tag_name != 'genai-arcade' %}
+                                <li>
+                                    <a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/" title="{{ tag_name | replace:'-', ' ' }}">
+                                        <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
+                                        {{ tag_name | replace:'-', ' ' }}
+                                    </a>
+                                </li>
+                                {% endif %}
                         {% endfor %}
                     </ul>
                 </li>
@@ -67,12 +84,14 @@ type: default
 				{% endif %}
              {% else %}
                 {% assign current_tag = page.tags[0] %}
-                <ul>
-                    {% for post in site.posts %}
-                        {% if post.tags[0] == current_tag %}
-                            <li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "widgets" %} {{ "/assets/img/arcade.ico" | relative_url}} {% else %} {{ "/assets/img/file.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
-                        {% endif %}
-                    {% endfor %}
+                <ul>                
+                    {% if current_tag != 'genai-arcade' %}
+                        {% for post in site.posts %}
+                            {% if post.tags[0] == current_tag %}
+                                <li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "widgets" %} {{ "/assets/img/arcade.ico" | relative_url}} {% else %} {{ "/assets/img/file.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
                 </ul>
             
 			{% endunless %}
