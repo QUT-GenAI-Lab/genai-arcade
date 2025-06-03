@@ -101,6 +101,7 @@ ul.topbar {
 	margin: 0 auto;
 	min-height: 150px;
 	max-height: 150px;
+    padding: 5px 0px;
 	overflow-y: scroll;
 	display: inline-block;
 
@@ -131,17 +132,17 @@ ul.topbar {
 }
 .tag_list {
 	width: 28%;
-	margin: 50 auto;
+	margin: 0 auto;
 	min-height: 150px;
 	max-height: 150px;
-	padding: 5px 0px;
+    padding: 5px 0px;
 	overflow-y: scroll;
 	display: inline-block;
 
 	img {
 		height: 16px;
 		width: 16px;
-		margin: 0px 3px -2px 5px;
+		margin: 0px 5px -2px 5px;
 	}
 
 	a {
