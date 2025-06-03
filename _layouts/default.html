@@ -35,7 +35,7 @@ type: default
         {% include topbar.html %}
         <div class="tag_list">
             <ul id="tag-list">
-                <li><a href="{{ site.baseurl }}/tag/genai-arcade/" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a> <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
+                <li><a href="{{ '/' | relative_url}}" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a> <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
                     <ul>
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
