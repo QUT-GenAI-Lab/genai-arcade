@@ -80,11 +80,12 @@ body {
 	.btn:active {
 		width: 12px;
 		height: 10px;
+        border-color: #000000 #fff8ff #fff8ff #000000;
 	}
 }
 ul.topbar {
 	list-style: none;
-	padding: 0 10px;
+	padding: 0 3px;
 	margin: 3px 0 3px 0;
 
 	li {
@@ -94,6 +95,45 @@ ul.topbar {
 	a {
 		text-decoration: none;
 		color: #000000;
+	}
+    .btn {
+		background: #cccccc;
+		width: 35px;
+		height: 20px;
+		float: left;
+		border: 2px solid;
+		border-color: #fff8ff #000000 #000000 #fff8ff;
+
+		span {
+			font-size: 19px;
+			position: relative;
+			left: 1px;
+			top: 2px;
+		}
+
+		.fa-home {
+			font-size: 18px;
+			left: 8px;
+		}
+
+		.fa-hand-o-left {
+			font-size: 18px;
+			left: 6px;
+		}
+		.fa-hand-o-right {
+			font-size: 18px;
+			left: 8px;
+		}
+	}
+
+	.btn_max {
+		margin: 0 3px 0 0;
+	}
+
+	.btn:active {
+		width: 34px;
+		height: 20px;
+        border-color: #000000 #fff8ff #fff8ff #000000;
 	}
 }
 .post_list, .tag_list, .post_content {
@@ -198,7 +238,7 @@ ul.topbar {
 }
 .post_content {
 	position: relative;
-	width: 99.5%;
+	width: calc(100% - 6px);
 	min-height: 600px;
 	max-height: 600px;
 	padding: 2px 40px;

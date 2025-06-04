@@ -2,6 +2,8 @@
 layout: default
 title:  "Context Window"
 tags: widgets
+before: knowledge-cutoff
+after: about-us
 ---
 
 ## Context Window

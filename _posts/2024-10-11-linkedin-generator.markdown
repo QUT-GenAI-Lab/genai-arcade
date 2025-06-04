@@ -2,6 +2,8 @@
 layout: default
 title:  "LinkedIn Generator"
 tags: widgets
+before: llm-calculator
+after: politeness
 ---
 
 ## LinkedIn Generator
