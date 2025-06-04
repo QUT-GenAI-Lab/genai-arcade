@@ -8,15 +8,18 @@ function maximize () {
 	var post = document.getElementsByClassName("content")[0];
 	var cont = document.getElementsByClassName("post_content")[0];
 	var wid = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName("body")[0].clientWidth;
+    var zoom = parseFloat(window.getComputedStyle(document.body).zoom) || 1;
+	var effectiveWidth = wid / zoom;
 
-	if (wid > 900) {
-		widf = wid * 0.9;
+
+	if (effectiveWidth > 900) {
+		widf = effectiveWidth * 0.9;
 		post.style.width = widf + "px";
 
-		if (wid < 1400) {
-			cont.style.width = "99%";
+		if (effectiveWidth < 1400) {
+			cont.style.width = "";
 		} else {
-			cont.style.width = "99.4%";
+			cont.style.width = "";
 		}
 	}
 }
@@ -25,10 +28,12 @@ function minimize () {
 	var post = document.getElementsByClassName("content")[0];
 	var cont = document.getElementsByClassName("post_content")[0];
 	var wid = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName("body")[0].clientWidth;
-
-	if ( wid > 900 ) {
+    var zoom = parseFloat(window.getComputedStyle(document.body).zoom) || 1;
+	var effectiveWidth = wid / zoom;
+    
+	if ( effectiveWidth > 900 ) {
 		post.style.width = "800px";
-		cont.style.width = "98.5%";
+		cont.style.width = "";
 	}
 }
 
