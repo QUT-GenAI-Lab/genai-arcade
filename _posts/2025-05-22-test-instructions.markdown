@@ -2,6 +2,8 @@
 layout: default
 title:  "GenAI Arcade"
 tags: genai-arcade
+before: first
+after: 2025-05-21-explainer
 ---
 
 ## GenAI Arcade: Explore, Play, and Understand AI

@@ -2,6 +2,8 @@
 layout: default
 title:  "Sort of Calculator"
 tags: widgets
+before: probable-facts
+after: linkedin-generator
 ---
 
 ## Calculator (sort of)
