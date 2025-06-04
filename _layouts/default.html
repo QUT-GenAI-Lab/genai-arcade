@@ -44,14 +44,6 @@ type: default
                                 AI explainer
                             </a>
                         </li>
-                        <li>
-                            <a href="{{ '20250520/about-us'  | relative_url  }}" title="About us">
-                                <img src="{{ '/assets/img/file.ico' | relative_url }}" />
-                                About us
-                            </a>
-                        </li>
-
-                        
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
                             {% assign tag_name = tag[0] %}
@@ -64,6 +56,14 @@ type: default
                                 </li>
                                 {% endif %}
                         {% endfor %}
+                        
+                        <!-- hardcoding some links to stuff -->
+                        <li>
+                            <a href="{{ '20250520/about-us'  | relative_url  }}" title="About us">
+                                <img src="{{ '/assets/img/file.ico' | relative_url }}" />
+                                About us
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
