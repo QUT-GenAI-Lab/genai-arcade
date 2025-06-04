@@ -117,7 +117,9 @@ type: default
                 <div class="btn"><span class="fa fa-window-minimize"></span></div>
             </div>
             <ul class="topbar">
-                <li>{{ page.date | date: '%B %-d, %Y' }}</li>
+                <a href="{{ '/' | relative_url }}"> <div class="btn"><span class="fa fa-home"></span></div></a>
+                <div class="btn"><span class="fa fa-hand-o-left"></span></div>
+                <div class="btn"><span class="fa fa-hand-o-right"></span></div>
             </ul>
             <div class="post_content">
                 {{ content }}
