@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Sort of Calculator"
-tags: widgets
+tags: limits
 before: probable-facts
 after: linkedin-generator
 ---

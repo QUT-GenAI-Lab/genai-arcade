@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "LinkedIn Generator"
-tags: widgets
+tags: knowing
 before: llm-calculator
 after: politeness
 ---

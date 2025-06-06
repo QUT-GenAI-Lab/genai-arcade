@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Knowledge Cutoff"
-tags: widgets
+tags: knowing
 before: milkless
 after: context-window
 ---
