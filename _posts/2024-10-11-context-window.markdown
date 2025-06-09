@@ -33,12 +33,12 @@ What happens when it’s longer?
 
 ---
 
-<iframe
-	src="https://willsh1997-context-window-poc.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.1/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-context-window-poc.hf.space"></gradio-app>
 
 ## Reflections:
 

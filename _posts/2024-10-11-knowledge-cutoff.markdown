@@ -19,12 +19,12 @@ That’s what this widget is all about.
 
 You’ll ask a question, and the widget will send it to **three different models** — LLaMA (Feb 2023), LLaMA 2 (July 2023), and LLaMA 3 (April 2024) — each trained at a different point in time.
 
-<iframe
-	src="https://willsh1997-knowledge-cutoff-gradio.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-knowledge-cutoff-gradio.hf.space"></gradio-app>
 
 Compare the answers.  
 What do they know? What do they miss? What changes?

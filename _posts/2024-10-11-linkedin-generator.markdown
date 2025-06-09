@@ -31,12 +31,12 @@ That’s because LLMs don’t understand meaning. They generate text based on wh
 - See how the model transforms it into a LinkedIn post.
 - Try changing your input. Does the tone always shift the same way?
 
-<iframe
-	src="https://willsh1997-linkedin-generator.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-linkedin-generator.hf.space"></gradio-app>
 
 ---
 

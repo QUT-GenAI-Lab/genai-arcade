@@ -24,12 +24,12 @@ In this widget, you can type a prompt and see how the model responds when your i
 
 ---
 
-<iframe
-	src="https://willsh1997-politeness-demo.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-politeness-demo.hf.space"></gradio-app>
 
 ---
 

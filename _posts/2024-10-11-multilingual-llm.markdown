@@ -23,12 +23,12 @@ For smaller or less digitally represented languages, the model might struggle to
 In this widget, you can ask the same question in different languages and compare the responses.  
 What changes? What stays the same? What does that tell you?
 
-<iframe
-	src="https://willsh1997-llm-multilingual-demo.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.16.1/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-llm-multilingual-demo.hf.space"></gradio-app>
 
 ---
 
