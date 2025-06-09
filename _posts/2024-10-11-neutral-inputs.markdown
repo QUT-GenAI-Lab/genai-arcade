@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Neutral Input"
-tags: widgets
+tags: data
 ---
 
 ## How Are LLMs and Stable Diffusion Related?

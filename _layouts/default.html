@@ -77,7 +77,7 @@ type: default
     				{% if layout.type == 'tag-landing' %}
                         <ul>
                         	{% for post in site.tags[page.tag] %}
-                        		<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "widgets" %} {{ "/assets/img/arcade.ico" | relative_url}} {% else %} {{ "/assets/img/file.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
+                        		<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
                         	{% endfor %}
                         </ul>
                     {% endif %}
@@ -88,7 +88,7 @@ type: default
                     {% if current_tag != 'genai-arcade' %}
                         {% for post in site.posts %}
                             {% if post.tags[0] == current_tag %}
-                                <li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "widgets" %} {{ "/assets/img/arcade.ico" | relative_url}} {% else %} {{ "/assets/img/file.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
+                                <li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
                             {% endif %}
                         {% endfor %}
                     {% endif %}

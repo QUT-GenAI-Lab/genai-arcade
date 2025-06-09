@@ -1,5 +1,0 @@
----
-layout: tag
-tag: welcome
-permalink: /tag/welcome/
----

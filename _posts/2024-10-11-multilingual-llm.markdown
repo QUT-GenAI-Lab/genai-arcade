@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Multilingual LLM"
-tags: widgets
+tags: data
 ---
 
 ## Languages

@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Politeness"
-tags: widgets
+tags: data
 before: linkedin-generator
 after: milkless
 ---
