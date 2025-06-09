@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Context Window"
-tags: knowing
+tags: limits
 before: knowledge-cutoff
 after: about-us
 ---
