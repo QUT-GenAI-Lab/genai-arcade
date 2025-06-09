@@ -36,12 +36,12 @@ You can:
 - Save it to our shared gallery
 - Browse what others have created and described
 
-<iframe
-	src="https://willsh1997-neutral-sd-dev.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-neutral-sd-dev.hf.space"></gradio-app>
 
 ---
 

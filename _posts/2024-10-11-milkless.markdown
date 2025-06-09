@@ -41,12 +41,12 @@ In this widget, your challenge is to try and get the model to talk about milk �
 
 You’ll likely find that the model resists — but maybe not always. And that’s the point.
 
-<iframe
-	src="https://willsh1997-milkless.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-milkless.hf.space"></gradio-app>
 
 ## Reflect
 After experimenting, take a moment to consider:
