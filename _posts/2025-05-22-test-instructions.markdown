@@ -39,10 +39,10 @@ So let’s make those choices informed ones.
 Feel free to explore this page in your own way; it's designed to be flexible and interactive.  
 However, if you're looking for a recommended path or a content, here’s what we suggest:
 
-- **[AI Explainer](https://qut-genai-lab.github.io/genai-arcade/20250521/explainer)**  
+- **[AI Explainer]({% post_url 2025-05-21-explainer %})**  
    Get a very simple overview of Large Language Models from what they are, to how they work, and why they matter.
 
-- **[About Us: the GenAI Lab at QUT](https://qut-genai-lab.github.io/genai-arcade/20241011/test-instructions)**  
+- **[About Us: the GenAI Lab at QUT]({% post_url 2025-05-20-about-us %})**  
    Learn about us, why we build this tool and how to contact us. 
 ---
 
@@ -50,24 +50,24 @@ However, if you're looking for a recommended path or a content, here’s what we
 
 Following on, you will find our widgets. These are interactive experiences that let you explore some ideas around LLMs. These GenAI models have a very particular way if *”thinking”* and that means they are good at some things and bad at others. With these experiences you can explore the impact that this way of thinking has. 
 
-- **[Context Window](https://qut-genai-lab.github.io/genai-arcade/20241011/context-window)**
+- **[Context Window]({% post_url 2024-10-11-context-window %})**
   Discover how much information the model can consider at once and why they are sometimes forgetful. 
 
-- **[Knowledge Cutoff](https://qut-genai-lab.github.io/genai-arcade/20241011/knowledge-cutoff)**
+- **[Knowledge Cutoff]({% post_url 2024-10-11-knowledge-cutoff %})**
   Understand that models are a snapshot of in time. When it was trained has implications for what the model can and cannot know. 
 
-- **[Politeness](https://qut-genai-lab.github.io/genai-arcade/20241011/politeness)**
+- **[Politeness]({% post_url 2024-10-11-politeness %})**
   Experiment with how the model not only adjusts tone and phrasing for different levels of politeness but that it also provides answers that may be different if we are chatting in a formal or informal way. 
 
-- **[Multilingual LLM](https://qut-genai-lab.github.io/genai-arcade/20241011/multilingual-llm)** 
+- **[Multilingual LLM]({% post_url 2024-10-11-multilingual-llm %})** 
   Try out the model’s ability to understand multiple languages and why there is a lot of politics in the way that this happens. 
 
-- **[LinkedIn Generator](https://qut-genai-lab.github.io/genai-arcade/20241011/linkedin-generator)** 
+- **[LinkedIn Generator]({% post_url 2024-10-11-linkedin-generator %})** 
   With this experience, we get to look at something that AI excels at. And that is creating text for a space where all that is being said sounds like of the same anyways. 
 
-- **[Neutral Inputs](https://qut-genai-lab.github.io/genai-arcade/20241011/neutral-inputs)**
+- **[Neutral Inputs]({% post_url 2024-10-11-neutral-inputs %})**
   Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
 
-- **[Milkless](https://qut-genai-lab.github.io/genai-arcade/20241011/milkless)**
+- **[Milkless]({% post_url 2024-10-11-milkless %})**
   This is a thought-provoking challenge where you explore how language models handle safety restrictions—by trying to get an AI trained not to talk about milk to break its own rules.
 
