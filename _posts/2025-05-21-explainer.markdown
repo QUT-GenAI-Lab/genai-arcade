@@ -59,7 +59,20 @@ For example, if you ask an LLM to calculate the square root of 242, it might not
 Or if you ask it to look up recent research, it might use another agent to search the web or access a database. That’s actually pretty clever! But it also shows that LLMs aren’t perfect for everything, they often need backup.
 
 And here’s the thing: all of that takes a lot of computing power.  
-A simple **Casio calculator** can do maths instantly using just a tiny bit of energy — like running on a **tiny solar panel**.  
+A simple **Casio calculator** can do maths instantly using just a tiny bit of energy, like running on a **tiny solar panel**.  
 Meanwhile, an LLM might need a whole **data centre** and a ton of electricity to do the same thing.
 
 So while LLMs are powerful, they’re not always the most efficient tool for the job.
+
+---
+
+## Typology: Four Ways to Think About AI
+
+Every widget in the GenAI Arcade is sorted into one of four categories. These categories help you understand what kind of issue the widget is exploring. 
+They are:
+- **Knowing** - This is about how a model knows, not what it knows, but the way it comes to know anything at all.
+- **Data** - This is about what the model can know, and how that depends entirely on the data it has been trained on.
+- **Limits** - This is about where the edges are, the boundaries of memory, time, and capability that shape what the model can do.
+- **Values** - This is about the human choices behind the model, what it’s allowed to say, what it avoids, and who decides.
+
+Each widget focuses on one of these, but none of them exist in isolation. Every time you explore one category, you’re also brushing up against the others. That’s because generative AI is a system, and systems are messy, interconnected, and full of trade-offs.
