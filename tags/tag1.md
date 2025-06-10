@@ -7,16 +7,19 @@ title: Knowing
 
 ## Knowing
 
-This is all about how a generative AI “knows” things. It’s the model’s **epistemology**, its way of establishing what counts as a fact.
+Let’s talk about what it means for a generative AI to “know” something.
 
-For a language model, knowing is mostly about **probability**. It doesn’t check facts against the world. It just predicts what word is likely to come next based on patterns it has seen in its training data. That’s why it can sound confident and still be wrong.
+Unlike a person, a language model doesn’t learn by observing the world or testing ideas. It doesn’t verify facts or form beliefs. Instead, it works through patterns, predicting the next word in a sequence based on what it has seen during training.
 
-But there are many ways of knowing:
+This kind of knowing is statistical. If certain words or phrases often appear together in its training data, the model learns to associate them. That’s why it sounds fluent and confident, even when it’s wrong. It doesn’t know in the way a scientist knows through experiment, or a historian through evidence, or a person through experience. It just estimates what’s likely to come next.
 
-- In **science**, facts are established through evidence and repeatable experiments.
-- In **religion**, belief can be accepted as fact without proof.
-- In **law**, facts are decided through argument and precedent.
+There are many ways of knowing:
+- In science, knowledge is built through testing and replication.
+- In law, knowledge is shaped by precedent and argument.
+- In belief systems like religion, knowledge may be accepted through faith or tradition.
 
-A language model doesn’t do any of that. It just guesses.
+A language model doesn’t participate in any of these. It doesn’t reason, reflect, or understand. It generates.
 
-That’s also why it’s a terrible calculator. It doesn’t “know” that 17 times 23 is 391, it just knows that those numbers often appear together.
+That’s why it might say that 17 × 23 = 391, not because it calculated it, but because those numbers often appear together. It’s not doing math. It’s doing pattern recognition.
+
+Understanding this helps us use AI more thoughtfully. It’s not a source of truth. It’s a refelction of how it has 'seen' the data that allows it to know. 
