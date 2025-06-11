@@ -2,8 +2,8 @@
 layout: default
 title:  "Politeness"
 tags: data
-before: linkedin-generator
-after: milkless
+before: data
+after: multilingual-llm
 ---
 
 ## Politeness

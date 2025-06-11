@@ -3,7 +3,7 @@ layout: default
 title:  "LinkedIn Generator"
 tags: knowing
 before: llm-calculator
-after: politeness
+after: data
 ---
 
 ## LinkedIn Generator

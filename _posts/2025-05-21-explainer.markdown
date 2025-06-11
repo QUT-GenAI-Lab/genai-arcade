@@ -3,7 +3,7 @@ layout: default
 title:  "AI Explainer"
 tags: genai-arcade
 before: /
-after: probable-facts
+after: knowing
 ---
 ## How Does a Large Language Model Create Text?
 

@@ -2,7 +2,7 @@
 layout: default
 title:  "Knowledge Cutoff"
 tags: limits
-before: milkless
+before: limits
 after: context-window
 ---
 
