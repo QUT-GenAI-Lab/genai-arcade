@@ -5,7 +5,7 @@ permalink: /tag/knowing/
 title: Knowing
 ---
 
-## Knowing
+## Knowing 
 
 Let’s talk about what it means for a generative AI to “know” something.
 
