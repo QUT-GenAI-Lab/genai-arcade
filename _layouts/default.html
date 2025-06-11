@@ -134,14 +134,16 @@ type: default
                         {% if page.before == '/' %}
                             <a href="{{ '/' | relative_url }}"> <div class="btn"><span class="fa fa-hand-o-left"></span></div> </a>
                         {% else %}
-                            {% assign post = site.posts | where: "slug", page.before | first %}
+                            {% assign postlist = site.posts | concat: site.pages %}
+                            {% assign post = postlist | where: "slug", page.before | first %}
                              <a href="{{ post.url | relative_url }}"> <div class="btn"><span class="fa fa-hand-o-left"></span></div> </a>
                         {% endif %}
                     {% endif %}
                 {% endif %}
                 {% if page.after %}
                     {% if page.after != 'last' %}
-                        {% assign post = site.posts | where: "slug", page.after | first %}
+                        {% assign postlist = site.posts | concat: site.pages %}
+                        {% assign post = postlist | where: "slug", page.after | first %}
                         <a href="{{ post.url | relative_url }}"> <div class="btn"><span class="fa fa-hand-o-right"></span></div> </a>
                     {% endif %}
                 {% endif %}

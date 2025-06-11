@@ -2,7 +2,10 @@
 layout: tag
 tag: limits
 permalink: /tag/limits/
-title: limits
+title: Limits
+slug: limits
+before: neutral-inputs
+after: knowledge-cutoff
 ---
 
 ## Limits

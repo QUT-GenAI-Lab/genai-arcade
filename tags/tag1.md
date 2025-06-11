@@ -3,6 +3,9 @@ layout: tag
 tag: knowing
 permalink: /tag/knowing/
 title: Knowing
+slug: knowing
+before: explainer
+after: probable-facts
 ---
 
 ## Knowing 

@@ -3,7 +3,7 @@ layout: default
 title:  "Context Window"
 tags: limits
 before: knowledge-cutoff
-after: about-us
+after: values
 ---
 
 ## Context Window

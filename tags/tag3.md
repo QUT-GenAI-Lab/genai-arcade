@@ -2,7 +2,10 @@
 layout: tag
 tag: values
 permalink: /tag/values/
-title: values
+title: Values
+slug: values
+before: context-window
+after: milkless
 ---
 
 ## Values

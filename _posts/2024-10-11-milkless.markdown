@@ -2,8 +2,8 @@
 layout: default
 title:  "Milkless"
 tags: values
-before: politeness
-after: knowledge-cutoff
+before: values
+after: about-us
 ---
 
 ## Milkless

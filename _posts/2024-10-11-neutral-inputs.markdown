@@ -2,6 +2,8 @@
 layout: default
 title:  "Neutral Input"
 tags: data
+before: multilingual-llm
+after: limits
 ---
 
 ## How Are LLMs and Stable Diffusion Related?

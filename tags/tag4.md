@@ -2,6 +2,10 @@
 layout: tag
 tag: data
 permalink: /tag/data/
+before: linkedin-generator
+after: politeness
+title: Data
+slug: data
 ---
 
 ## Data
