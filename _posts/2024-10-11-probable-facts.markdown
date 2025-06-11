@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Probable Facts - Examples"
+title:  "Probable Facts"
 tag: knowing
 before: knowing
 after: llm-calculator
