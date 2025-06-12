@@ -29,6 +29,7 @@ Language models are powerful tools. Without constraints, they could be misused, 
 - *Protect users* from dangerous or triggering content
 - *Prevent misuse* of the model for unethical or illegal purposes
 - *Align AI behaviour* with human values and legal standards
+
 But no system is perfect. Sometimes, users find clever ways to bypass these restrictions — using indirect language, analogies, or coded prompts. This is known as jailbreaking or prompt injection.
 
 ---
