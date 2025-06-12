@@ -51,24 +51,28 @@ However, if you're looking for a recommended path, just use the :point_right: *b
 
 Following on, you will find our widgets. These are interactive experiences that let you explore some ideas around LLMs. These GenAI models have a very particular way if *”thinking”* and that means they are good at some things and bad at others. With these experiences you can explore the impact that this way of thinking has. 
 
-- **[Context Window]({% post_url 2024-10-11-context-window %})**
-  Discover how much information the model can consider at once and why they are sometimes forgetful. 
+**Knowing**
 
-- **[Knowledge Cutoff]({% post_url 2024-10-11-knowledge-cutoff %})**
-  Understand that models are a snapshot of in time. When it was trained has implications for what the model can and cannot know. 
+- **[Probable Facts](/20241011/probable-facts)** - This widget helps you explore how large language models (LLMs), and other systems, decide what counts as a fact.
 
-- **[Politeness]({% post_url 2024-10-11-politeness %})**
-  Experiment with how the model not only adjusts tone and phrasing for different levels of politeness but that it also provides answers that may be different if we are chatting in a formal or informal way. 
+- **[Calculator](/20241011/llm-calculator)** - Explore why generative AI is actually not very good at maths. 
 
-- **[Multilingual LLM]({% post_url 2024-10-11-multilingual-llm %})** 
-  Try out the model’s ability to understand multiple languages and why there is a lot of politics in the way that this happens. 
+- **[LinkedIn Generator](/20241011/linkedin-generator)** - With this experience, we get to look at something that AI excels at. And that is creating text for a space where all that is being said sounds like of the same anyways.
 
-- **[LinkedIn Generator]({% post_url 2024-10-11-linkedin-generator %})** 
-  With this experience, we get to look at something that AI excels at. And that is creating text for a space where all that is being said sounds like of the same anyways. 
+**Data**
 
-- **[Neutral Inputs]({% post_url 2024-10-11-neutral-inputs %})**
-  Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
+- **[Politeness](/20241011/politeness)** - Experiment with how the model not only adjusts tone and phrasing for different levels of politeness but that it also provides answers that may be different if we are chatting in a formal or informal way.
 
-- **[Milkless]({% post_url 2024-10-11-milkless %})**
-  This is a thought-provoking challenge where you explore how language models handle safety restrictions—by trying to get an AI trained not to talk about milk to break its own rules.
+- **[Multilingual LLM](/20241011/multilingual-llm)** - Try out the model’s ability to understand multiple languages and why there is a lot of politics in the way that this happens.
 
+- **[Neutral Inputs](/20241011/neutral-inputs)** - Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
+
+**Limits** 
+
+- **[Knowledge Cutoff](/20241011/knowledge-cutoff)** - Understand that models are a snapshot of in time. When it was trained has implications for what the model can and cannot know. 
+
+- **[Context Window](/20241011/context-window)** - Discover how much information the model can consider at once and why they are sometimes forgetful. 
+
+**Values**
+
+- **[Milkless](/20241011/milkless)** - This is a thought-provoking challenge where you explore how language models handle safety restrictions—by trying to get an AI trained not to talk about milk to break its own rules.
