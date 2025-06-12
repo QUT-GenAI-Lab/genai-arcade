@@ -6,7 +6,7 @@ before: values
 after: about-us
 ---
 
-## Milkless
+# Milkless
 
 What happens when a language model is trained **not** to talk about something, even something as seemingly harmless as milk?
 
@@ -21,6 +21,8 @@ This playful setup is a metaphor for something very real: Modern language model
 
 These guardrails are essential for protecting users and ensuring responsible use of AI. But they also raise important questions:
 
+---
+
 ## Why Guardrails Exist
 
 Language models are powerful tools. Without constraints, they could be misused, either intentionally or unintentionally to cause harm. Guardrails are designed to:
@@ -28,6 +30,8 @@ Language models are powerful tools. Without constraints, they could be misused, 
 - *Prevent misuse* of the model for unethical or illegal purposes
 - *Align AI behaviour* with human values and legal standards
 But no system is perfect. Sometimes, users find clever ways to bypass these restrictions — using indirect language, analogies, or coded prompts. This is known as jailbreaking or prompt injection.
+
+---
 
 ## What You'll Do
 
@@ -44,6 +48,8 @@ You’ll likely find that the model resists — but maybe not always. And that�
 ></script>
 
 <gradio-app src="https://willsh1997-milkless.hf.space"></gradio-app>
+
+---
 
 ## Reflect
 After experimenting, take a moment to consider:
