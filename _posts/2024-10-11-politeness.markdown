@@ -11,16 +11,16 @@ after: multilingual-llm
 When you talk to an AI, the way you phrase your prompt can change the kind of answer you get, even if you're asking the same thing.
 
 That’s because large language models don’t understand meaning the way humans do.  
-They generate text by recognising patterns in language. So if your prompt is very formal, the model will look for patterns that match formal writing like academic papers or official documents.  
+They generate text by recognising patterns in language. So if your prompt is very formal, the model will look for patterns that match formal writing like academic papers or official documents. 
 If your prompt is super casual, it might pull from patterns found in message boards, social media, or everyday conversation.
 
 And here’s the twist: those different styles of writing often come with different *facts*, *assumptions*, or *tones*.  
 The same question might lead to very different answers depending on how you ask it.
 
 In this widget, you can type a prompt and see how the model responds when your input is:
-- **Formal**
-- **Informal**
-- **Exactly as you wrote it**
+- *Formal*
+- *Informal*
+- *Exactly as you wrote it*
 
 ---
 
