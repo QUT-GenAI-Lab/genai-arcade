@@ -42,10 +42,10 @@ They’re not calculating. They’re predicting.
 
 ---
 
-## Questions to Think About:
-- When did the model get the answer right? When did it get it wrong?
+## Reflections
+- When did the model get the answer right?
+- When did it get it wrong?
 - What kinds of problems was it better at?
-- Did it sound confident, even when it was wrong?
 
 ---
 
