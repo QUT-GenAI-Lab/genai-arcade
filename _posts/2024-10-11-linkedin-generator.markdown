@@ -27,7 +27,7 @@ That’s because LLMs don’t understand meaning. They generate text based on wh
 ---
 
 #### Try it out:
-- Write a short idea or update in your own words.
+- Write a short idea or update in your own words. You could try something like: "I'm sometimes tired at work" 
 - See how the model transforms it into a LinkedIn post.
 - Try changing your input. Does the tone always shift the same way?
 
@@ -40,8 +40,8 @@ That’s because LLMs don’t understand meaning. They generate text based on wh
 
 ---
 
-### Questions to Think About:
-- How did the tone or message change in the LinkedIn version?
+### Reflections:
+- Does the post suit the space of LinkedIn?
 - Did it feel more professional? More vague? More confident?
 - What parts of your original idea got lost or exaggerated?
 
@@ -56,12 +56,12 @@ That makes them useful for:
 - Helping with tone, structure, or phrasing
 
 But it also means:
-- They can reinforce clichés or empty language
-- They might strip away nuance or personal voice
+- They can reinforce clichés or *empty language* 
+- They might strip away nuance and personal voice
 
 ---
 
 #### What do you think?
 - When is it helpful to sound “LinkedIn-y”? When is it not?
-- What does this say about how we communicate online?
-- Can AI help us write better or just more of the same?
+- In what writing formats could this feature be useful? 
+- Can AI help us write better or just write more like everyone else?
