@@ -6,7 +6,7 @@ before: multilingual-llm
 after: neutral-inputs
 ---
 
-## Languages
+# Multilingual LLM
 
 AI models don’t understand language the way humans do. 
 They don’t *translate* ideas between languages, they just look for patterns in the data they’ve seen for each language.
