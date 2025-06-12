@@ -56,14 +56,6 @@ Sometimes, AI seems smarter than it really is and that’s because companies qui
 
 Let's go back to the calculator example: If you ask an LLM to calculate the square root of 250, it might not know the answer on its own. But some systems will secretly call in a helper, like a little agent that writes and runs a Python programme to do the maths.
 
-**The LLM interface may look like this** 
-![Agent]({{"/assets/img/squareroot.png" | absolute_url}})
-*The interface may look like this*
-
-**But this is what is actually happening**
-![Agent]({{"/assets/img/square_root_2.png" | absolute_url}})
-*But this is what's happening*
-
 Or if you ask it to look up recent research, it might use another agent to search the web or access a database. That’s actually pretty clever! But it also shows that LLMs aren’t perfect for everything, they often need backup.
 
 And here’s the thing: all of that takes a lot of computing power.  
