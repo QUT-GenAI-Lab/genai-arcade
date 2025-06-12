@@ -8,7 +8,7 @@ before: context-window
 after: milkless
 ---
 
-## Values
+# Values
 
 If *Data* is about what a model can know, then *Values* are about what it should do with that knowledge. 
 
@@ -21,7 +21,9 @@ There are different ways to shape a model’s behavior:
 
 Each of these methods has strengths and weaknesses. None are perfect. Excluding data can create gaps. Alignment can introduce bias. Guardrails can be too rigid or too vague. And all of them reflect human judgment, which is always situated, contested, and evolving. There is real power in deciding what is acceptable and what is not, in drawing the boundaries of conversation, shaping what can be said, and determining whose values are reflected in the system.
 
-What counts as “safe” or “appropriate” can vary across cultures, communities, and contexts:
+---
+
+## What counts as “safe” or “appropriate” can vary across cultures, communities, and contexts:
 - A topic that’s sensitive in one place might be ordinary in another.
 - A joke that’s funny to some might be offensive to others.
 - A question that seems neutral might carry deep historical or political weight.
