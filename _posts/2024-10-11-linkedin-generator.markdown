@@ -6,7 +6,7 @@ before: llm-calculator
 after: data
 ---
 
-## LinkedIn Generator
+# LinkedIn Generator
 
 Ever noticed how LinkedIn posts all start to sound the same?
 
@@ -26,7 +26,7 @@ That’s because LLMs don’t understand meaning. They generate text based on wh
 
 ---
 
-#### Try it out:
+## Try it out:
 - Write a short idea or update in your own words. You could try something like: "I'm sometimes tired at work" 
 - See how the model transforms it into a LinkedIn post.
 - Try changing your input. Does the tone always shift the same way?
@@ -40,14 +40,14 @@ That’s because LLMs don’t understand meaning. They generate text based on wh
 
 ---
 
-### Reflections:
+## Reflections:
 - Does the post suit the space of LinkedIn?
 - Did it feel more professional? More vague? More confident?
 - What parts of your original idea got lost or exaggerated?
 
 ---
 
-### So What?
+## So What?
 
 This widget shows how LLMs are great at mimicking tone and style, especially in spaces where people write in predictable ways.
 
@@ -61,7 +61,7 @@ But it also means:
 
 ---
 
-#### What do you think?
+## What do you think?
 - When is it helpful to sound “LinkedIn-y”? When is it not?
 - In what writing formats could this feature be useful? 
 - Can AI help us write better or just write more like everyone else?
