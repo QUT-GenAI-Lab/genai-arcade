@@ -39,7 +39,7 @@ The choices we make now, about which tools we use and what we use them for, will
 ## Start Here
 
 Feel free to explore this page in your own way; it's designed to be flexible and interactive.  
-However, if you're looking for a recommended path, just use the 👉 *button* in the task bar. If you are looking for specific content, here is what we suggest: 
+However, if you're looking for a recommended path, just use the **👉** *button* in the task bar. If you are looking for specific content, here is what we suggest: 
 - **[AI Explainer]({/genai-arcade/20250521/explainer)** - Get a very simple overview of Large Language Models from what they are, to how they work, and why they matter.
 - **[About the GenAI Lab](/20250520/about-us)** - Learn about us, why we build this tool and how to contact us. 
 
@@ -50,19 +50,19 @@ However, if you're looking for a recommended path, just use the 👉 *button* in
 Following on, you will find our widgets. These are interactive experiences that let you explore some ideas around LLMs. These GenAI models have a very particular way if *thinking* and that means they are good at some things and bad at others. With these experiences you can explore the impact that this way of thinking has. 
 
 **Knowing**
-- **[Probable Facts](/20241011/probable-facts)** - This widget helps you explore how large language models (LLMs), and other systems, decide what counts as a fact.
-- **[Calculator](/20241011/llm-calculator)** - Explore why generative AI is actually not very good at maths. 
-- **[LinkedIn Generator](/20241011/linkedin-generator)** - With this experience, we get to look at something that AI excels at. And that is creating text for a space where all that is being said sounds like of the same anyways.
+- **[Probable Facts](/20241011/probable-facts)** - Learn how a language model decides what counts as a fact — not by checking the world, but by guessing what sounds most likely.
+- **[Calculator](/20241011/llm-calculator)** - Explore why generative AI struggles with maths, and what that tells us about the difference between knowing a fact and predicting a pattern.
+- **[LinkedIn Generator](/20241011/linkedin-generator)** - See how generative AI thrives in spaces where everything already sounds the same, and what that reveals about its strengths and limits.
 
 **Data**
-- **[Politeness](/20241011/politeness)** - Experiment with how the model not only adjusts tone and phrasing for different levels of politeness but that it also provides answers that may be different if we are chatting in a formal or informal way.
-- **[Multilingual LLM](/20241011/multilingual-llm)** - Try out the model’s ability to understand multiple languages and why there is a lot of politics in the way that this happens.
+- **[Politeness](/20241011/politeness)** - Ask the same question in different tones, see how the model responds, and learn what that says about the data it was trained on.
+- **[Multilingual LLM](/20241011/multilingual-llm)** - Test the model’s ability to understand different languages, and explore the politics of which ones it handles well, and which it doesn’t and why it seems to know different things. 
 - **[Neutral Inputs](/20241011/neutral-inputs)** - Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
  
 **Limits** 
 - **[Knowledge Cutoff](/20241011/knowledge-cutoff)** - Understand that models are a snapshot of in time. When it was trained has implications for what the model can and cannot know. 
-- **[Context Window](/20241011/context-window)** - Discover how much information the model can consider at once and why they are sometimes forgetful. 
+- **[Context Window](/20241011/context-window)** - Explore how much information a model can hold in mind at once, and why it sometimes forgets things you just told it.
 
 **Values**
-- **[Milkless](/20241011/milkless)** - This is a thought-provoking challenge where you explore how language models handle safety restrictions—by trying to get an AI trained not to talk about milk to break its own rules.
+- **[Milkless](/20241011/milkless)** - This is a thought provoking challenge where you explore how language models handle safety restrictions by trying to get an AI trained not to talk about milk to break its own rules.
   
