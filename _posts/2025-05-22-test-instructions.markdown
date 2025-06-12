@@ -11,10 +11,10 @@ after: 2025-05-21-explainer
 This isn’t your average explainer site. Whether you're here to learn something new, challenge what you think you know, or just mess around and see what happens, you're in the right place. You don’t need to be a tech expert. You don’t need to know how to code. All you need is a bit of curiosity.
 
 Here, you’ll get hands on with interactive experiences, we call them **widgets**, that let you explore some of the inner workings of generative AI. Each widget dives into a different part of how AI *thinks*: Sometimes they are about how AI reasons, other times, about the training data that makes an AI's response possible, and sometimes about the environment that sustains our use of AI. We have sorted every widget in the GenAI Arcade into one of four categories. They are:
-   * Knowing - This is about how a model knows, not what it knows, but the way it comes to know anything at all.
-   * Data - This is about what the model can know, and how that depends entirely on the data it has been trained on.
-   * Limits - This is about where the edges are, the boundaries of memory, time, and capability that shape what the model can do.
-   * Values - This is about the human choices behind the model, what it’s allowed to say, what it avoids, and who decides.
+   * **[Knowing](/genai-arcade/tag/knowing/)** - This is about how a model knows, not what it knows, but the way it comes to know anything at all.
+   * **[Data](genai-arcade/tag/data/)** - This is about what the model can know, and how that depends entirely on the data it has been trained on.
+   * **[Limits](/genai-arcade/tag/limits)** - This is about where the edges are, the boundaries of memory, time, and capability that shape what the model can do.
+   * **[Values](/genai-arcade/tag/values/)** - This is about the human choices behind the model, what it’s allowed to say, what it avoids, and who decides.
 
 Each widget focuses on one of these, but none of them exist in isolation. Every time you explore one category, you’re also brushing up against the others. 
 
@@ -42,11 +42,9 @@ The choices we make now, about which tools we use and what we use them for, will
 Feel free to explore this page in your own way; it's designed to be flexible and interactive.  
 However, if you're looking for a recommended path, just use the :point_right: *button* in the task bar. If you are looking for specific content, here is what we suggest: 
 
-- **[AI Explainer]({% post_url 2025-05-21-explainer %})**  
-   Get a very simple overview of Large Language Models from what they are, to how they work, and why they matter.
+- **[AI Explainer]({/genai-arcade/20250521/explainer)** - Get a very simple overview of Large Language Models from what they are, to how they work, and why they matter.
 
-- **[About Us: the GenAI Lab at QUT]({% post_url 2025-05-20-about-us %})**  
-   Learn about us, why we build this tool and how to contact us. 
+- **[About Us: the GenAI Lab at QUT](/20250520/about-us)** - Learn about us, why we build this tool and how to contact us. 
 ---
 
 ## Explore the Widgets
