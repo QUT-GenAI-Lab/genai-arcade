@@ -66,7 +66,7 @@ Following on, you will find our widgets. These are interactive experiences that 
 - **[Multilingual LLM](/20241011/multilingual-llm)** - Try out the model’s ability to understand multiple languages and why there is a lot of politics in the way that this happens.
 
 - **[Neutral Inputs](/20241011/neutral-inputs)** - Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
-
+ 
 **Limits** 
 
 - **[Knowledge Cutoff](/20241011/knowledge-cutoff)** - Understand that models are a snapshot of in time. When it was trained has implications for what the model can and cannot know. 
