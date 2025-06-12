@@ -54,16 +54,22 @@ Following on, you will find our widgets. These are interactive experiences that 
 - **[Probable Facts](/genai-arcade/20241011/probable-facts)** - Learn how a language model decides what counts as a fact — not by checking the world, but by guessing what sounds most likely.
 - **[Calculator](/genai-arcade/20241011/llm-calculator)** - Explore why generative AI struggles with maths, and what that tells us about the difference between knowing a fact and predicting a pattern.
 - **[LinkedIn Generator](/genai-arcade/20241011/linkedin-generator)** - See how generative AI thrives in spaces where everything already sounds the same, and what that reveals about its strengths and limits.
+
 ---
+
 ## Data
 - **[Politeness](/genai-arcade/20241011/politeness)** - Ask the same question in different tones, see how the model responds, and learn what that says about the data it was trained on.
 - **[Multilingual LLM](/genai-arcade/20241011/multilingual-llm)** - Test the model’s ability to understand different languages, and explore the politics of which ones it handles well, and which it doesn’t and why it seems to know different things. 
 - **[Neutral Inputs](/genai-arcade/20241011/neutral-inputs)** - Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
+
 ---
+
 ## Limits 
 - **[Knowledge Cutoff](/genai-arcade/20241011/knowledge-cutoff)** - Understand that models are a snapshot of in time. When it was trained has implications for what the model can and cannot know. 
 - **[Context Window](/genai-arcade/20241011/context-window)** - Explore how much information a model can hold in mind at once, and why it sometimes forgets things you just told it.
+
 ---
+
 ## Values
 - **[Milkless](/genai-arcade/20241011/milkless)** - This is a thought provoking challenge where you explore how language models handle safety restrictions by trying to get an AI trained not to talk about milk to break its own rules.
   
