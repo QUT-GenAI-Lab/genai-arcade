@@ -25,7 +25,7 @@ But it does not always choose the most likely one. Instead, it *samples* from a 
 
 Here is a simplified example of what that might look like for the following sentence:
 
-< At the animal shelter, the child chose to adopt a [..] 
+> At the animal shelter, the child chose to adopt a [..] 
 
 | Token Option | Probability | Explanation |
 |--------------|-------------|-------------|
