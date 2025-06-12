@@ -10,7 +10,7 @@ after: last
 
 This site was created by the **Generative AI Lab** at **Queensland University of Technology (QUT)**.
 
-The QUT GenAI Lab is a research initiative that brings together technical expertise in computer science and AI, humanities expertise in culture and media, and social science expertise in organisations and technology. We have a strong focus on developing tools and methods to uplift the public’s understanding and unlock the capabilities of generative AI—but we know that these capabilities can only be created at the intersection of people and machines, and by engaging with the knowledge or lived experience of specific communities.
+The QUT GenAI Lab is a research initiative that brings together technical expertise in computer science and AI, humanities expertise in culture and media, and social science expertise in organisations and technology. We have a strong focus on developing tools and methods to uplift the public’s understanding and unlock the capabilities of generative AI. But we know that these capabilities can only be created at the intersection of people and machines, and by engaging with the knowledge or lived experience of specific communities.
 
 Led by **Distinguished Professor Jean Burgess**, the lab is home to a multidisciplinary team with expertise in engineering, computer science, media and cultural studies, education, and science and technology studies.
 
