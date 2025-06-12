@@ -41,7 +41,7 @@ The choices we make now, about which tools we use and what we use them for, will
 Feel free to explore this page in your own way; it's designed to be flexible and interactive.  
 However, if you're looking for a recommended path, just use the :point_right: *button* in the task bar. If you are looking for specific content, here is what we suggest: 
 - **[AI Explainer]({/genai-arcade/20250521/explainer)** - Get a very simple overview of Large Language Models from what they are, to how they work, and why they matter.
-- **[About Us: the GenAI Lab at QUT](/20250520/about-us)** - Learn about us, why we build this tool and how to contact us. 
+- **[The GenAI Lab at QUT](/20250520/about-us)** - Learn about us, why we build this tool and how to contact us. 
 ---
 
 ## Explore the Widgets
