@@ -8,7 +8,7 @@ title: Data
 slug: data
 ---
 
-## Data
+# Data
 
 If *Knowing* is about how it knows, then *Data* is about what it can know. This is the model’s **ontology** — the shape and scope of its world.
 
@@ -18,7 +18,7 @@ Some languages are overrepresented. Some regions dominate the conversation. Some
 
 This means the model’s world is uneven. It knows a lot about some things, and very little about others. And that imbalance is political.
 
-Politics lives in data, not just in the content of political debates, but in deeper questions:
+## Politics lives in data, not just in the content of debates, but in critical questions:
 - Whose voices are included?
 - Whose histories are told?
 - What kinds of knowledge are considered valid?
