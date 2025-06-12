@@ -5,62 +5,77 @@ tags: genai-arcade
 before: /
 after: knowing
 ---
-## How Does a Large Language Model Create Text?
+## What Is a Large Language Model and How Does It Work?
 
-Imagine you're playing a really smart guessing game.
+Imagine you are playing a really smart guessing game. A **large language model**, or **LLM**, has read a huge amount of text from books, websites, articles and more. It does not understand the world like humans do, but it is very good at spotting patterns in language.
 
-A large language model (LLM) has read *a huge amount* of text, books, websites, articles, and more. It doesn’t understand the world like humans do, but it’s really good at spotting patterns in language.
+So when you ask it a question or give a generative AI model a prompt, it does not think about the answer. Instead, it *guesses what word is most likely to come next*, based on everything it has seen before.
 
-So when you ask it a question or give it a prompt, it doesn’t *think* about the answer. Instead, it guesses what word is most likely to come next, based on everything it’s seen before.
-
-Then it guesses the next word.  
-And the next one.  
-And the next one after that.
+Then it guesses the next word. And the next one. And the next one after that.
 
 It keeps going, one word at a time, until it finishes your answer.
 
-It’s kind of like autocomplete on your phone but way more powerful.
+It is a bit like **autocomplete** on your phone, but much more powerful.
+
+## Prompts and Answers
+
+When a prompt comes in, the model breaks it into *tokens*. A token might be a word, part of a word, or even punctuation. The model then analyses all of the tokens together and predicts what token is most likely to come next, based on the ones that came before. **This is how you get an answer from a Chatbot.**
+
+But it does not always choose the most likely one. Instead, it *samples* from a list of possibilities. This makes the output more varied and more human-like.
+
+Here is a simplified example of what that might look like for the following sentence:
+
+< At the animal shelter, the child chose to adopt a [..] 
+
+| Token Option | Probability | Explanation |
+|--------------|-------------|-------------|
+| cat          | 40%         | Most likely next word based on training data |
+| dog          | 30%         | Also common, but slightly less likely |
+| lizard          | 20%         | Less likely, but still possible |
+| cactus       | 10%         | Very unusual, but not impossible |
+
+The model might choose *cat*, but it could also pick *dog* or even *cactus*, depending on how it is set up. Then it does the same thing again for the next token. And again. And again.
+
+This is how it builds up a sentence, one token at a time, until it decides to stop.
 
 ---
 
-## What Does That Mean for Facts?
+## How a Language Model Reasons
 
-Because LLMs create text by guessing what words are likely to come next, they don’t actually *know* what’s true or false.  
-They’ve seen lots of patterns in language — including how facts are usually written — so they can sound very confident. But they’re still just making predictions based on probability.
+LLMs do not reason like humans. They do not have beliefs, goals, or understanding. They do not know what a fact is in the way people do.
 
-That’s also why LLMs aren’t great with numbers.  
-They know that **2 + 2 = 4** because they’ve seen that exact phrase many times.  
-But if you ask for something like **the square root of 242**, they might guess, and guess incorrectly, because they haven’t seen that specific answer enough to be sure.
+Instead, they *recognise patterns* in how facts are usually written. So when they produce a fact, they are not recalling it from memory. They are *predicting what a fact should look like* based on the language they have seen.
 
-So when an LLM gives you a “fact,” it’s really saying:  
-> “Based on everything I’ve seen, this is probably what someone would say here.”
+Their reasoning is not logical or deliberate. It is *statistical*, a matter of what is most likely to come next.
 
-Most of the time, that works pretty well. But sometimes, what's being said on the internet is wrong or our facts change over time.  
-For example, the answer to *Who is the prime minister?* depends on *when* and *where* you ask.
+Because LLMs create text by guessing what words are likely to come next, they do *not actually know* what is true or false. They have seen lots of patterns in language — including how facts are usually written — so they can sound very confident. But they are still just making predictions based on probability.
 
-And sometimes, the model just gets things wrong — or even makes things up. We tend to call these **hallucinations**. 
+That is also why LLMs are *not great with numbers*. They know that *2 plus 2 equals 4* because they have seen that exact phrase many times. But if you ask for something like the square root of 250, they might guess, and guess incorrectly, because they have not seen that specific answer enough to be sure.
 
-But here’s the thing: a hallucination isn’t always *wrong* in the way people think. The model is still following its own internal logic, it’s just that this logic sometimes works in our world, and sometimes it doesn’t.
+So when an LLM gives you a *fact*, it is really saying:
 
-That’s why it’s so important to understand what kind of task you’re using generative AI for.  
-If you’re writing a poem or brainstorming ideas, a bit of creative guessing might be fine or even helpful.  
-But if you’re looking for facts, doing research, or making decisions, you need to be careful.
+> “Based on everything I have seen, this is probably what someone would say here.”
 
-Knowing how the model works helps you know when to trust it and when to double-check.
+Most of the time, that works pretty well. But sometimes, what is being said on the internet is wrong or our facts change over time. For example, the answer to *Who is the prime minister?* depends on *when* and *where* you ask.
+
+And sometimes, the model just gets things wrong, or even *makes things up*. We tend to call these *hallucinations*.
+
+But here is the thing: a hallucination is not always wrong in the way people think. The model is still following its own internal logic, it is just that this logic sometimes works in our world, and sometimes it does not.
+
+That is why it is so important to understand what kind of task you are using generative AI for. If you are writing a poem or brainstorming ideas, a bit of creative guessing might be fine or even helpful. But if you are looking for facts, doing research, or making decisions, you need to be careful.
+
+**Knowing how the model works helps you know when to trust it and when to double-check.**
 
 ---
 
 ## What You See Isn’t Always What You Get
 
-Sometimes, AI seems smarter than it really is and that’s because companies quietly add extra tools behind the scenes to help it out.
+Sometimes, AI seems more capable than it really is. That is because companies often add *extra tools behind the scenes* to help it out.
 
-Let's go back to the calculator example: If you ask an LLM to calculate the square root of 250, it might not know the answer on its own. But some systems will secretly call in a helper, like a little agent that writes and runs a Python programme to do the maths.
+Let us go back to the calculator example. If you ask an LLM to calculate the square root of 250, it might not know the answer on its own. But some systems will quietly call in a helper, ike a small agent that writes and runs a Python program to do the maths.
 
-Or if you ask it to look up recent research, it might use another agent to search the web or access a database. That’s actually pretty clever! But it also shows that LLMs aren’t perfect for everything, they often need backup.
+Or if you ask it to look up recent events, it might use another agent to search the web or access a database. That is actually quite clever. But it also shows that LLMs are not perfect for everything. They often need backup.
 
-And here’s the thing: all of that takes a lot of computing power.  
-A simple **Casio calculator** can do maths instantly using just a tiny bit of energy, like running on a **tiny solar panel**.  
-Meanwhile, an LLM might need a whole **data centre** and a ton of electricity to do the same thing.
+And here’s the thing: all of that takes a lot of computing power. A simple *Casio calculator* can do maths instantly using just a tiny bit of energy, like running on a tiny solar panel. Meanwhile, an LLM might need a ton of electricity to do the same thing.
 
-So while LLMs are powerful, they’re not always the most efficient tool for the job.
-
+So while LLMs are powerful, they are not always the most efficient tool for the job. That is why it is important to use them thoughtfully and know where their strengths and weaknesses lie. 
