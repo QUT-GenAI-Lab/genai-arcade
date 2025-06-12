@@ -6,7 +6,7 @@ before: limits
 after: context-window
 ---
 
-## Knowledge Cutoff
+# Knowledge Cutoff
 
 Large language models are expensive to train, they take huge amounts of data, time, and computing power.  
 And once they’re trained, they’re **static**. That means they don’t automatically learn new things or update themselves over time.
