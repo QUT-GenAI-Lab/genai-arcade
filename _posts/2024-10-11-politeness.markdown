@@ -6,7 +6,7 @@ before: data
 after: multilingual-llm
 ---
 
-## Politeness
+# Politeness
 
 When you talk to an AI, the way you phrase your prompt can change the kind of answer you get, even if you're asking the same thing.
 
@@ -20,7 +20,6 @@ The same question might lead to very different answers depending on how you ask 
 In this widget, you can type a prompt and see how the model responds when your input is:
 - *Formal*
 - *Informal*
-- *Exactly as you wrote it*
 
 ---
 
@@ -46,10 +45,7 @@ Compare the results. What changes? What stays the same?
 
 ## So What?
 
-This experiment shows that LLMs don’t just respond to *what* you say they also respond to *how* you say it.
-
-That makes them powerful tools for adapting tone and style.  
-But it also means they can reflect biases or assumptions hidden in different types of language.
+This experiment shows that LLMs don’t just respond to *what* you say they also respond to *how* you say it. That makes them powerful tools for adapting tone and style. But it also means they can reflect biases or assumptions hidden in different types of language.
 
 ---
 
