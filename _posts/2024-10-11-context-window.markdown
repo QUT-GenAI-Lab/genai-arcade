@@ -6,7 +6,7 @@ before: knowledge-cutoff
 after: values
 ---
 
-## Context Window
+# Context Window
 
 Ever tried writing a story with AI, only to find it keeps forgetting your character’s hair colour halfway through?
 
