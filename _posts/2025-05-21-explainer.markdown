@@ -5,17 +5,13 @@ tags: genai-arcade
 before: /
 after: knowing
 ---
-## What Is a Large Language Model and How Does It Work?
+# What Is a Large Language Model (LLM) & How Does It Work?
 
 Imagine you are playing a really smart guessing game. A **large language model**, or **LLM**, has read a huge amount of text from books, websites, articles and more. It does not understand the world like humans do, but it is very good at spotting patterns in language.
 
-So when you ask it a question or give a generative AI model a prompt, it does not think about the answer. Instead, it *guesses what word is most likely to come next*, based on everything it has seen before.
+So when you ask it a question or give a generative AI model a prompt, it does not think about the answer. Instead, it *guesses what word is most likely to come next*, based on everything it has seen before. Then it guesses the next word. And the next one. And the next one after that. It keeps going, one word at a time, until it finishes your answer. It is a bit like **autocomplete** on your phone, but much more powerful.
 
-Then it guesses the next word. And the next one. And the next one after that.
-
-It keeps going, one word at a time, until it finishes your answer.
-
-It is a bit like **autocomplete** on your phone, but much more powerful.
+---
 
 ## Prompts and Answers
 
@@ -33,6 +29,7 @@ Here is a simplified example of what that might look like for the following sent
 | dog          | 30%         | Also common, but slightly less likely |
 | lizard          | 20%         | Less likely, but still possible |
 | cactus       | 10%         | Very unusual, but not impossible |
+
 
 The model might choose *cat*, but it could also pick *dog* or even *cactus*, depending on how it is set up. Then it does the same thing again for the next token. And again. And again.
 
