@@ -6,7 +6,7 @@ before: multilingual-llm
 after: limits
 ---
 
-## Neutral Inputs
+# Neutral Inputs
 
 Okay, this is not an LLM but instead a text-to-image model. But they are related: Even though large language models (LLMs) like GPT generate text, and models like Stable Diffusion generate images, they’re built on some of the same ideas especially the *transformer architecture*.
 
@@ -32,7 +32,7 @@ In this widget, we’ve stripped down a Stable Diffusion model so that it always
 
 This “neutral point” is like the average of everything the model has seen. When you generate an image from here, you’re seeing what the model thinks is most *typical* or *common*.
 
-You can:
+**You can**:
 - Generate your own image from the neutral point
 - Describe what you see
 - Save it to our shared gallery
@@ -59,11 +59,11 @@ You can:
 
 This widget helps us explore the **biases and patterns** baked into image models.
 
-It shows that:
+**It shows that**:
 - Even with no prompt, the model still makes choices — based on what it has seen most often.
 - These *default* images reflect the **dominant patterns** in the training data.
 
-That might mean:
+**That might mean**:
 - Certain types of people, places, or aesthetics show up more than others.
 - Other perspectives or styles might be missing entirely.
 
