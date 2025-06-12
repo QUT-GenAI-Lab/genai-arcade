@@ -8,7 +8,7 @@ before: explainer
 after: probable-facts
 ---
 
-## Knowing 
+# Knowing 
 
 Let’s talk about what it means for a generative AI to “know” something.
 
@@ -16,7 +16,7 @@ Unlike a person, a language model doesn’t learn by observing the world or test
 
 This kind of knowing is statistical. If certain words or phrases often appear together in its training data, the model learns to associate them. That’s why it sounds fluent and confident, even when it’s wrong. It doesn’t know in the way a scientist knows through experiment, or a historian through evidence, or a person through experience. It just estimates what’s likely to come next.
 
-### There are many ways of knowing:
+## There are many ways of knowing:
 - In science, knowledge is built through testing and replication.
 - In law, knowledge is shaped by precedent and argument.
 - In belief systems like religion, knowledge may be accepted through faith or tradition.
