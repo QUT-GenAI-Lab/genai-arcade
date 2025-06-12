@@ -18,7 +18,7 @@ Some languages are overrepresented. Some regions dominate the conversation. Some
 
 This means the model’s world is uneven. It knows a lot about some things, and very little about others. And that imbalance is political.
 
-## Politics lives in data, not just in the content of debates, but in critical questions:
+## Politics lives in data:
 - Whose voices are included?
 - Whose histories are told?
 - What kinds of knowledge are considered valid?
