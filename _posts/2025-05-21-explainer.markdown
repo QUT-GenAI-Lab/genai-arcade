@@ -54,7 +54,7 @@ Knowing how the model works helps you know when to trust it and when to double-c
 
 Sometimes, AI seems smarter than it really is and that’s because companies quietly add extra tools behind the scenes to help it out.
 
-Let's go back to the calculator example: If you ask an LLM to calculate the square root of 242, it might not know the answer on its own. But some systems will secretly call in a helper, like a little agent that writes and runs a Python programme to do the maths.
+Let's go back to the calculator example: If you ask an LLM to calculate the square root of 250, it might not know the answer on its own. But some systems will secretly call in a helper, like a little agent that writes and runs a Python programme to do the maths.
 
 **The LLM interface may look like this** 
 ![Agent](/assets/img/squareroot.png "The interface may look like this")
