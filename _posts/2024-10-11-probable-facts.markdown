@@ -14,7 +14,7 @@ LLMs do not know what is true in the way people do. They work with probabilities
 
 There are many different knowledge systems that define facts in different ways. This is part of a field called epistemology, the study of how we know what we know. For example:
 - Banks rely on ledgers, rules, and audits  
-- Religions may rely on scripture, tradition, or spiritual authority  
+- Religions may rely on scripture, tradition, beliefs, or spiritual authority  
 - Science uses observation, experimentation, and peer review
 - LLMs use statistical patterns in language data  
 
@@ -22,14 +22,14 @@ Each system has its own logic, and each can produce different kinds of *truth*.
 
 ## Comparison of Knowledge Systems
 
-| Feature | **LLM** | **Science** | **Law** | **Journalism** | **Philosophy** |
+|  | **LLM** | **Science** | **Law** | **Journalism** | **Philosophy** |
 |--------|---------------------------|-------------|---------|----------------|----------------|
 | **Basis** | Statistical patterns in text | Empirical observation & experimentation | Legal procedures & evidence | Investigation & source verification | Logical reasoning & conceptual analysis |
 | **Verification** | None (relies on training data consistency) | Reproducibility, peer review | Cross-examination, burden of proof | Multiple sources, editorial standards | Internal coherence, argument strength |
 | **Truth Standard** | Most probable answer based on data | Falsifiability, predictive power | Legal standards (e.g., "beyond reasonable doubt") | Credibility, corroboration | Logical validity, philosophical rigor |
 | **Error Handling** | May repeat common misconceptions | Actively seeks to disprove hypotheses | Appeals, retrials | Retractions, corrections | Revisions through debate and critique |
-| **Authority** | Prevalence in data | Scientific consensus | Courts, judges, legal precedent | Reputable media, eyewitnesses | Philosophical tradition, argument quality |
-| **Goal** | Generate plausible responses | Discover objective truths | Resolve disputes fairly | Inform the public accurately | Understand fundamental concepts |
+| **Authority** | Prevalence in data | Peer consensus | Courts, judges, legal precedent | Reputable media, eyewitnesses | Philosophical tradition, argument quality |
+| **Goal** | Generate plausible responses | Discover new knowledge | Resolve disputes fairly | Inform the public | Understand fundamental concepts |
 
 
 ## How to Use This Widget
