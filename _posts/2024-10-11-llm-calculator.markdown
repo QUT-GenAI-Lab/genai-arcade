@@ -17,11 +17,7 @@ Often, when you ask an AI to solve a maths problem, it quietly uses extra tools 
 It’s also worth thinking about efficiency. A basic calculator, the kind with a tiny solar panel, is incredibly energy-efficient. In contrast, using a large language model to do simple arithmetic is like using a jet engine to toast a slice of bread. It works, but it’s not exactly the best tool for the job.
 
 
-You can try basic operations like:
-- Addition (+)
-- Subtraction (−)
-- Multiplication (×)
-- Division (÷)
+You can try basic operations like: addition (+), subtraction (−), multiplication (×), and division (÷)
 
 But don’t be surprised if it gets things wrong, especially with bigger or more unusual numbers. You might be surprised about how good (or bad) this type of AI is actually with numbers. 
 
