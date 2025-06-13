@@ -75,6 +75,8 @@ Let us go back to the calculator example. If you ask an LLM to calculate the squ
 
 Or if you ask it to look up recent events, it might use another agent to search the web or access a database. That is actually quite clever. But it also shows that LLMs are not perfect for everything. They often need backup.
 
+![Agent]({{"/assets/img/square_root_2.png" | absolute_url}}){: width="100%"}
+
 And here’s the thing: all of that takes a lot of computing power. A simple *Casio calculator* can do maths instantly using just a tiny bit of energy, like running on a tiny solar panel. Meanwhile, an LLM might need a ton of electricity to do the same thing.
 
 So while LLMs are powerful, they are not always the most efficient tool for the job. That is why it is important to use them thoughtfully and know where their strengths and weaknesses lie. 
