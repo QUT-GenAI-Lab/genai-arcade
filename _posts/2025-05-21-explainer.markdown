@@ -69,7 +69,7 @@ That is why it is so important to understand what kind of task you are using gen
 
 Sometimes, AI seems more capable than it really is. That is because companies often add *extra tools behind the scenes* to help it out.
 
-Let us go back to the calculator example. If you ask an LLM to calculate the square root of 250, it might not know the answer on its own. But some systems will quietly call in a helper, ike a small agent that writes and runs a Python program to do the maths.
+Let us go back to the calculator example. If you ask an LLM to calculate the square root of 250, it might not know the answer on its own. But some systems will quietly call in a helper, like a small agent that writes and runs a Python program to do the maths.
 
 Or if you ask it to look up recent events, it might use another agent to search the web or access a database. That is actually quite clever. But it also shows that LLMs are not perfect for everything. They often need backup.
 
