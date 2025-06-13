@@ -71,6 +71,8 @@ Sometimes, AI seems more capable than it really is. That is because companies of
 
 Let us go back to the calculator example. If you ask an LLM to calculate the square root of 250, it might not know the answer on its own. But some systems will quietly call in a helper, like a small agent that writes and runs a Python program to do the maths.
 
+![Agent]({{"/assets/img/squareroot.png" | absolute_url}}){: width="90%"}
+
 Or if you ask it to look up recent events, it might use another agent to search the web or access a database. That is actually quite clever. But it also shows that LLMs are not perfect for everything. They often need backup.
 
 And here’s the thing: all of that takes a lot of computing power. A simple *Casio calculator* can do maths instantly using just a tiny bit of energy, like running on a tiny solar panel. Meanwhile, an LLM might need a ton of electricity to do the same thing.
