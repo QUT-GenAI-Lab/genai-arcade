@@ -4,7 +4,6 @@ title:  "GenAI Arcade"
 before: first
 after: explainer
 ---
-# Press 👉 to start 
 
 # GenAI Arcade: Explore, Play, and Understand AI
 

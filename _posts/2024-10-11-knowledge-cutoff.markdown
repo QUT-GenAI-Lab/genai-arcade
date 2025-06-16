@@ -26,7 +26,7 @@ You’ll ask a question, and the widget will send it to **three different models
 
 <gradio-app src="https://willsh1997-knowledge-cutoff-gradio.hf.space"></gradio-app>
 
-Compare the answers.  
+Compare your answers.  
 What do they know? What do they miss? What changes?
 
 ---

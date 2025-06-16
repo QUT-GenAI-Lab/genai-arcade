@@ -8,7 +8,7 @@ after: values
 
 # Context Window
 
-Ever tried writing a story with AI, only to find it keeps forgetting your character’s hair colour halfway through?
+Ever tried writing a story with AI, only to find it keeps forgetting a character’s hair colour halfway through?
 
 You tell it: *“Sarah has curly red hair and a green jacket.”* But a few paragraphs later, Sarah’s suddenly blonde and wearing a hoodie.  
 Frustrating, right?
