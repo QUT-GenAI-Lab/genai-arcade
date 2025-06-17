@@ -151,6 +151,7 @@ type: default
             <div class="post_content">
                 {{ content }}
                 {% if page.title %}{% endif %}
+                {% include pagenav.html %}
             </div>
         </div>
     {% endif %}

@@ -239,7 +239,6 @@ ul.topbar {
 .post_content {
 	position: relative;
 	width: calc(100% - 6px);
-	min-height: 600px;
 	padding: 2px 40px;
     box-sizing: border-box;
 	margin: 0 auto;
@@ -344,6 +343,7 @@ ul.topbar {
 		}
 	}
 }
+
 .donate {
 	float: right;
 	padding: 0 3px 0 0;
