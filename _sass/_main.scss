@@ -83,6 +83,80 @@ body {
         border-color: #000000 #fff8ff #fff8ff #000000;
 	}
 }
+
+.navbar {
+    display: flex;
+    width: 800px;
+    margin: auto;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    padding: 0;
+    gap: 4px; // Add 4px gap between buttons
+
+    a, .btn-wrapper {
+        flex: none;
+        text-decoration: none;
+        display: block;
+    }
+
+    .btn {
+        background: #cccccc;
+        height: 40px;
+        border: 2px solid;
+        border-color: #fff8ff #000000 #000000 #fff8ff;
+        display: flex;
+        flex-direction: column; // Stack icon and text vertically
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 0;
+        float: none;
+        font-size: 10px;
+        color: #000000;
+
+        .fa {
+            font-size: 16px;
+            margin-bottom: 2px; // Small gap between icon and text
+        }
+
+        .btn-text {
+            font-size: 10px;
+            line-height: 1;
+        }
+    }
+
+    .btn:active {
+        border-color: #000000 #fff8ff #fff8ff #000000;
+    }
+
+    // Disabled/greyed out state
+    .btn-disabled {
+        background: #999999;
+        color: #666666;
+        cursor: default;
+        
+        .fa {
+            color: #666666;
+        }
+        
+        .btn-text {
+            color: #666666;
+        }
+    }
+    
+    .btn-disabled:active {
+        // Prevent active state styling on disabled buttons
+        border-color: #fff8ff #000000 #000000 #fff8ff;
+    }
+}
+
+// Media query adjustments for responsive design
+@media only screen and (max-width: 810px) {
+    .navbar {
+        width: 90%;
+    }
+}
+
 ul.topbar {
 	list-style: none;
 	padding: 0 3px;

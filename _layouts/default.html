@@ -116,6 +116,86 @@ type: default
             <div class="right">&nbsp;</div>
         </div>
     </div>
+    
+    <div class="navbar">
+        <!-- Home Button -->
+        <a href="{{ '/' | relative_url }}" style="width: 156px;">
+            <div class="btn" style="height: 40px; width: 100%;">
+                <span class="fa fa-home"></span>
+                <span class="btn-text">Home</span>
+            </div>
+        </a>
+        
+        <!-- Previous/Back Button -->
+        {% if page.before %}
+            {% if page.before != 'first' %}
+                {% if page.before == '/' %}
+                    <a href="{{ '/' | relative_url }}" style="width: 318px;">
+                        <div class="btn" style="height: 40px; width: 100%;">
+                            <span class="fa fa-hand-o-left"></span>
+                            <span class="btn-text">Previous</span>
+                        </div>
+                    </a>
+                {% else %}
+                    {% assign postlist = site.posts | concat: site.pages %}
+                    {% assign post = postlist | where: "slug", page.before | first %}
+                    <a href="{{ post.url | relative_url }}" style="width: 318px;">
+                        <div class="btn" style="height: 40px; width: 100%;">
+                            <span class="fa fa-hand-o-left"></span>
+                            <span class="btn-text">Previous</span>
+                        </div>
+                    </a>
+                {% endif %}
+            {% else %}
+                <!-- Disabled Previous Button -->
+                <div class="btn-wrapper" style="width: 318px;">
+                    <div class="btn btn-disabled" style="height: 40px; width: 100%;">
+                        <span class="fa fa-hand-o-left"></span>
+                        <span class="btn-text">Previous</span>
+                    </div>
+                </div>
+            {% endif %}
+        {% else %}
+            <!-- Disabled Previous Button when no page.before exists -->
+            <div class="btn-wrapper" style="width: 318px;">
+                <div class="btn btn-disabled" style="height: 40px; width: 100%;">
+                    <span class="fa fa-hand-o-left"></span>
+                    <span class="btn-text">Previous</span>
+                </div>
+            </div>
+        {% endif %}
+        
+        <!-- Next/Forward Button -->
+        {% if page.after %}
+            {% if page.after != 'last' %}
+                {% assign postlist = site.posts | concat: site.pages %}
+                {% assign post = postlist | where: "slug", page.after | first %}
+                <a href="{{ post.url | relative_url }}" style="width: 318px;">
+                    <div class="btn" style="height: 40px; width: 100%;">
+                        <span class="fa fa-hand-o-right"></span>
+                        <span class="btn-text">Next</span>
+                    </div>
+                </a>
+            {% else %}
+                <!-- Disabled Next Button -->
+                <div class="btn-wrapper" style="width: 318px;">
+                    <div class="btn btn-disabled" style="height: 40px; width: 100%;">
+                        <span class="fa fa-hand-o-right"></span>
+                        <span class="btn-text">Next</span>
+                    </div>
+                </div>
+            {% endif %}
+        {% else %}
+            <!-- Disabled Next Button when no page.after exists -->
+            <div class="btn-wrapper" style="width: 318px;">
+                <div class="btn btn-disabled" style="height: 40px; width: 100%;">
+                    <span class="fa fa-hand-o-right"></span>
+                    <span class="btn-text">Next</span>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    
     {% if page.title %}
         <div class="content">
             <div class="post_title">
@@ -124,29 +204,11 @@ type: default
                 <a href="{{ '/' | relative_url }}">
                     <div class="btn"><span class="fa fa-times"></span></div>
                 </a>
-                <div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
+                <div class="btn"><span class="fa fa-window-maximize"></span></div>
                 <div class="btn"><span class="fa fa-window-minimize"></span></div>
             </div>
             <ul class="topbar">
-                <a href="{{ '/' | relative_url }}"> <div class="btn"><span class="fa fa-home"></span></div></a>
-                {% if page.before %}
-                    {% if page.before != 'first' %}
-                        {% if page.before == '/' %}
-                            <a href="{{ '/' | relative_url }}"> <div class="btn"><span class="fa fa-hand-o-left"></span></div> </a>
-                        {% else %}
-                            {% assign postlist = site.posts | concat: site.pages %}
-                            {% assign post = postlist | where: "slug", page.before | first %}
-                             <a href="{{ post.url | relative_url }}"> <div class="btn"><span class="fa fa-hand-o-left"></span></div> </a>
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
-                {% if page.after %}
-                    {% if page.after != 'last' %}
-                        {% assign postlist = site.posts | concat: site.pages %}
-                        {% assign post = postlist | where: "slug", page.after | first %}
-                        <a href="{{ post.url | relative_url }}"> <div class="btn"><span class="fa fa-hand-o-right"></span></div> </a>
-                    {% endif %}
-                {% endif %}
+            
             </ul>
             <div class="post_content">
                 {{ content }}
