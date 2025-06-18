@@ -1,0 +1,32 @@
+<div>
+    <br><br><br><br>
+    <hr> 
+    <div style="display: grid; grid-template-columns: 1fr 2fr 1fr; align-items: center; font-size: 130%">
+        <a href="{{ '/' | relative_url }}" style="justify-self: start;">⌂ Home</a>
+        
+        <div style="display: flex; gap: 20px; justify-content: center;">
+            {% if page.before %}
+                {% if page.before != 'first' %}
+                    {% if page.before == '/' %}
+                        <a href="{{ '/' | relative_url }}">◀ Previous</a>
+                    {% else %}
+                        {% assign postlist = site.posts | concat: site.pages %}
+                        {% assign post = postlist | where: "slug", page.before | first %}
+                        <a href="{{ post.url | relative_url }}">◀ Previous</a>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+            
+            {% if page.after %}
+                {% if page.after != 'last' %}
+                    {% assign postlist = site.posts | concat: site.pages %}
+                    {% assign post = postlist | where: "slug", page.after | first %}
+                    <a href="{{ post.url | relative_url }}">Next ▶</a>
+                {% endif %}
+            {% endif %}
+        </div>
+        
+        <div></div> <!-- Empty column -->
+    </div>
+</div>
+            
