@@ -91,12 +91,24 @@ body {
     margin-top: 4px;
     margin-bottom: 0px;
     padding: 0;
-    gap: 4px; // Add 4px gap between buttons
+    gap: 4px;
 
     a, .btn-wrapper {
         flex: none;
         text-decoration: none;
         display: block;
+    }
+
+    // Home button - smaller, fixed size
+    a:first-child {
+        width: 156px;
+        flex: 0 0 156px;
+    }
+
+    // Previous and Next buttons - equal flex
+    a:not(:first-child), .btn-wrapper {
+        flex: 1;
+        min-width: 0; // Allow shrinking below content size
     }
 
     .btn {
@@ -105,7 +117,7 @@ body {
         border: 2px solid;
         border-color: #fff8ff #000000 #000000 #fff8ff;
         display: flex;
-        flex-direction: column; // Stack icon and text vertically
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
@@ -113,15 +125,19 @@ body {
         float: none;
         font-size: 10px;
         color: #000000;
+        width: 100%; // Fill the flex container
 
         .fa {
             font-size: 16px;
-            margin-bottom: 2px; // Small gap between icon and text
+            margin-bottom: 2px;
         }
 
         .btn-text {
             font-size: 10px;
             line-height: 1;
+            white-space: nowrap; // Prevent text wrapping
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
@@ -129,7 +145,6 @@ body {
         border-color: #000000 #fff8ff #fff8ff #000000;
     }
 
-    // Disabled/greyed out state
     .btn-disabled {
         background: #999999;
         color: #666666;
@@ -145,17 +160,76 @@ body {
     }
     
     .btn-disabled:active {
-        // Prevent active state styling on disabled buttons
         border-color: #fff8ff #000000 #000000 #fff8ff;
     }
 }
 
-// Media query adjustments for responsive design
+// Media queries for mobile responsiveness
 @media only screen and (max-width: 810px) {
     .navbar {
         width: 90%;
+        gap: 2px; // Reduce gap on smaller screens
+        
+        a:first-child {
+            width: 120px;
+            flex: 0 0 120px; // Smaller home button on mobile
+        }
+        
+        .btn {
+            .btn-text {
+                font-size: 9px; // Slightly smaller text
+            }
+            
+            .fa {
+                font-size: 14px; // Slightly smaller icons
+            }
+        }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        gap: 1px; // Even smaller gap
+        
+        a:first-child {
+            width: 90px;
+            flex: 0 0 90px; // Even smaller home button
+        }
+        
+        .btn {
+            .btn-text {
+                font-size: 8px; // Even smaller text
+            }
+            
+            .fa {
+                font-size: 12px; // Even smaller icons
+                margin-bottom: 1px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar {
+        .btn {
+            .btn-text {
+                display: none; // Hide text labels on very small screens
+            }
+            
+            .fa {
+                font-size: 16px; // Larger icons when text is hidden
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// // Media query adjustments for responsive design
+// @media only screen and (max-width: 810px) {
+//     .navbar {
+//         width: 90%;
+//     }
+// }
 
 ul.topbar {
 	list-style: none;
