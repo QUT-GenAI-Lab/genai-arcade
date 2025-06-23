@@ -89,6 +89,8 @@ After training your AI and comparing different models, consider what just happen
 * What are the implications of AI companies using predominantly Western, educated perspectives for this training?
 * How might this process exclude or marginalise certain communities or viewpoints?
 
+---
+
 ## **Recommended Learning**
 
 * [**Algorithmic Political Bias in AI Systems**](https://pmc.ncbi.nlm.nih.gov/articles/PMC8967082/) - Research on how political orientations get embedded in AI through training processes
