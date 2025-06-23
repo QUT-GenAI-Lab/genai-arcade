@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Multilingual LLM"
+title:  "Speak my Language"
 tags: training
 before: multilingual
 after: limits
