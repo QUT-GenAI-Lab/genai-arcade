@@ -2,8 +2,8 @@
 layout: tag
 tag: training
 permalink: /tag/training/
-before: multilingual
-after: multilingual
+before: linkedin-generator
+after: average-internet
 title: Training
 slug: training
 ---
