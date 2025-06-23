@@ -1,11 +1,11 @@
 ---
 layout: tag
-tag: data
-permalink: /tag/data/
+tag: training
+permalink: /tag/training/
 before: linkedin-generator
 after: politeness
-title: Data
-slug: data
+title: Training
+slug: training
 ---
 
 # Data

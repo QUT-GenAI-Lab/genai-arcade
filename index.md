@@ -2,73 +2,56 @@
 layout: default
 title:  "GenAI Arcade"
 before: first
-after: explainer
+after: 2025-05-21-how-to
 ---
 
 # GenAI Arcade: Explore, Play, and Understand AI
+---
+## Why we Built the GenAI Arcade
 
-This isn’t your average explainer site. Whether you're here to learn something new, challenge what you think you know, or just mess around and see what happens, you're in the right place. You don’t need to be a tech expert. You don’t need to know how to code. All you need is a bit of curiosity.
+Generative AI is everywhere: in your feeds, your apps, your music, and your memes. But it’s hard to know how the technologies behind it really work. And that's a problem for us all.
 
-Here, you’ll get hands on with interactive experiences, we call them **widgets**, that let you explore some of the inner workings of generative AI. Each widget dives into a different part of how AI *thinks*: Sometimes they are about how AI reasons, other times, about the training data that makes an AI's response possible, and sometimes about the environment that sustains our use of AI. We have sorted every widget in the GenAI Arcade into one of four categories. They are:
-   * **[Knowing](/genai-arcade/tag/knowing/)** - This is about how a model knows, not what it knows, but the way it comes to know anything at all.
-   * **[Data](/genai-arcade/tag/data/)** - This is about what the model can know, and how that depends entirely on the data it has been trained on.
-   * **[Limits](/genai-arcade/tag/limits)** - This is about where the edges are, the boundaries of memory, time, and capability that shape what the model can do.
-   * **[Values](/genai-arcade/tag/values/)** - This is about the human choices behind the model, what it’s allowed to say, what it avoids, and who decides.
+> **Where do you go to learn about GenAI?** 
 
-Each widget focuses on one of these, but none of them exist in isolation. Every time you explore one category, you’re also brushing up against the others. 
+Most AI explainer resources fall into three problematic camps. Some are too technical, drowning you in jargon about "transformers" and "neural networks" without explaining what any of it actually means. Others, particularly from big tech companies, gloss over the massive environmental costs, failing to mention that [AI companies aren't transparent about energy consumption](https://theconversation.com/the-hidden-cost-of-the-ai-boom-social-and-environmental-exploitation-208669) or that they [use accounting tricks](https://carboncredits.com/ai-hidden-carbon-footprint-how-tech-giants-are-masking-their-emissions/) to hide their carbon footprint. Then there are the doomsayers, painting apocalyptic scenarios that make AI sound like a Hollywood movie villain rather than the useful, flawed and limited technology it actually is.
+
+Big tech companies often explain AI in ways that sound helpful but don't tell the full story. Sometimes, they might even represent  the technology  as mysterious or even magical   to make it [seem more powerful](https://www.livescience.com/technology/artificial-intelligence/foolhardy-at-best-and-deceptive-and-dangerous-at-worst-dont-believe-the-hype-heres-why-artificial-general-intelligence-isnt-what-the-billionaires-tell-you-it-is) than it really is. It's all part of the sales pitch.
+
+This is why we built the GenAI Arcade. Instead of just reading about AI, you get to play with it directly through a series of interactive games that reveal both its capabilities and its limitations. We believe the best way to understand AI is to actually interact with GenAI, to poke it, test its limits, and see what happens when you push it in unexpected directions.
+
+This is why we built the GenAI Arcade. Instead of just reading about AI, you get to play with it directly through a series of interactive games that reveal both its capabilities and its limitations. We believe the best way to understand AI is to actually interact with GenAI, to poke it, test its limits, and see what happens when you push it in unexpected directions.
+
+You don't need to be a tech expert to play around in the Arcade. You don't need to know how to code. All you need is a bit of curiosity and a willingness to experiment.
 
 ---
 
-## Why Does This Matter?
+## What You Gain from Understanding GenAI
 
-Generative AI is everywhere: in your feeds, your apps, your music, your memes.  
-But most people don’t really know how it works. And that’s a problem.
+When you understand how AI works, you can make better decisions about when and how to use it:
 
-Big tech companies often explain AI in ways that sound helpful but don’t tell the full story.  
-Sometimes, they even make things more confusing on purpose to make their software seem more powerful than it actually is. It's part of the sale. 
+**Better questions**: You'll know why "please write me a professional email" gets generic results, but "write an email declining a meeting invitation while suggesting alternative times" gets exactly what you need. This puts you in charge of the conversation, not the AI.
 
-That’s why it’s important to build *real experiences* with AI, ones that don’t require a long-winded explanation or hide the fact that AI sometimes simply isn't very smart. 
+**Environmental responsibility**: You'll understand that using AI for everything harms our planet and choose tools that align with your values. A simple calculator or search engine can use far less energy than asking an AI model to do the same task - and you'll have the confidence to make that choice.
 
-At QUT’s GenAI Lab, we believe the future of generative AI isn’t set in stone.  
-We have the power to shape it but that power depends on understanding how AI works and deciding what kind of AI we want to build.
+**Holding AI accountable**: You'll see through marketing claims to understand what these tools can and can't actually do, including recognising when companies are overselling AI's capabilities or underselling its limitations. You'll also understand how to create more inclusive content and demand better from AI developers.
 
-The choices we make now, about which tools we use and what we use them for, will shape the future of this technology.  
+**Informed citizenship**: You'll make thoughtful decisions about when to use AI, when to double-check its output, and when to avoid it entirely.
 
 ---
 
-## Start Here
+## Your Role in the Future of GenAI
 
-Feel free to explore this page in your own way; it's designed to be flexible and interactive.  
-However, if you're looking for a recommended path, just use the **👉** *button* in the task bar. If you are looking for specific content, here is what we suggest: 
-- **[AI Explainer](/genai-arcade/20250521/explainer)** - Get a very simple overview of Large Language Models from what they are, to how they work, and why they matter.
-- **[About the GenAI Lab](/genai-arcade/20250520/about-us)** - Learn about us, why we build this tool and how to contact us. 
+At QUT's GenAI Lab, we believe the future of generative AI isn't set in stone. We have the power to shape it, but that power depends on understanding how AI works and deciding what kind of AI we want to build.
 
----
-
-## Explore the Widgets
-
-Following on, you will find our widgets. These are interactive experiences that let you explore some ideas around LLMs. These GenAI models have a very particular way if *thinking* and that means they are good at some things and bad at others. With these experiences you can explore the impact that this way of thinking has. 
-
-## Knowing
-- **[Probable Facts](/genai-arcade/20241011/probable-facts)** - Learn how a language model decides what counts as a fact — not by checking the world, but by guessing what sounds most likely.
-- **[Calculator](/genai-arcade/20241011/llm-calculator)** - Explore why generative AI struggles with maths, and what that tells us about the difference between knowing a fact and predicting a pattern.
-- **[LinkedIn Generator](/genai-arcade/20241011/linkedin-generator)** - See how generative AI thrives in spaces where everything already sounds the same, and what that reveals about its strengths and limits.
+The choices we make now, about which tools we use and what we use them for, will shape the future of this technology. Understanding AI isn't just about using it better today, it's about being part of the conversation about where it goes tomorrow. 
 
 ---
 
-## Data
-- **[Politeness](/genai-arcade/20241011/politeness)** - Ask the same question in different tones, see how the model responds, and learn what that says about the data it was trained on.
-- **[Multilingual LLM](/genai-arcade/20241011/multilingual-llm)** - Test the model’s ability to understand different languages, and explore the politics of which ones it handles well, and which it doesn’t and why it seems to know different things. 
-- **[Neutral Inputs](/genai-arcade/20241011/neutral-inputs)** - Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator.
+## About the GenAI Arcade
 
----
+This tool was created by QUT's GenAI Lab. For questions or more information, contact: [Dr Kevin Witzenberger](kevin.witzenberger@qut.edu.au), GenAI Lab Research Fellow. 
 
-## Limits 
-- **[Knowledge Cutoff](/genai-arcade/20241011/knowledge-cutoff)** - Understand that models are a snapshot of in time. When it was trained has implications for what the model can and cannot know. 
-- **[Context Window](/genai-arcade/20241011/context-window)** - Explore how much information a model can hold in mind at once, and why it sometimes forgets things you just told it.
+Recommended Citation: Witzenberger, K., Burgess, J., He, W., & Snowswell, A. (2025). GenAI Arcade. QUT GenAI Lab. [Link to follow]
 
----
+Acknowledgment: [write a list] 
 
-## Values
-- **[Milkless](/genai-arcade/20241011/milkless)** - This is a thought provoking challenge where you explore how language models handle safety restrictions by trying to get an AI trained not to talk about milk to break its own rules.
-  
