@@ -1,10 +1,10 @@
 ---
 layout: default
-title:  "Align me"
+title:  "Align Me"
 tags: values
 before: values
 after: multilingual
 ---
 
-# words written 
-
+# Stuff
+content 

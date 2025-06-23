@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Word by Word"
-tag: understanding
+tags: understanding
 before: understanding
 after: calculator
 ---
