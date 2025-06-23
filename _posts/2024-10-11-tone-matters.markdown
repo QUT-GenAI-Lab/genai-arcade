@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Politeness"
-tags: data
-before: data
-after: multilingual-llm
+title:  "Tone Matters"
+tags: training
+before: average-internet
+after: multilingual
 ---
 
 # Politeness

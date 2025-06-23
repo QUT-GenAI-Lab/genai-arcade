@@ -1,0 +1,9 @@
+---
+layout: default
+title:  "Align me"
+tags: values
+before: values
+after: multilingual
+---
+
+# Stuff

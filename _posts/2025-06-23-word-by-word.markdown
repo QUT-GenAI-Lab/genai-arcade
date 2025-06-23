@@ -3,7 +3,7 @@ layout: default
 title:  "Word by Word"
 tag: understanding
 before: understanding
-after: llm-calculator
+after: calculator
 ---
 
 # Word by Word

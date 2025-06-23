@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "Sort of Calculator"
-tags: knowing
-before: probable-facts
+tags: understanding
+before: word-by-word
 after: linkedin-generator
 ---
 

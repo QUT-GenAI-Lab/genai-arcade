@@ -4,8 +4,8 @@ tag: values
 permalink: /tag/values/
 title: Values
 slug: values
-before: context-window
-after: milkless
+before: short-term-memory
+after: align-me
 ---
 
 # Values

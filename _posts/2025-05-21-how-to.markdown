@@ -12,10 +12,10 @@ after: understanding
 
 Here, you'll get hands-on with interactive *games* that let you explore some of the inner workings of generative AI. Each game is a self-paced, interactive experience that dives into a different aspect of how AI thinks and decides what to do: Sometimes they are about how AI reasons, other times, about the training data that makes an AI's response possible, and sometimes about the environment that sustains our use of AI. We have sorted every game in the GenAI Arcade into one of four categories. They are:
 
-   * **[Understanding](/genai-arcade/tag/understanding/)** - Games about how AI "understands" things
-   * **[Training](genai-arcade/tag/training/)** - Games about what AI can learn from data
-   * **[Limits](/genai-arcade/tag/limits)** - Games about AI's boundaries and constraints
-   * **[Values](/genai-arcade/tag/values/)** - Games about choices in AI systems
+   * **[Understanding]({{ "tag/understanding/" | relative_url}})** - Games about how AI "understands" things
+   * **[Training](/tag/training/)** - Games about what AI can learn from data
+   * **[Limits](/tag/limits)** - Games about AI's boundaries and constraints
+   * **[Values](/tag/values/)** - Games about choices in AI systems
 
 Each game focuses on one of these, but none of them exist in isolation. Every time you explore one category, you're also brushing up against the others.
 

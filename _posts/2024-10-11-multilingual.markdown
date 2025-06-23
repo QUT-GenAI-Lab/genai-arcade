@@ -1,9 +1,9 @@
 ---
 layout: default
 title:  "Multilingual LLM"
-tags: data
-before: multilingual-llm
-after: neutral-inputs
+tags: training
+before: multilingual
+after: limits
 ---
 
 # Multilingual LLM

@@ -1,9 +1,9 @@
 ---
 layout: default
 title:  "LinkedIn Generator"
-tags: knowing
-before: llm-calculator
-after: data
+tags: understanding
+before: calculator
+after: training
 ---
 
 # LinkedIn Generator

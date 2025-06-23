@@ -2,8 +2,8 @@
 layout: tag
 tag: training
 permalink: /tag/training/
-before: linkedin-generator
-after: politeness
+before: multilingual
+after: multilingual
 title: Training
 slug: training
 ---

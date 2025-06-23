@@ -7,6 +7,7 @@ after: last
 ---
 
 # About Us
+
 ---
 
 This site was created by the **Generative AI Lab** at **Queensland University of Technology (QUT)**.

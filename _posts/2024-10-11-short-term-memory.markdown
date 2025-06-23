@@ -1,8 +1,8 @@
 ---
 layout: default
-title:  "Context Window"
+title:  "Short-Term Memory" 
 tags: limits
-before: knowledge-cutoff
+before: time-capsule
 after: values
 ---
 

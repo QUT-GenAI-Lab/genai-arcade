@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Neutral Input"
-tags: data
-before: multilingual-llm
-after: limits
+title:  "Average Internet"
+tags: training
+before: training
+after: tone-matters
 ---
 
 # Neutral Inputs

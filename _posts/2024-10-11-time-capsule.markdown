@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Knowledge Cutoff"
+title:  "Time Capsule"
 tags: limits
-before: limits
-after: context-window
+before: environment
+after: short-term-memory
 ---
 
 # Knowledge Cutoff
