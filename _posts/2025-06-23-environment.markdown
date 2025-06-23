@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Environmental Boundaries"
+title:  "Environment"
 tags: limits
 before: limits
 after: time-capsule
