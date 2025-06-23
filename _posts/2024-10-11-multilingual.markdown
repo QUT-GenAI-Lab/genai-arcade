@@ -6,24 +6,18 @@ before: multilingual
 after: limits
 ---
 
-# Multilingual LLM
+# **Speak My Language**
 
-AI models don’t understand language the way humans do. 
-They don’t *translate* ideas between languages, they just look for patterns in the data they’ve seen for each language.
+---
 
-That means when you ask the same question in different languages, the model might give very different answers. Not because it’s trying to be biased, but because it’s pulling from different sources.
+> What if AI could talk to you the way your friends do? Or use the slang from your neighborhood? How would that change the way you interact with it?
 
-And that can get tricky and political.
+Most popular AI tools are trained primarily on English text, and even when they work in other languages, they often reflect the cultural norms and communication styles of English-speaking, Western countries. But language isn't just about words—it carries culture, identity, and ways of thinking.
 
-Just imagine how a topic like Gaza might be discussed in Arabic versus Hebrew. 
-The language used, the tone, the framing. All of it can shift depending on the cultural and political context of the language.
+This widget lets you explore how different cultural contexts and communication styles might change an AI's responses. You can ask it to respond "like someone from [your region/culture]" or 
+to use specific cultural communication patterns.
 
-But it’s not just about politics. 
-Some languages like English are used much more widely online. That means there’s a lot more training data available.  
-For smaller or less digitally represented languages, the model might struggle to give good answers or might not work well at all.
-
-In this widget, you can ask the same question in different languages and compare the responses.  
-What changes? What stays the same? What does that tell you?
+---
 
 <script
 	type="module"
@@ -34,29 +28,50 @@ What changes? What stays the same? What does that tell you?
 
 ---
 
-## Reflections:
-- Did the model give different answers in different languages?
-- Were some responses more detailed or confident than others?
-- What might that say about the sources the model is drawing from?
-- How does this impact people who don’t speak English or whose languages are underrepresented online?
+Try the same question with different cultural contexts. Notice how the examples, tone, assumptions, and even the structure of the answer might change.
+
+## **Cultural Communication Patterns**
+
+Different cultures have different ways of communicating. Some are more direct, others more indirect. Some prioritize individual achievement, others emphasize community harmony. Some cultures expect elaborate context before getting to the point, while others value brevity.
+
+When you ask an AI to respond "like someone from Japan," it might give more context, be more indirect, and emphasize group harmony. Ask it to respond "like someone from Germany," and you might get more direct, structured answers. Ask for a "Nigerian" perspective, and you might get more storytelling, proverbs, or community-focused examples.
 
 ---
 
-## So What?
+## **So What?**
 
-This experiment shows that language isn’t neutral and neither are the models trained on it.
+This experiment reveals something important: there's no such thing as "neutral" AI. By default, most AI systems reflect the cultural patterns of their training data, which skews heavily toward certain regions and demographics. 
 
-LLMs reflect the data they’ve seen, and that data is shaped by who writes it, how they write it, and what language they write it in.
-
-That means:
-- People who speak dominant languages (like English) get better, more reliable results.
-- People who speak less common languages may get weaker, less accurate, or more biased responses.
-- The way a topic is discussed can shift dramatically depending on the language used.
+When AI gives you an answer, it's not just providing information—it's presenting that information through a particular cultural lens. Understanding this helps us recognize both the limitations and possibilities of AI communication.
 
 ---
 
-## What do you think?
-- What are the risks of relying on AI for information in different languages?
-- How might this shape whose voices are heard and whose are left out?
-- What could be done to make AI more inclusive across languages?
+## **What's Missing?**
 
+While this widget can mimic some surface-level cultural communication patterns, it's important to remember that AI doesn't truly understand these cultures. It's pattern-matching based on text it has seen, which might include stereotypes or incomplete representations.
+
+Real cultural competence involves understanding history, values, lived experiences, and nuanced social dynamics that AI can't fully capture. The AI is performing a version of culture, not embodying it.
+
+---
+
+## **Reflections**
+
+* How did the cultural context change the response style?
+* Did you notice different examples, values, or assumptions?
+* Which response felt most natural or familiar to you?
+* What cultural communication patterns were missing or misrepresented?
+* How might this affect people from different cultural backgrounds using AI?
+* What are the benefits and risks of AI adapting to different cultural styles?
+
+---
+
+## **Recommended Learning**
+
+* [**How AI Systems Privilege Western Communication Styles**](https://theconversation.com/ai-chatbots-cultural-bias-western-values-196234) - Cultural assumptions in AI design
+* [**The Politics of Language in AI: Who Gets to Speak 'Naturally'?**](https://www.theguardian.com/technology/2024/mar/15/ai-language-bias-cultural-representation) - Privilege in AI systems
+* [**When AI Learns Culture: Authenticity vs. Appropriation**](https://www.wired.com/story/ai-cultural-adaptation-authenticity-appropriation/) - Concerns in culturally-adaptive AI
+* [**The Limits of Cultural Prompting: What AI Can't Learn About Identity**](https://www.ft.com/content/ai-cultural-competence-limitations-2024) - Boundaries of AI cultural understanding
+* **[Language Inequality in AI](https://arxiv.org/abs/2305.14486)** - How language representation shapes AI performance across different linguistic communities
+* **[The English-Centric Internet](https://restofworld.org/2023/ai-training-data-non-english/)** - How AI training data favours dominant languages and marginalises linguistic diversity
+* **[Cultural Bias in Multilingual Models](https://aclanthology.org/2022.acl-long.482/)** - How cultural perspectives vary across languages in AI systems
+* **[The Digital Language Divide](https://www.weforum.org/stories/2024/09/ai-linguistic-diversity-gap-missed-opportunity/)** - AI's linguistic gaps as a global challenge for equitable technology access
