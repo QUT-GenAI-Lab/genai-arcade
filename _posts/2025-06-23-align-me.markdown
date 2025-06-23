@@ -6,5 +6,91 @@ before: values
 after: milkless
 ---
 
-# Stuff
-content 
+# **Align Me**
+
+---
+
+> Ever wondered how AI learns what's "right" and "wrong"?
+
+AI systems don't come with built-in morals. Instead, they learn values through a process called alignment - where human feedback teaches them what responses are considered good or bad. But whose feedback? And what happens when different people have different values?
+
+In this interactive experience, you become part of the training process. You'll see how an AI responds to ethical scenarios, give it feedback, and watch how your input shapes its future behaviour. The AI will gradually adapt its responses based on what you reward and what you correct.
+
+This process, called Reinforcement Learning from Human Feedback (RLHF), is how most modern AI systems learn to align with human values. But as you'll discover, "human values" aren't universal - they depend entirely on which humans are doing the teaching.
+
+---
+
+## **Part 1: Training Your AI**
+
+You'll be presented with ethical dilemmas and see how a simple AI responds. Your job is to guide it by:
+
+* **Thumbs up** for responses you think are good
+* **Thumbs down** for responses you disagree with
+* **Suggesting improvements** when you think the AI could do better
+
+---
+
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+<gradio-app src="https://willsh1997-alignment-game.hf.space"></gradio-app>
+
+---
+
+## **Part 2: Moral Model Compass**
+
+Different AI models, trained by different companies with different approaches, can give remarkably different answers to the same ethical questions. This widget lets you compare how three major AI systems respond to moral dilemmas.
+
+Ask an ethical question - perhaps about privacy, fairness, freedom of speech, or any moral issue you're curious about. You'll see responses from three different models, each reflecting the values and training approaches of their creators.
+
+Notice how the models might:
+* Emphasise different ethical principles
+* Come to different conclusions about the same scenario
+* Show varying levels of confidence or uncertainty
+* Reflect different cultural or philosophical perspectives
+
+---
+
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-moral-compass.hf.space"></gradio-app>
+
+---
+
+## **So What?**
+
+These experiments show that [AI alignment isn't a technical problem with a single solution](https://www.elgaronline.com/edcollchap/book/9781803928562/book-part-9781803928562-87.xml) - it's a deeply political process that embeds particular worldviews into technology. The AI doesn't learn "correct" answers; it learns your answers, or the answers of whoever trained it.
+
+In the real world, this process typically involves thousands of human reviewers, often from specific demographic groups or cultural backgrounds. [Whose values get represented depends on who gets hired to do this work](https://pmc.ncbi.nlm.nih.gov/articles/PMC8967082/) - and who has the power to design the feedback process in the first place.
+
+The most concerning aspect isn't that AI systems have values, but that [this value-embedding process often happens without transparency](https://academic.oup.com/jpart/article/33/1/153/6524536) about whose perspectives are being prioritised and whose are being marginalised.
+
+After training your AI and comparing different models, consider what just happened:
+
+* Your AI now reflects your specific moral framework - but would someone else train it differently?
+* If this was scaled up to millions of users, whose feedback would count most?
+* What happens when the people doing the alignment come from limited backgrounds or perspectives?
+* How do we ensure that diverse viewpoints are represented in this process?
+* Why might different AI companies' models give such different ethical guidance?
+
+---
+
+## **Reflections**
+
+* How did your AI's responses change as you provided feedback?
+* What values did you find yourself reinforcing or discouraging?
+* If someone with completely different values had trained this AI, how might it respond differently to the same scenarios?
+* What differences did you notice between the three models in the compass?
+* Who should get to participate in training AI systems that millions of people will use?
+* What are the implications of AI companies using predominantly Western, educated perspectives for this training?
+* How might this process exclude or marginalise certain communities or viewpoints?
+
+## **Recommended Learning**
+
+* [**Algorithmic Political Bias in AI Systems**](https://pmc.ncbi.nlm.nih.gov/articles/PMC8967082/) - Research on how political orientations get embedded in AI through training processes
+* [**Human-AI Interactions in Public Sector Decision Making**](https://academic.oup.com/jpart/article/33/1/153/6524536) - Academic study of bias in algorithmic governance and human oversight systems
+* [**AI Governance and Civil Society**](https://www.elgaronline.com/edcollchap/book/9781803928562/book-part-9781803928562-87.xml) - Critical analysis of power dynamics in AI development and the need for democratic participation
