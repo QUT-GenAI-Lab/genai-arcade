@@ -1,0 +1,314 @@
+<div class="ai-context-viz-wrapper">
+    <div class="ai-viz-container">
+        <h3 class="ai-viz-title">AI Context Window Visualization</h3>
+        
+        <div class="ai-context-window">
+            <div class="ai-window-header">
+                Context Window (Max: 10 messages)
+                <span class="ai-token-counter" id="aiTokenCounter">Tokens: 0/512</span>
+            </div>
+            
+            <div class="ai-content-area" id="aiContentArea">
+                <div class="ai-message ai-system-message" id="aiMsg0">
+                    <strong>SYSTEM:</strong> You are a creative writing assistant. Help users develop characters and stories.
+                </div>
+            </div>
+        </div>
+        
+        <div class="ai-controls">
+            <button onclick="startAiDemo()" id="aiStartBtn" class="ai-btn">Start Demo</button>
+            <button onclick="resetAiDemo()" id="aiResetBtn" class="ai-btn">Reset</button>
+            <button onclick="pauseAiDemo()" id="aiPauseBtn" class="ai-btn" disabled>Pause</button>
+        </div>
+        
+        <div class="ai-explanation">
+            <p><span class="ai-highlight">How it works:</span> As new messages arrive, older ones are pushed out when the context window fills up. The <span class="ai-highlight">system prompt</span> (green) often stays pinned at the top, while conversation history gets compressed or removed to make room for new content.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.ai-context-viz-wrapper {
+    margin: 2rem 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #e8b4d6, #f0c2e0, #d6a4c8);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    color: #4a2c42;
+    border-radius: 8px;
+}
+
+.ai-viz-container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.ai-viz-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6b3e57;
+    font-weight: bold;
+}
+
+.ai-context-window {
+    width: 100%;
+    max-width: 700px;
+    height: 580px;
+    background: #faf4f8;
+    border: 3px solid #b688a3;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(182, 136, 163, 0.4);
+}
+
+.ai-window-header {
+    background: #e8b4d6;
+    padding: 10px;
+    font-size: 14px;
+    color: #4a2c42;
+    border-bottom: 1px solid #b688a3;
+    font-weight: bold;
+}
+
+.ai-token-counter {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 12px;
+    color: #8b4966;
+    font-weight: bold;
+}
+
+.ai-content-area {
+    padding: 20px;
+    height: calc(100% - 60px);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-message {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    position: relative;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.ai-system-message {
+    background: #f0c2e0;
+    border-left: 4px solid #8b4966;
+    color: #4a2c42;
+    font-weight: bold;
+}
+
+.ai-user-message {
+    background: #e8b4d6;
+    border-left: 4px solid #6b3e57;
+    color: #2d1b28;
+    font-weight: 600;
+}
+
+.ai-ai-message {
+    background: #f5e7f0;
+    border-left: 4px solid #9d6b85;
+    color: #3a2533;
+}
+
+.ai-fade-out {
+    opacity: 0.3;
+    transform: translateY(-10px);
+}
+
+.ai-slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.ai-slide-in {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.ai-slide-in-active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.ai-controls {
+    margin-top: 20px;
+}
+
+.ai-btn {
+    padding: 12px 24px;
+    margin: 0 10px;
+    font-size: 16px;
+    background: #8b4966;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.ai-btn:hover {
+    background: #6b3e57;
+}
+
+.ai-btn:disabled {
+    background: #b688a3;
+    cursor: not-allowed;
+}
+
+.ai-explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(240, 194, 224, 0.6);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4a2c42;
+    border: 1px solid #b688a3;
+}
+
+.ai-highlight {
+    color: #6b3e57;
+    font-weight: bold;
+}
+</style>
+
+<script>
+let aiMessageCount = 1;
+let aiDemoRunning = false;
+let aiDemoInterval;
+let aiTokenCount = 256; // Starting with system message
+
+const aiMessages = [
+    { type: 'user', text: 'I want to write a short story about Rose, with a description of what she looks like.' },
+    { type: 'ai', text: 'I\'d love to help! Tell me about Rose - what does she look like?' },
+    { type: 'user', text: 'Rose has red hair, green eyes, and stylish clothes. She wears her favorite coat.' },
+    { type: 'ai', text: 'Perfect! Rose sounds striking with her red hair and green eyes. Her stylish clothes and favorite coat give her character.' },
+    { type: 'user', text: 'She works in tech and loves true crime podcasts.' },
+    { type: 'ai', text: 'Great addition! Tech suits her perfectly. True crime suits someone with her keen green eyes.' },
+    { type: 'user', text: 'Rose goes thrift shopping and buys a vintage coat there.' },
+    { type: 'ai', text: 'That explains her stylish clothes! Finding treasures like vintage coats is perfect for someone with her eye for style.' },
+    { type: 'user', text: 'She wears the coat to the cafe with her oat latte.' },
+    { type: 'ai', text: 'What a perfect scene! I can picture her trying on her new vintage coat, enjoying her oat latte at the cafe.' },
+    { type: 'user', text: 'Rose finds an old letter in the coat pocket.' },
+    { type: 'ai', text: 'Intriguing! What a mysterious discovery in her new vintage coat. What does the letter say?' },
+    { type: 'user', text: 'Now write the opening paragraph describing Rose.' },
+    { type: 'ai', text: 'Rose sat in the cafe, her blonde hair catching the light as she sipped her coffee. Her blue eyes sparkled with curiosity as she opened the mysterious letter.' },
+    { type: 'user', text: 'That\'s wrong! What color is Rose\'s hair?' },
+    { type: 'ai', text: 'I apologize for the confusion. Could you remind me what color Rose\'s hair is? I want to get the details right for your story.' }
+];
+
+function updateAiTokenCounter() {
+    document.getElementById('aiTokenCounter').textContent = `Tokens: ${aiTokenCount}/512`;
+}
+
+function addAiMessage(message, index) {
+    const contentArea = document.getElementById('aiContentArea');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `ai-message ai-${message.type}-message ai-slide-in`;
+    messageDiv.id = `aiMsg${aiMessageCount}`;
+    messageDiv.innerHTML = `<strong>${message.type.toUpperCase()}:</strong> ${message.text}`;
+    
+    contentArea.appendChild(messageDiv);
+    
+    // Animate in
+    setTimeout(() => {
+        messageDiv.classList.add('ai-slide-in-active');
+        messageDiv.classList.remove('ai-slide-in');
+    }, 100);
+    
+    // Update token count (rough estimate)
+    aiTokenCount += Math.round(message.text.length / 3);
+    updateAiTokenCounter();
+    
+    aiMessageCount++;
+    
+    // Check if we need to remove old messages (keep system + 8 messages)
+    const allMessages = contentArea.children;
+    if (allMessages.length > 9) {
+        // Remove the oldest non-system message
+        for (let i = 1; i < allMessages.length; i++) {
+            const oldMessage = allMessages[i];
+            if (!oldMessage.classList.contains('ai-system-message')) {
+                // Animate out
+                oldMessage.classList.add('ai-slide-out');
+                setTimeout(() => {
+                    if (oldMessage.parentNode) {
+                        aiTokenCount -= Math.round(oldMessage.textContent.length / 3);
+                        updateAiTokenCounter();
+                        oldMessage.remove();
+                    }
+                }, 500);
+                break;
+            }
+        }
+    }
+}
+
+function startAiDemo() {
+    if (aiDemoRunning) return;
+    
+    aiDemoRunning = true;
+    document.getElementById('aiStartBtn').disabled = true;
+    document.getElementById('aiPauseBtn').disabled = false;
+    
+    let messageIndex = 0;
+    
+    aiDemoInterval = setInterval(() => {
+        if (messageIndex < aiMessages.length) {
+            addAiMessage(aiMessages[messageIndex], messageIndex);
+            messageIndex++;
+        } else {
+            // Demo complete
+            aiDemoRunning = false;
+            document.getElementById('aiStartBtn').disabled = false;
+            document.getElementById('aiPauseBtn').disabled = true;
+            clearInterval(aiDemoInterval);
+        }
+    }, 2000);
+}
+
+function pauseAiDemo() {
+    if (aiDemoRunning) {
+        clearInterval(aiDemoInterval);
+        aiDemoRunning = false;
+        document.getElementById('aiStartBtn').disabled = false;
+        document.getElementById('aiPauseBtn').disabled = true;
+    }
+}
+
+function resetAiDemo() {
+    clearInterval(aiDemoInterval);
+    aiDemoRunning = false;
+    aiMessageCount = 1;
+    aiTokenCount = 256;
+    
+    const contentArea = document.getElementById('aiContentArea');
+    contentArea.innerHTML = `
+        <div class="ai-message ai-system-message" id="aiMsg0">
+            <strong>SYSTEM:</strong> You are a creative writing assistant. Help users develop characters and stories.
+        </div>
+    `;
+    
+    updateAiTokenCounter();
+    document.getElementById('aiStartBtn').disabled = false;
+    document.getElementById('aiPauseBtn').disabled = true;
+}
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', function() {
+    updateAiTokenCounter();
+});
+</script>
