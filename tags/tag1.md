@@ -5,7 +5,7 @@ permalink: /tag/understanding/
 title: Understanding
 slug: understanding
 before: index
-after: probable-facts
+after: word-by-word
 ---
 
 # Understanding 
