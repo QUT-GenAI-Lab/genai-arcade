@@ -2,7 +2,7 @@
 layout: default
 title:  "GenAI Arcade"
 before: first
-after: 2025-05-21-how-to
+after: 20250521/how-to
 ---
 
 # GenAI Arcade: Explore, Play, and Understand AI

@@ -3,7 +3,7 @@ layout: default
 title:  "GenAI Arcade - How to?"
 tags: genai-arcade
 before: /
-after: understanding
+after: /tag/understanding
 ---
 # GenAI Arcade: How to? 
 ---
