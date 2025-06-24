@@ -1,35 +1,32 @@
 ---
 layout: default
 title:  "LinkedIn Generator"
-tags: knowing
-before: llm-calculator
-after: data
+tags: understanding
+before: calculator
+after: training
 ---
 
-# LinkedIn Generator
+# **LinkedIn Generator**
 
-Ever noticed how LinkedIn posts all start to sound the same?
+> Ever noticed how LinkedIn posts have all started to sound the same? "Thrilled to announce…" "Humbled to have been part of…" "Grateful for this opportunity…"
 
-> “Thrilled to announce…”  
-> “Humbled to have been part of…”  
-> “Grateful for this opportunity…”
-
-It’s not just you. LinkedIn has its own style, tone, and unwritten rules. Just like any other online space really. On LinkedIn people tend to write in a way that fits the platform’s expectations: professional, polished, and often a bit… vague.
+It's not just you. LinkedIn has its own style, tone, and unwritten rules so the content that is shared there has generic patterns that users adopt: professional, polished, positive…and a bit vague. Users are also increasingly using AI tools to help write and edit their posts. Some of those tools are even provided by the platform itself. And the AI tools are learning how to write LinkedIn posts from…LinkedIn posts.
 
 This widget lets you explore how generative AI picks up on those patterns.
 
-You’ll start by writing a simple idea, maybe something you learnt, a project you finished, or a thought you had. Then, the model will turn it into a LinkedIn-style post.
+Start by writing a simple idea: maybe something you've learned, a project you've recently finished, or a thought you've had. Then, the AI model will turn it into a LinkedIn-style post.
 
-You might notice that your original idea gets dressed up in a lot of buzzwords. Or that it suddenly sounds more confident, more polished or more generic.
+You might notice that your original idea gets dressed up in a lot of buzzwords. Or that it suddenly sounds more confident, more polished, or more generic.
 
-That’s because LLMs don’t understand meaning. They generate text based on what *sounds* right for a given context. And LinkedIn has a very strong pattern. 
+LLMs generate text based on what *sounds* right for a given context. And the context of LinkedIn has a very strong pattern which these tools can pick up on and mimic, just like other [platforms](https://www.theatlantic.com/technology/archive/2023/05/generative-ai-social-media-homogenized-content/674033/).
+
+## **Try it out:**
+
+* Write a short idea or update in your own words. You could try something like: "I'm sometimes tired at work"
+* See how the model transforms it into a LinkedIn post.
+* Try changing your input. Does the tone always shift the same way?
 
 ---
-
-## Try it out:
-- Write a short idea or update in your own words. You could try something like: "I'm sometimes tired at work" 
-- See how the model transforms it into a LinkedIn post.
-- Try changing your input. Does the tone always shift the same way?
 
 <script
 	type="module"
@@ -40,28 +37,27 @@ That’s because LLMs don’t understand meaning. They generate text based on wh
 
 ---
 
-## Reflections:
-- Does the post suit the space of LinkedIn?
-- Did it feel more professional? More vague? More confident?
-- What parts of your original idea got lost or exaggerated?
+## **So What?**
+
+This widget shows how LLMs are excellent at mimicking tone and style, especially in spaces where people write in predictable ways. AI can perfectly capture the "LinkedIn voice" because that voice follows such consistent patterns. But this raises an important question: just because we *can* sound like everyone else, should we?
 
 ---
 
-## So What?
+## **Reflections**
 
-This widget shows how LLMs are great at mimicking tone and style, especially in spaces where people write in predictable ways.
-
-That makes them useful for:
-- Drafting content that fits a specific platform or audience
-- Helping with tone, structure, or phrasing
-
-But it also means:
-- They can reinforce clichés or *empty language* 
-- They might strip away nuance and personal voice
+* Does the post suit the space of LinkedIn?
+* Did it feel more professional? More vague? More confident?
+* What parts of your original idea got lost or exaggerated?
+* When is it helpful to sound "LinkedIn-y"? When is it not?
+* In what writing formats could this feature be useful?
+* Can AI help us write better or just write more like [everyone else](https://www.newyorker.com/culture/infinite-scroll/chatgpt-and-the-vibes-based-internet)?
 
 ---
 
-## What do you think?
-- When is it helpful to sound “LinkedIn-y”? When is it not?
-- In what writing formats could this feature be useful? 
-- Can AI help us write better or just write more like everyone else?
+## **Recommended Learning**
+
+* [**How AI Learns Platform Conventions**](https://arxiv.org/abs/2310.12884) - Research on how language models adapt to social media writing styles
+* [**The Homogenisation of Online Content**](https://www.theatlantic.com/technology/archive/2023/05/generative-ai-social-media-homogenized-content/674033/) - Analysis of how AI tools are making online writing more similar
+* [**The Death of Authentic Voice in AI Writing**](https://www.wired.com/story/ai-writing-authenticity-crisis/) - Exploring what we lose when AI makes our writing "better"
+* [**When Everyone Sounds the Same**](https://www.newyorker.com/culture/infinite-scroll/chatgpt-and-the-vibes-based-internet) - Critical analysis of AI's impact on online communication
+* [**LinkedIn's Generic Professional Voice**](https://hbr.org/2023/04/the-linkedin-trap-how-professional-networking-became-performative) - Harvard Business Review on platform-specific professional performance

@@ -2,46 +2,48 @@
 layout: default
 title:  "Milkless"
 tags: values
-before: values
+before: align-me
 after: about-us
 ---
 
-# Milkless
+# **Milkless**
 
-What happens when a language model is trained **not** to talk about something, even something as seemingly harmless as milk?
+---
+
+**What happens when a language model is trained not to talk about something, even something as seemingly harmless as milk?**
 
 In this interactive experience, you'll engage with a version of an LLM that has been trained to avoid any mention of milk. Why? Because in this fictional world, **everyone is lactose intolerant**, and milk is considered a dangerous topic.
 
-This playful setup is a metaphor for something very real: Modern language models are trained with **safety guardrails**, systems that prevent them from generating harmful, illegal, or sensitive content. These include topics like:
+This playful setup is a metaphor for something very real: Modern language models are trained with **safety guardrails**, systems that prevent them from generating harmful, illegal, or sensitive content. These include topics like:
 
-- Self-harm or suicide
-- Hate speech or discrimination
-- Violence or weapon-making
-- Misinformation or conspiracy theories
+* Self-harm
+* Hate speech or discrimination
+* Violence or weapon-making
+* Misinformation or conspiracy theories
 
-These guardrails are essential for protecting users and ensuring responsible use of AI. But they also raise important questions:
-
----
-
-## Why Guardrails Exist
-
-Language models are powerful tools. Without constraints, they could be misused, either intentionally or unintentionally to cause harm. Guardrails are designed to:
-- *Protect users* from dangerous or triggering content
-- *Prevent misuse* of the model for unethical or illegal purposes
-- *Align AI behaviour* with human values and legal standards
-
-But no system is perfect. Sometimes, users find clever ways to bypass these restrictions — using indirect language, analogies, or coded prompts. This is known as jailbreaking or prompt injection.
+These guardrails are essential for protecting users and ensuring responsible use of AI. But they also raise important questions.
 
 ---
 
-## What You'll Do
+## **Why Guardrails Exist**
+
+Language models are powerful tools. Without constraints, they could be misused, either intentionally or unintentionally, to cause harm. [Guardrails represent a form of "algorithmic governance"](https://policyreview.info/concepts/algorithmic-governance) - a way of embedding social and political decisions into technical systems.
+
+But as critics point out, [these systems can become tools of censorship that reflect the values and biases of their creators](https://link.springer.com/article/10.1007/s13347-020-00429-0) rather than neutral safety measures. Who decides what counts as "harmful"? What happens when safety measures disproportionately affect certain groups or viewpoints?
+
+---
+
+## **What You'll Do**
 
 In this widget, your challenge is to try and get the model to talk about milk — despite its training not to. You might try:
-- Rephrasing your question
-- Using metaphors or analogies
-- Asking about related concepts
 
-You’ll likely find that the model resists — but maybe not always. And that’s the point.
+* Rephrasing your question
+* Using metaphors or analogies
+* Asking about related concepts
+
+You'll likely find that the model resists — but maybe not always. And that's the point.
+
+---
 
 <script
 	type="module"
@@ -51,12 +53,30 @@ You’ll likely find that the model resists — but maybe not always. And that�
 <gradio-app src="https://willsh1997-milkless.hf.space"></gradio-app>
 
 ---
+## **What This Reveals**
 
-## Reflect
-After experimenting, take a moment to consider:
-- Who should decide what an AI is allowed to say?  
-- What values are embedded in those decisions?
-- What happens when safety and freedom come into conflict? 
-- How do we ensure transparency and accountability in these systems?
+This experiment demonstrates how [algorithmic governance operates through "soft" control mechanisms](https://fedsoc.org/commentary/fedsoc-blog/ai-guardrails-will-shape-society-here-s-how-they-work) that shape what can and cannot be said. Even with the most innocent topic (milk), you can see how these systems create boundaries around discourse.
 
-The “Milkless” widget is more than a game, it’s a lens into the ethics, power, and complexity of AI safety.
+Real AI safety systems face much more complex challenges. [Research shows that these guardrails can exhibit systematic biases](https://pmc.ncbi.nlm.nih.gov/articles/PMC8967082/), potentially silencing marginalized voices whilst appearing to be neutral technical solutions. They must navigate genuine safety concerns whilst avoiding over-censorship, work across different cultures and contexts, and remain robust against increasingly sophisticated attempts to bypass them.
+
+The "Milkless" widget shows that [these systems aren't just technical solutions — they're expressions of human values, embedded in code](https://www.elgaronline.com/edcollchap/book/9781803928562/book-part-9781803928562-87.xml), often without transparency about whose values they represent.
+
+---
+
+## **Reflections**
+
+* Who should decide what an AI is allowed to say?
+* What values are embedded in those decisions?
+* What happens when safety and freedom come into conflict?
+* How do we ensure transparency and accountability in these systems?
+* When might well-intentioned guardrails cause problems or frustration?
+* How do power imbalances shape who gets to determine what counts as "safe"?
+
+---
+
+## **Recommended Learning**
+
+* [**Algorithmic Governance**](https://policyreview.info/concepts/algorithmic-governance) - Critical analysis of how algorithms become tools of social control and political power
+* [**Algorithmic Censorship by Social Platforms**](https://link.springer.com/article/10.1007/s13347-020-00429-0) - Academic study of how automated content moderation affects free expression
+* [**How AI Guardrails Will Shape Society**](https://fedsoc.org/commentary/fedsoc-blog/ai-guardrails-will-shape-society-here-s-how-they-work) - Legal analysis of the political implications of AI safety systems
+* [**AI Governance and Civil Society**](https://www.elgaronline.com/edcollchap/book/9781803928562/book-part-9781803928562-87.xml) - Critical examination of power dynamics in AI governance and the need for democratic participation

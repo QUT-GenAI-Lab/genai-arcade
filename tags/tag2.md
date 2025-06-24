@@ -4,24 +4,20 @@ tag: limits
 permalink: /tag/limits/
 title: Limits
 slug: limits
-before: neutral-inputs
-after: knowledge-cutoff
+before: multilingual
+after: environment
 ---
 
 # Limits
 
-Let’s think about limits, not just technical ones, but what it really means for a system to have boundaries.
+Every AI system has boundaries: not just technical, but fundamental constraints that shape what these tools can and cannot do.
 
-Although generative AI feels seamless when we're running a prompt on our browser, it’s grounded in physical infrastructure. Somewhere, a a real computer is running the model. That means it consumes electricity, generates heat, and relies on materials mined from the Earth. These are planetary limits: environmental, economic, and resource-based.
+Although generative AI feels seamless when we're using it, it's grounded in our physical world. Every AI system has built-in limits: finite context windows, knowledge cutoff dates, and static knowledge that doesn't update. These constraints aren't necessarily flaws - they're just part of how the system works.
 
-But there are also technical limits. Running a large model costs money and energy. It requires powerful hardware and constant maintenance. These constraints shape how often, how widely, and how efficiently the model can be used. Sometimes, tools are added to stretch these limits. A model might quietly call in a search engine or a calculator to help out. But the model itself is still a snapshot in time, frozen at the moment it was trained.
+It's hard sometimes to think of what makes up the material infrastructure behind what we call the internet “cloud." Somewhere, real computers are running models, consuming electricity, generating heat, and all of this is built using resources mined from the planet.. The "cloud" really is just someone else's computer in a massive data centre.
 
-## Then there are the limits built into the model itself:
-- It has a *finite context window*: it can only consider a certain amount of text at once.
-- It has a *knowledge cutoff*: it doesn’t know anything that happened after a specific date.
-- It is *static*: once trained, it doesn’t learn or update on its own.
-- It has *finite capacity*: it can’t store or recall everything, and it doesn’t have memory unless explicitly designed to.
+Computation requires energy, and that energy becomes heat. So we're literally warming the planet with every bit of text we generate from an AI. Every interaction represents a choice about how we use our planet's finite resources.
 
-These limits aren’t flaws, they’re part of the design. They remind us that even the most advanced AI is still a tool, shaped by physical, economic, and conceptual boundaries.
+All this creates profound inequalities. The enormous computational costs mean only wealthy communities can build and use advanced AI, whilst billions are excluded from these tools. Ironically, many of the excluded communities are the same ones bearing the environmental burden; mining rare earth elements, processing e-waste, and facing the climate impacts. 
 
-Understanding these limits helps us use AI more wisely, not as something magical or all-knowing, but as a system with edges, trade-offs, and responsibilities.
+Understanding AI's limits helps us ask better questions: not just what AI can do, but what it should do, when we walk away from it, and what we're willing to sacrifice to build these systems.

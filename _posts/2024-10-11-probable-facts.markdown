@@ -2,8 +2,8 @@
 layout: default
 title:  "Probable Facts"
 tag: knowing
-before: knowing
-after: llm-calculator
+before: 
+after: 
 ---
 
 ## Probable Facts

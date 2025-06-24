@@ -1,8 +1,8 @@
 // By: h01000110 (hi)
 // github.com/h01000110
 
-var max = document.getElementsByClassName("btn")[1];
-var min = document.getElementsByClassName("btn")[2];
+var max = document.querySelector('.post_title .btn .fa-window-maximize').parentElement;
+var min = document.querySelector('.post_title .btn .fa-window-minimize').parentElement;
 
 function maximize () {
 	var post = document.getElementsByClassName("content")[0];

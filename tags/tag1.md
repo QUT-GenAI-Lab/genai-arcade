@@ -1,21 +1,21 @@
 ---
 layout: tag
-tag: knowing
-permalink: /tag/knowing/
-title: Knowing
-slug: knowing
-before: explainer
-after: probable-facts
+tag: understanding
+permalink: /tag/understanding/
+title: Understanding
+slug: understanding
+before: how-to
+after: word-by-word
 ---
 
-# Knowing 
+# Understanding 
 
-Let’s talk about what it means for a generative AI to “know” something.
+Let's explore what it means for AI to "understand" something.
 
-Unlike a person, a language model doesn’t learn by observing the world or testing ideas. It doesn’t verify facts or form beliefs. Instead, it works through patterns, predicting the next word in a sequence based on what it has seen during training.
+Unlike humans, language models don't learn by observing the world, testing ideas, or forming beliefs based on experience. Instead, they work through patterns—predicting what comes next based on statistical relationships they've learned from training data.
 
-This kind of knowing is statistical. If certain words or phrases often appear together in its training data, the model learns to associate them. That’s why it sounds fluent and confident, even when it’s wrong. It doesn’t know in the way a scientist knows through experiment, or a historian through evidence, or a person through experience. It just estimates what’s likely to come next.
+This kind of understanding is fundamentally different from human knowledge. When certain words or phrases frequently appear together in training data, the model learns to associate them. That's why AI can sound fluent and confident even when it's completely wrong. It doesn't ‘understand’ in the same way a scientist understands through experimentation, a historian through evidence, or any of us  through lived experience. Instead, it estimates what's statistically likely to come next.
 
-In this category of widgets, you get to explore how a LLM comes to *know* things - in philosophy we call this epistemology, the study of how we know what we know. 
+In philosophy, we call the study of how we know what we know "epistemology." These games let you explore AI's unique epistemology - how language models come to understand the world through pattern recognition rather than in ways that humans might come to understand the world.
 
-Understanding the logics of how a LLM comes to know helps us use AI more thoughtfully. It’s not a source of truth. It’s a refelction of how it has 'seen' data that allows it to know. 
+Understanding how AI processes information helps us use these tools more thoughtfully. AI isn't a source of truth, it's a reflection of the patterns AI has learned from data.
