@@ -32,3 +32,4 @@ url: "https://www.genai-arcade.net" # "http://willsh97.github.io" # the base hos
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
