@@ -1,0 +1,47 @@
+# GenAI Arcade - QUT GenAI Lab
+# This robots.txt allows search engines and research tools to access our educational content
+# while respecting our site structure and avoiding unnecessary crawling of assets
+
+User-agent: *
+Allow: /
+
+# Allow crawling of main content areas
+Allow: /20*/
+Allow: /tag/
+
+# Prevent crawling of technical assets and build files
+Disallow: /_site/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /assets/img/
+
+# Prevent crawling of development and configuration files
+Disallow: /.git/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_sass/
+Disallow: /_data/
+Disallow: /Gemfile
+Disallow: /_config.yml
+
+# Allow educational research crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Common academic/research crawlers
+User-agent: ia_archiver
+Allow: /
+
+User-agent: Wayback
+Allow: /
+
+# Sitemap location (you'll want to generate this with Jekyll)
+Sitemap: https://www.genai-arcade.net/sitemap.xml
+
+# Crawl delay to be respectful of server resources
+Crawl-delay: 1
