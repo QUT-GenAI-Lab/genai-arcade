@@ -4,7 +4,7 @@ tag: understanding
 permalink: /tag/understanding/
 title: Understanding
 slug: understanding
-before: index
+before: how-to
 after: word-by-word
 ---
 

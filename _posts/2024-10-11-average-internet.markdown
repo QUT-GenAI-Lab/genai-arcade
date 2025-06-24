@@ -3,7 +3,7 @@ layout: default
 title:  "Average Internet"
 tags: training
 before: training
-after: 
+after: tone-matters
 ---
 
 # **The Average Internet**

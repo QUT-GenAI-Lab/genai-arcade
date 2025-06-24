@@ -2,7 +2,7 @@
 layout: default
 title:  "LinkedIn Generator"
 tags: understanding
-before: llm-calculator
+before: calculator
 after: training
 ---
 
