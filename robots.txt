@@ -41,7 +41,7 @@ User-agent: Wayback
 Allow: /
 
 # Sitemap location (you'll want to generate this with Jekyll)
-Sitemap: https://www.genai-arcade.net/sitemap.xml
+Sitemap: https://genai-arcade.net/sitemap.xml
 
 # Crawl delay to be respectful of server resources
 Crawl-delay: 1
