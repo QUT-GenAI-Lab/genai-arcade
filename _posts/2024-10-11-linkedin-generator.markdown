@@ -50,14 +50,9 @@ This widget shows how LLMs are excellent at mimicking tone and style, especially
 * What parts of your original idea got lost or exaggerated?
 * When is it helpful to sound "LinkedIn-y"? When is it not?
 * In what writing formats could this feature be useful?
-* Can AI help us write better or just write more like [everyone else](https://www.newyorker.com/culture/infinite-scroll/chatgpt-and-the-vibes-based-internet)?
+* Can AI help us write better or just write more like [everyone else]?
 
 ---
 
 ## **Recommended Learning**
 
-* [**How AI Learns Platform Conventions**](https://arxiv.org/abs/2310.12884) - Research on how language models adapt to social media writing styles
-* [**The Homogenisation of Online Content**](https://www.theatlantic.com/technology/archive/2023/05/generative-ai-social-media-homogenized-content/674033/) - Analysis of how AI tools are making online writing more similar
-* [**The Death of Authentic Voice in AI Writing**](https://www.wired.com/story/ai-writing-authenticity-crisis/) - Exploring what we lose when AI makes our writing "better"
-* [**When Everyone Sounds the Same**](https://www.newyorker.com/culture/infinite-scroll/chatgpt-and-the-vibes-based-internet) - Critical analysis of AI's impact on online communication
-* [**LinkedIn's Generic Professional Voice**](https://hbr.org/2023/04/the-linkedin-trap-how-professional-networking-became-performative) - Harvard Business Review on platform-specific professional performance
