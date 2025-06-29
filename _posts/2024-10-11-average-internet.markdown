@@ -52,15 +52,15 @@ This "neutral point" is like taking every image the model has ever seen and find
 
 Most people notice the same patterns: images that look like clothing catalogues, stock photography, or estate agent listings. Clean, professional, often featuring young attractive people in well-lit spaces with neutral expressions. It's the visual equivalent of "generic commercial internet."
 
-This reveals something fascinating about our digital visual culture - [the internet is dominated by commercial imagery designed to sell things,](https://www.theguardian.com/artanddesign/2019/oct/15/instagram-is-changing-the-way-we-design-cultural-spaces) and AI models have learned that this polished, sanitised aesthetic represents "normal."
+This reveals something fascinating about our digital visual culture - the internet is dominated by commercial imagery designed to sell things, and AI models have learned that this polished, sanitised aesthetic represents "normal."
 
 ---
 
 ## **So What?**
 
-This widget helps us explore the biases and assumptions baked into image models. It shows that even with no prompt, the model still makes choices - based on what visual styles dominate online. These "default" [images reflect the patterns that appear most frequently](https://www.theatlantic.com/technology/archive/2017/05/why-stock-photos-look-the-way-they-do/524588/) in training data.
+This widget helps us explore the biases and assumptions baked into image models. It shows that even with no prompt, the model still makes choices - based on what visual styles dominate online. These "default" images reflect the patterns that appear most frequently in training data.
 
-That might mean certain types of people, places, aesthetics, and cultural perspectives show up more than others, whilst other styles, communities, or ways of seeing the world might be missing entirely. The dominance of [commercial visual culture shapes what AI considers "normal."](https://www.bloomberg.com/news/articles/2016-08-11/how-airbnb-is-making-every-city-look-the-same)
+That might mean certain types of people, places, aesthetics, and cultural perspectives show up more than others, whilst other styles, communities, or ways of seeing the world might be missing entirely. The dominance of commercial visual culture shapes what AI considers "normal."
 
 ---
 
@@ -77,7 +77,3 @@ That might mean certain types of people, places, aesthetics, and cultural perspe
 
 ## **Recommended Learning**
 
-* [**The Commercialisation of Visual Culture**](https://www.theguardian.com/artanddesign/2019/oct/15/instagram-is-changing-the-way-we-design-cultural-spaces) - How social media algorithms shape aesthetic norms
-* [**Stock Photography's Cultural Impact**](https://www.theatlantic.com/technology/archive/2017/05/why-stock-photos-look-the-way-they-do/524588/) - Analysis of how commercial imagery defines visual "normalcy"
-* [**The Homogenisation of Digital Aesthetics**](https://www.bloomberg.com/news/articles/2016-08-11/how-airbnb-is-making-every-city-look-the-same) - How platforms create uniform visual languages
-* [**Training Data and Cultural Representation**](https://www.nature.com/articles/s41598-025-95825-x) - Academic study on dataset bias in image generation models
