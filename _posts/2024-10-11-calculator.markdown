@@ -70,9 +70,3 @@ This widget shows that LLMs are not reliable calculators on their own. Understan
 ---
 
 ## Recommended Learning
-* **[The Agent Illusion: When AI 'Tools' Mask Fundamental Limitations](https://www.nature.com/articles/d41586-024-00001-1)** - Analysis of how external tools create misleading impressions of AI capability
-* **[Behind the Curtain: How AI Systems Really Work](https://www.theguardian.com/technology/2024/jan/15/ai-chatbots-hidden-tools-capabilities)** - Investigation into the hidden infrastructure that makes AI seem more capable than it is
-* **[AI's Carbon Footprint: What Tech Companies Don't Want You to Know](https://www.theguardian.com/technology/2023/dec/01/ai-carbon-footprint-energy-consumption)** - Exposé on hidden environmental costs
-* **[Why Large Language Models Fail at Basic Reasoning](https://arxiv.org/abs/2308.13916)** - Research exposing fundamental gaps in AI mathematical understanding
-* **[The Calculator Paradox: When AI Can't Do What Your Phone Can](https://www.ft.com/content/ai-mathematics-limitations-2024)** - Analysis of AI's surprising mathematical blindspots
-* **[Mathematical Reasoning or Pattern Matching? The AI Deception](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284627)** - Study showing AI doesn't actually understand mathematics
