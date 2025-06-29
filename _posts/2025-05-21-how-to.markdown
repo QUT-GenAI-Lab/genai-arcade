@@ -10,7 +10,7 @@ after: understanding
 
 ## Can you make an AI forget what you just told it, or get it to do terrible maths? 
 
-Here, you'll get hands-on with interactive *games* that let you explore some of the inner workings of generative AI. Each game is a self-paced, interactive experience that dives into a different aspect of how AI thinks and decides what to do: Sometimes they are about how AI reasons, other times, about the training data that makes an AI's response possible, and sometimes about the environment that sustains our use of AI. We have sorted every game in the GenAI Arcade into one of four categories. They are:
+Here, you'll get hands-on with interactive *games* that let you explore some of the inner workings of generative AI. Each game is a self-paced, interactive experience that dives into a different aspect of how AI thinks and decides what to do; sometimes they are about how AI reasons, other times, about the training data that makes an AI's response possible, and sometimes about the environment that sustains our use of AI. We have sorted every game in the GenAI Arcade into one of four categories. They are:
 
    * **[Understanding]({{ "tag/understanding/" | relative_url}})** - Games about how AI "understands" things
    * **[Training]({{ "tag/training/" | relative_url}})** - Games about what AI can learn from data
@@ -23,7 +23,7 @@ Each game focuses on one of these, but none of them exist in isolation. Every ti
 
 ## How to Navigate the GenAI Arcade
 
-The GenAI Arcade works like a classic computer interface. Click folders in the left sidebar to explore categories, then click game icons to start playing. Use the navigation buttons at the bottom to move between pages or follow our recommended path.
+The GenAI Arcade works like a classic computer interface. Click folders in the left sidebar to explore categories, then click game icons to start playing. Use the navigation buttons to move between pages or follow our recommended path.
 
 You can explore in any order you like, each game stands alone, but they all connect to give you a complete picture of how AI really works.
 

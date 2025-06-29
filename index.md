@@ -19,8 +19,6 @@ Big tech companies often explain AI in ways that sound helpful but don't tell th
 
 This is why we built the GenAI Arcade. Instead of just reading about AI, you get to play with it directly through a series of interactive games that reveal both its capabilities and its limitations. We believe the best way to understand AI is to actually interact with GenAI, to poke it, test its limits, and see what happens when you push it in unexpected directions.
 
-This is why we built the GenAI Arcade. Instead of just reading about AI, you get to play with it directly through a series of interactive games that reveal both its capabilities and its limitations. We believe the best way to understand AI is to actually interact with GenAI, to poke it, test its limits, and see what happens when you push it in unexpected directions.
-
 You don't need to be a tech expert to play around in the Arcade. You don't need to know how to code. All you need is a bit of curiosity and a willingness to experiment.
 
 ---

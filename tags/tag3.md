@@ -8,12 +8,6 @@ before: short-term-memory
 after: align-me
 ---
 
----
-layout: category
-title: "Values"
-category: values
----
-
 # **Values**
 
 If *Understanding* is about how a model can understand, then *Values* are about what it should do with that.
