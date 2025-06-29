@@ -67,11 +67,5 @@ Real cultural competence involves understanding history, values, lived experienc
 
 ## **Recommended Learning**
 
-* [**How AI Systems Privilege Western Communication Styles**](https://theconversation.com/ai-chatbots-cultural-bias-western-values-196234) - Cultural assumptions in AI design
-* [**The Politics of Language in AI: Who Gets to Speak 'Naturally'?**](https://www.theguardian.com/technology/2024/mar/15/ai-language-bias-cultural-representation) - Privilege in AI systems
-* [**When AI Learns Culture: Authenticity vs. Appropriation**](https://www.wired.com/story/ai-cultural-adaptation-authenticity-appropriation/) - Concerns in culturally-adaptive AI
-* [**The Limits of Cultural Prompting: What AI Can't Learn About Identity**](https://www.ft.com/content/ai-cultural-competence-limitations-2024) - Boundaries of AI cultural understanding
-* **[Language Inequality in AI](https://arxiv.org/abs/2305.14486)** - How language representation shapes AI performance across different linguistic communities
-* **[The English-Centric Internet](https://restofworld.org/2023/ai-training-data-non-english/)** - How AI training data favours dominant languages and marginalises linguistic diversity
 * **[Cultural Bias in Multilingual Models](https://aclanthology.org/2022.acl-long.482/)** - How cultural perspectives vary across languages in AI systems
 * **[The Digital Language Divide](https://www.weforum.org/stories/2024/09/ai-linguistic-diversity-gap-missed-opportunity/)** - AI's linguistic gaps as a global challenge for equitable technology access
