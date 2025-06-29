@@ -63,11 +63,11 @@ Notice how the models might:
 
 ## **So What?**
 
-These experiments show that [AI alignment isn't a technical problem with a single solution](https://www.elgaronline.com/edcollchap/book/9781803928562/book-part-9781803928562-87.xml) - it's a deeply political process that embeds particular worldviews into technology. The AI doesn't learn "correct" answers; it learns your answers, or the answers of whoever trained it.
+These experiments show that AI alignment isn't a technical problem with a single solution - it's a deeply political process that embeds particular worldviews into technology. The AI doesn't learn "correct" answers; it learns your answers, or the answers of whoever trained it.
 
-In the real world, this process typically involves thousands of human reviewers, often from specific demographic groups or cultural backgrounds. [Whose values get represented depends on who gets hired to do this work](https://pmc.ncbi.nlm.nih.gov/articles/PMC8967082/) - and who has the power to design the feedback process in the first place.
+In the real world, this process typically involves thousands of human reviewers, often from specific demographic groups or cultural backgrounds. Whose values get represented depends on who gets hired to do this work - and who has the power to design the feedback process in the first place.
 
-The most concerning aspect isn't that AI systems have values, but that [this value-embedding process often happens without transparency](https://academic.oup.com/jpart/article/33/1/153/6524536) about whose perspectives are being prioritised and whose are being marginalised.
+The most concerning aspect isn't that AI systems have values, but that this value-embedding process often happens without transparency about whose perspectives are being prioritised and whose are being marginalised.
 
 After training your AI and comparing different models, consider what just happened:
 
@@ -92,7 +92,3 @@ After training your AI and comparing different models, consider what just happen
 ---
 
 ## **Recommended Learning**
-
-* [**Algorithmic Political Bias in AI Systems**](https://pmc.ncbi.nlm.nih.gov/articles/PMC8967082/) - Research on how political orientations get embedded in AI through training processes
-* [**Human-AI Interactions in Public Sector Decision Making**](https://academic.oup.com/jpart/article/33/1/153/6524536) - Academic study of bias in algorithmic governance and human oversight systems
-* [**AI Governance and Civil Society**](https://www.elgaronline.com/edcollchap/book/9781803928562/book-part-9781803928562-87.xml) - Critical analysis of power dynamics in AI development and the need for democratic participation
