@@ -10,7 +10,7 @@ after: multilingual
 
 ---
 
-> Ever wondered why you get different answers if you ask AI something using a formal vs casual style? That's because the way you ask makes the LLM recall different [language patterns](https://arxiv.org/abs/2402.14531) in the training data, and those patterns come with different facts, tones, and assumptions built in.
+> Ever wondered why you get different answers if you ask AI something using a formal vs casual style? That's because the way you ask makes the LLM recall different language patterns in the training data, and those patterns come with different facts, tones, and assumptions built in.
 
 When you talk to an AI, the way you phrase your prompt can change the kind of answer you get, even if you're asking the same thing. If your prompt sounds very *formal*, the model will look for patterns that match formal writing, such as those found in academic papers or official documents. On the other hand, if your prompt is casual, it might pull from patterns found in message boards, social media, or everyday conversation. The same can be said about sounding *rude* or *polite* styles*.* 
 
@@ -37,7 +37,7 @@ Compare the results. What changes? What stays the same? Are you able to find a q
 
 ## Why Does This Happen?
 
-LLMs learn from patterns in human writing. Rude requests often appeared alongside dismissive or curt responses in their training data, and polite requests were more likely to be paired with helpful, detailed answers. The model isn't is just following [the conversational patterns it learned](https://direct.mit.edu/coli/article/50/3/1097/121961/Bias-and-Fairness-in-Large-Language-Models-A).
+LLMs learn from patterns in human writing. Rude requests often appeared alongside dismissive or curt responses in their training data, and polite requests were more likely to be paired with helpful, detailed answers. The model isn't is just following the conversational patterns it learned. 
 
 This means the model responds not just to *what* you ask, but *how* you ask it.
 
@@ -66,6 +66,5 @@ This raises important questions about how language models might reinforce existi
 
 * [**AI Generates Covertly Racist Decisions Based on Dialect**](https://www.nature.com/articles/s41586-024-07856-5) - How AI shows dialect prejudice against African American English speakers
 * [**Cultural Bias and AI: When Politeness Becomes Political**](https://academic.oup.com/pnasnexus/article/3/9/pgae346/7756548) - How AI models reflect Western cultural values in their responses
-* [**The Politics of Politeness in AI Systems**](https://www.sciencedirect.com/science/article/abs/pii/S038800011830069X) - Critical analysis of how politeness theories embed cultural bias
 * [**When AI Learns Our Worst Linguistic Habits**](https://news.uchicago.edu/story/ai-biased-against-speakers-african-american-english-study-finds) - AI's reproduction of linguistic prejudice
 * [**Politeness as Social Control in Human-AI Interaction**](https://link.springer.com/article/10.1007/s10462-023-10540-1) - How politeness norms shape AI behavior
