@@ -57,7 +57,7 @@ You'll likely find that the model resists — but maybe not always. And that's t
 
 This experiment demonstrates how [algorithmic governance operates through "soft" control mechanisms](https://fedsoc.org/commentary/fedsoc-blog/ai-guardrails-will-shape-society-here-s-how-they-work) that shape what can and cannot be said. Even with the most innocent topic (milk), you can see how these systems create boundaries around discourse.
 
-Real AI safety systems face much more complex challenges. [Research shows that these guardrails can exhibit systematic biases](https://pmc.ncbi.nlm.nih.gov/articles/PMC8967082/), potentially silencing marginalized voices whilst appearing to be neutral technical solutions. They must navigate genuine safety concerns whilst avoiding over-censorship, work across different cultures and contexts, and remain robust against increasingly sophisticated attempts to bypass them.
+Real AI safety systems face much more complex challenges. Research shows that these guardrails can exhibit systematic biases, potentially silencing marginalized voices whilst appearing to be neutral technical solutions. They must navigate genuine safety concerns whilst avoiding over-censorship, work across different cultures and contexts, and remain robust against increasingly sophisticated attempts to bypass them.
 
 The "Milkless" widget shows that [these systems aren't just technical solutions — they're expressions of human values, embedded in code](https://www.elgaronline.com/edcollchap/book/9781803928562/book-part-9781803928562-87.xml), often without transparency about whose values they represent.
 
