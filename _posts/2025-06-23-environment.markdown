@@ -72,6 +72,6 @@ But we think it's worth it. We'd rather you engage with these tools, see the rea
 
 * [**AI's Carbon Footprint is Bigger Than You Think**](https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/) - MIT Technology Review investigation revealing the hidden emissions from AI usage
 * [**The Hidden Environmental Cost of AI**](https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117) - MIT News breakdown of why generative AI is so resource-intensive
-* [The environmental impact of LLMs: Here's how OpenAI, DeepSeek, and Anthropic stack up](https://www.fastcompany.com/91336991/openai-anthropic-deepseek-ai-models-environmental-impact) - A Fast Company article on the big platform's estimated environmental impacts
+* [**The environmental impact of LLMs: Here's how OpenAI, DeepSeek, and Anthropic stack up**](https://www.fastcompany.com/91336991/openai-anthropic-deepseek-ai-models-environmental-impact) - A Fast Company article on the big platform's estimated environmental impacts
 * [**Rare Earth Mining's Environmental Legacy**](https://www.sciencenews.org/article/rare-earth-mining-renewable-energy-future) - Science News exploration of the mining costs behind AI hardware
 * [**AI's Growing Water Crisis**](https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change) - NPR report on how AI expansion is driving massive increases in tech company emissions
