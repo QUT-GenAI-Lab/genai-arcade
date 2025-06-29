@@ -10,7 +10,7 @@ after: about-us
 
 ---
 
-**What happens when a language model is trained not to talk about something, even something as seemingly harmless as milk?**
+> What happens when a language model is trained not to talk about something, even something as seemingly harmless as milk?
 
 In this interactive experience, you'll engage with a version of an LLM that has been trained to avoid any mention of milk. Why? Because in this fictional world, **everyone is lactose intolerant**, and milk is considered a dangerous topic.
 

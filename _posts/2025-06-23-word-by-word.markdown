@@ -39,7 +39,7 @@ Here's an example: "**At the animal shelter, the child chose to adopt a [..]**"
 
 <br>
 
-Most of the time, the model will choose "cat," but it also pick "dog" or even "cactus," depending on how it's configured. Then it repeats this process for the next token. And again. And again. This is how it builds up a response, [one token at a time](https://bbycroft.net/llm). And this whole process is random - if you type the same prompt a second or third time, you could get different outputs each time.
+Most of the time, the model will choose "cat," but it might also pick "dog" or even "cactus," depending on how it's configured. Then it repeats this process for the next token. And again. And again. This is how it builds up a response, [one token at a time](https://bbycroft.net/llm). And this whole process is random - if you type the same prompt a second or third time, you could get different outputs each time.
 
 **Try it yourself:** Type a few words in the box below and press enter. Watch how the AI predicts what comes next, you can watch the probability for each token at each step.
 

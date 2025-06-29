@@ -10,7 +10,7 @@ after: short-term-memory
 
 ---
 
-**Ever wondered why AI sometimes confidently states facts that are completely wrong about recent events?**
+> Ever wondered why AI sometimes confidently states facts that are completely wrong about recent events?
 
 Large language models are expensive to train - they take huge amounts of data, time, and computing power. And once they're trained, they're **static**. That means they don't automatically learn new things or update themselves over time.
 
