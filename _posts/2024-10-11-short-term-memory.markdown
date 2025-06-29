@@ -66,8 +66,3 @@ Understanding this limitation helps explain why AI sometimes seems inconsistent 
 ## **Recommended Learning**
 
 * [**The Limits of Large Language Models**](https://www.nature.com/articles/d41586-023-00288-7) - Why AI memory constraints reveal fundamental limitations in current approaches
-* [**Why AI Can't Remember: The Political Economy of Forgetting**](https://theconversation.com/why-ai-chatbots-keep-forgetting-what-you-just-told-them-and-how-that-reflects-their-limitations-198234) - How memory limitations expose AI's brittleness
-* [**The Myth of AI Memory**](https://www.theguardian.com/technology/2023/nov/15/ai-chatbots-memory-limitations-context-windows) - How tech companies oversell AI capabilities while hiding fundamental constraints
-* [**Computational Limits and the Illusion of Intelligence**](https://arxiv.org/abs/2310.12884) - How memory constraints expose the gap between AI performance and genuine understanding
-* [**The Energy Cost of AI's Forgetfulness**](https://www.ft.com/content/8b6d8d4a-7c8f-4e5b-9a2f-3d4c5e6f7a8b) - Investigation into how longer context windows exponentially increase computational costs
-* [**When Machines Forget: Memory, Power and Control in AI Systems**](https://journals.sagepub.com/doi/10.1177/20539517231168567) - How AI memory limitations reflect broader questions about technological control
