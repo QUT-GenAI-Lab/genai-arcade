@@ -18,7 +18,7 @@ Start by writing a simple idea: maybe something you've learned, a project you've
 
 You might notice that your original idea gets dressed up in a lot of buzzwords. Or that it suddenly sounds more confident, more polished, or more generic.
 
-LLMs generate text based on what *sounds* right for a given context. And the context of LinkedIn has a very strong pattern which these tools can pick up on and mimic, just like other [platforms](https://www.theatlantic.com/technology/archive/2023/05/generative-ai-social-media-homogenized-content/674033/).
+LLMs generate text based on what *sounds* right for a given context. And the context of LinkedIn has a very strong pattern which these tools can pick up on and mimic, just like other platforms.
 
 ## **Try it out:**
 
