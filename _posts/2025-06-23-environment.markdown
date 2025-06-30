@@ -43,6 +43,8 @@ To give you a sense of scale - here's a quick table of common activities and the
 |Net Daily Greenhouse Gas Emissions of Queensland, Australia|	340kg|
 |New York to Tokyo by air (per passenger)|	1800 kg|
 
+In addition to the CO2e emissions at inference, these models also use a *lot* of energy to train, and by extension, would generate a lot of greenhouse gases at train-time. Most LLM providers and researchers do not publish their emissions metrics for model training. Meta, however, publishes their emissions metrics with each of their flagship model releases - most recently, their Llama 3.1 suite of models were reported to have emitted a total of [11,390 metric tonnes of CO2e](https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct), and their Llama 4 models emitted [1,999 metric tonnes of CO2e](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct) during training. More commercial models, such as GPT-4 (the model behind ChatGPT), are estimated to have emitted [anywhere between 1,246 and 14,994 metric tonnes of CO2e at train-time as a **single model**](https://towardsdatascience.com/the-carbon-footprint-of-gpt-4-d6c676eb21ae/).
+
 ## **What's the real carbon cost of your chat?**
 
 Here's what we need to address: by showing you these numbers, we're encouraging you to create more emissions. Every time you test our calculator, you're adding to the problem we're trying to highlight.
