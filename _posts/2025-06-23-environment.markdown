@@ -31,6 +31,18 @@ In this widget, we calculate the real carbon footprint of your AI prompts. Type 
 
 ---
 
+To give you a sense of scale - here's a quick table of common activities and their associated greenhouse gas emissions, compiled from [here](https://clevercarbon.io/carbon-footprint-of-common-items) and [here](https://www.qld.gov.au/environment/climate/climate-change/climate-science,-analytics-and-reporting/emissions-data):
+
+|**Activity** | 	**Greenhouse Gas Emissions in CO2 equivalents (CO2e)**|
+| -------- | ------- |
+|Mobile Phone use (1hr) |	0.172kg|
+|10 min drive in personal car |	0.560kg|
+|Average meal | 	1.5kg|
+|Purchasing flowers locally|	2.5kg|
+|London to Paris by air (per passenger)|	40kg|
+|Net Daily Greenhouse Gas Emissions of Queensland, Australia|	340kg|
+|New York to Tokyo by air (per passenger)|	1800 kg|
+
 ## **What's the real carbon cost of your chat?**
 
 Here's what we need to address: by showing you these numbers, we're encouraging you to create more emissions. Every time you test our calculator, you're adding to the problem we're trying to highlight.
