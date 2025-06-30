@@ -70,3 +70,10 @@ This widget shows that LLMs are not reliable calculators on their own. Understan
 ---
 
 ## Recommended Learning
+* [**AI Is Usually Bad At Math. Here’s Why It Matters**](https://www.forbes.com/sites/johnwerner/2024/10/07/ai-is-usually-bad-at-math-heres-what-will-happen-if-it-gets-better/) - Forbes on the implications of being bad at maths.
+* [**The Future of LLMs and maths**](https://arxiv.org/html/2404.00344v1) - Can LLMs Master Math?
+* [**Accuracy Problems & LLMs**]([https://arxiv.org/html/2404.00344v1](https://digitalcommons.dartmouth.edu/cgi/viewcontent.cgi?article=1038&context=cs_senior_theses)) - The Problem with Mathematical Accuracy in Large Language ModelsAccuracy in Large Language Models
+
+
+
+
