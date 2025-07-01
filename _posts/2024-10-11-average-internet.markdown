@@ -77,9 +77,8 @@ That might mean certain types of people, places, aesthetics, and cultural perspe
 
 ## **Recommended Learning**
 * [**Washington Post: AI Image Bias Analysis**](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/) - Interactive investigation showing how AI image generators perpetuate Western stereotypes and reflect commercial internet aesthetics
-* [**University of Washington Bias Study**](https://www.washington.edu/news/2023/11/29/ai-image-generator-stable-diffusion-perpetuates-racial-and-gendered-stereotypes-bias/) - Academic research on how Stable Diffusion over-represents light-skinned men and sexualizes women of color when prompted for "a person"
-* [**MIT Technology Review: Interactive Bias Tools**](https://www.technologyreview.com/2023/03/22/1070167/these-news-tool-let-you-see-for-yourself-how-biased-ai-image-models-are/) - Tools that let you explore bias in DALL-E 2 and Stable Diffusion through 96,000 generated images across different demographics
-* [**Comprehensive Bias Survey**](https://arxiv.org/html/2404.01030v2) - Academic survey of bias in text-to-image generation covering definition, evaluation, and mitigation approaches across multiple AI models
+* [**Overrepresentation in Stable Diffusion**](https://www.washington.edu/news/2023/11/29/ai-image-generator-stable-diffusion-perpetuates-racial-and-gendered-stereotypes-bias/) - Academic research on how Stable Diffusion over-represents light-skinned men and sexualizes women of color when prompted for "a person"
+* [**Interactive Bias Tools**](https://www.technologyreview.com/2023/03/22/1070167/these-news-tool-let-you-see-for-yourself-how-biased-ai-image-models-are/) - Tools that let you explore bias in DALL-E 2 and Stable Diffusion through 96,000 generated images across different demographics
 * [**Intersectional AI Analysis**](https://link.springer.com/article/10.1007/s00146-025-02207-y) - Critical analysis of how Stable Diffusion perpetuates multiple intersecting power systems through visual aesthetics and cultural representation
-* [**Unconditional Generation Bias Study**](https://arxiv.org/abs/2506.09106) - Research specifically examining bias in unconditional image generation (no prompts) and how training data shapes default outputs
+
 
