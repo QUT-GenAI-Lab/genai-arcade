@@ -92,3 +92,10 @@ After training your AI and comparing different models, consider what just happen
 ---
 
 ## **Recommended Learning**
+* [**RLHF Comprehensive Guide**](https://huggingface.co/blog/rlhf) - Detailed technical explanation of Reinforcement Learning from Human Feedback, covering how human preferences get embedded into AI systems and the limitations of this approach
+* [**Aligning AI with Human Values**](https://www.quantamagazine.org/what-does-it-mean-to-align-ai-with-human-values-20221213/) - Deep dive into the philosophical and technical challenges of AI alignment, questioning whose values should guide AI development
+* [**Democratising AI Value Alignment**](https://link.springer.com/article/10.1007/s43681-024-00624-1) - Academic paper critiquing "authoritarian" approaches like RLHF and Constitutional AI, arguing they concentrate power in the hands of a few tech companies
+* [**The Politics of AI: ChatGPT Analysis**](https://www.brookings.edu/articles/the-politics-of-ai-chatgpt-and-political-bias/) - Analysis of ChatGPT's demonstrated political leanings and how RLHF training process may embed particular worldviews
+* [**Study on AI Political Perceptions**](https://news.stanford.edu/stories/2025/05/ai-models-llms-chatgpt-claude-gemini-partisan-bias-research-study) - Research showing users perceive significant political slant in major AI models, with OpenAI models having the most intense left-leaning perception
+* [**Comprehensive RLHF Survey**](https://arxiv.org/abs/2312.14925) - Survey of Reinforcement Learning from Human Feedback, examining the intersection of AI and human values and the challenges of scalable alignment
+* [**Annotator Demographics Study**](https://www.digit.fyi/study-ai-bias-influenced-by-demographics-of-moderators/) - Research demonstrating that age, race, and education of human trainers significantly influence AI model behaviour and output patterns
