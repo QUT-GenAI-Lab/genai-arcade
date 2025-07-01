@@ -76,7 +76,6 @@ That might mean certain types of people, places, aesthetics, and cultural perspe
 ---
 
 ## **Recommended Learning**
-* [**Bloomberg's AI Bias Investigation**](https://www.bloomberg.com/graphics/2023-generative-ai-bias/) - Comprehensive study of how Stable Diffusion amplifies racial and gender stereotypes, generating 5,100 images to reveal systematic biases
 * [**Washington Post: AI Image Bias Analysis**](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/) - Interactive investigation showing how AI image generators perpetuate Western stereotypes and reflect commercial internet aesthetics
 * [**University of Washington Bias Study**](https://www.washington.edu/news/2023/11/29/ai-image-generator-stable-diffusion-perpetuates-racial-and-gendered-stereotypes-bias/) - Academic research on how Stable Diffusion over-represents light-skinned men and sexualizes women of color when prompted for "a person"
 * [**MIT Technology Review: Interactive Bias Tools**](https://www.technologyreview.com/2023/03/22/1070167/these-news-tool-let-you-see-for-yourself-how-biased-ai-image-models-are/) - Tools that let you explore bias in DALL-E 2 and Stable Diffusion through 96,000 generated images across different demographics
