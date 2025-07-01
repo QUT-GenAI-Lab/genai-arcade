@@ -55,4 +55,7 @@ This widget shows how LLMs are excellent at mimicking tone and style, especially
 ---
 
 ## **Recommended Learning**
+* [**LinkedIn's AI Feedback Loop**](https://fortune.com/2024/04/18/linkedin-microsoft-collaborative-articles-generative-ai-feedback-loop-user-backlash/) - How LinkedIn's AI-powered collaborative articles create an "absurd feedback loop" of AI-generated content training more AI
+* [**LLMs in Social Networks**](https://link.springer.com/article/10.1007/s13278-025-01428-9) - Academic analysis of how large language models are transforming computational social science and social media platforms
+* [**Self-Consuming AI Models**](https://arxiv.org/pdf/2307.01850.pdf) - Research showing how AI models trained on AI-generated content degrade over time, going "MAD" (Model Autophagy Disorder)
 
