@@ -164,6 +164,13 @@ body {
     }
 }
 
+.bottomnav {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    align-items: center; 
+    font-size: 130%;
+}
+
 // Media queries for mobile responsiveness
 @media only screen and (max-width: 810px) {
     .navbar {
@@ -184,6 +191,9 @@ body {
                 font-size: 14px; // Slightly smaller icons
             }
         }
+    }
+    .bottomnav {
+        font-size: 100%;
     }
 }
 
