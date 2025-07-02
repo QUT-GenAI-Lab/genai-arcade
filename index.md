@@ -51,3 +51,7 @@ This tool was created by QUT's GenAI Lab. For questions or more information, con
 
 Recommended Citation: Witzenberger, K., Burgess, J., He, W., & Snowswell, A. (2025). GenAI Arcade. QUT GenAI Lab. http://genai-arcade.net/. 
 
+## Feedback
+
+Would you like to get invovled or have ideas for more games and important resources we have missed: [Let us know](https://forms.cloud.microsoft/r/f2g1aQh9WU) 
+
