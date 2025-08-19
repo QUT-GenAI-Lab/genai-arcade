@@ -10,12 +10,17 @@ after: limits
 
 ---
 
-> What if AI could talk to you the way your friends do? Or use the slang from your neighborhood? How would that change the way you interact with it?
+> Ever wondered why AI gives you different answers depending on which language you ask in?
 
-Most popular AI tools are trained primarily on English text, and even when they work in other languages, they often reflect the cultural norms and communication styles of English-speaking, Western countries. But language isn't just about words—it carries culture, identity, and ways of thinking.
+AI models don't understand language the way humans do - they don't translate ideas between languages, they just look for patterns in the data they've seen for each specific language.
 
-This widget lets you explore how different cultural contexts and communication styles might change an AI's responses. You can ask it to respond "like someone from [your region/culture]" or 
-to use specific cultural communication patterns.
+That means when you ask the same question in different languages, the model might give very different answers. Not because it's trying to be biased, but because the input language you use is encouraging the model to mimic different sources and cultural contexts according to the languages in the training data the model learned from.
+
+And that can get tricky and political. Just imagine how a topic might be discussed differently across languages. Even within the same language, different terms can trigger completely different responses: asking about the history of "Brisbane" versus the history of "Meanjin" might give you entirely different stories, perspectives, and timeframes.
+But it's not just about politics. Some languages like English are used much more widely online, meaning there's vastly more training data available. For smaller or less digitally represented languages, the model might struggle to give good answers or might not work well at all.
+
+In this widget, you can ask the same question in different languages and compare the responses. What changes? What stays the same? What does that tell you? Can you find combinations of prompts and languages that give similar answers in each case?
+
 
 ---
 
@@ -28,40 +33,29 @@ to use specific cultural communication patterns.
 
 ---
 
-Try the same question with different cultural contexts. Notice how the examples, tone, assumptions, and even the structure of the answer might change.
+## **Why does this happen?** 
+LLMs learn from the internet, and the internet isn't equally represented across languages. English makes up a huge portion of online content, followed by other major languages, whilst many languages have very little digital presence. This means the AI has seen thousands of discussions about some topics in English but perhaps only a handful in other languages. This creates a growing digital language divide that affects billions of people worldwide.
 
-## **Cultural Communication Patterns**
-
-Different cultures have different ways of communicating. Some are more direct, others more indirect. Some prioritize individual achievement, others emphasize community harmony. Some cultures expect elaborate context before getting to the point, while others value brevity.
-
-When you ask an AI to respond "like someone from Japan," it might give more context, be more indirect, and emphasize group harmony. Ask it to respond "like someone from Germany," and you might get more direct, structured answers. Ask for a "Nigerian" perspective, and you might get more storytelling, proverbs, or community-focused examples.
-
----
+Different cultures also discuss topics differently - what's considered important, how arguments are structured, what sources are trusted, even what names are used for places and concepts. The AI picks up on all of these patterns.
 
 ## **So What?**
 
 This experiment reveals something important: there's no such thing as "neutral" AI. By default, most AI systems reflect the cultural patterns of their training data, which skews heavily toward certain regions and demographics. 
 
-When AI gives you an answer, it's not just providing information—it's presenting that information through a particular cultural lens. Understanding this helps us recognize both the limitations and possibilities of AI communication.
-
----
-
-## **What's Missing?**
-
-While this widget can mimic some surface-level cultural communication patterns, it's important to remember that AI doesn't truly understand these cultures. It's pattern-matching based on text it has seen, which might include stereotypes or incomplete representations.
-
-Real cultural competence involves understanding history, values, lived experiences, and nuanced social dynamics that AI can't fully capture. The AI is performing a version of culture, not embodying it.
+When AI gives you an answer, it's not just providing information—it's presenting that information through a particular cultural lens. Understanding this helps us recognise both the limitations and possibilities of AI communication.
 
 ---
 
 ## **Reflections**
 
-* How did the cultural context change the response style?
-* Did you notice different examples, values, or assumptions?
-* Which response felt most natural or familiar to you?
-* What cultural communication patterns were missing or misrepresented?
-* How might this affect people from different cultural backgrounds using AI?
-* What are the benefits and risks of AI adapting to different cultural styles?
+* Did the model give different answers in different languages?
+* Were some responses more detailed or confident than others?
+* What might that say about the sources the model is drawing from?
+* How does this impact people who don't speak English or whose languages are underrepresented online?
+* What are the risks of relying on AI for information in different languages?
+* How might this shape who gets to benefit from AI? 
+* What could be done to make AI more inclusive across languages?
+
 
 ---
 
