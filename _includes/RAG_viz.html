@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG Process Demo - Embeddable</title>
+  <style>
+    /* Scoped styles for the RAG demo widget */
+    .rag-demo-widget {
+      --bg: #efc0df;
+      --panel: #efc0df;
+      --muted: #000000;
+      --text: #000000;
+      --accent: #7aa2ff;
+      --accent-2: #4ad4b8;
+      --warning: #ffcf6d;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 15% -10%, #efc0df 0%, #efc0df 40%, #efc0df 100%);
+      color: var(--text);
+      padding: 24px;
+      border-radius: var(--radius);
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .rag-demo-widget * { 
+      box-sizing: border-box; 
+    }
+
+    .rag-demo-widget h1 { 
+      margin: 0 0 10px; 
+      font-size: 28px; 
+      letter-spacing: 0.2px; 
+    }
+
+    .rag-demo-widget p.lead { 
+      margin: 0 0 22px; 
+      color: var(--muted); 
+    }
+
+    .rag-demo-widget .stagebar { 
+      display: flex; 
+      gap: 16px; 
+      align-items: center; 
+      margin-bottom: 16px; 
+    }
+
+    .rag-demo-widget .pill { 
+      padding: 6px 12px; 
+      background: #0f1628; 
+      border: 1px solid #1e2a43; 
+      border-radius: 999px; 
+      color: var(--muted); 
+      font-size: 12px; 
+    }
+
+    .rag-demo-widget .board { 
+      position: relative; 
+      height: 480px; 
+      border: 1px solid #1f2a44; 
+      border-radius: var(--radius); 
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.0)); 
+      box-shadow: var(--shadow); 
+      overflow: hidden; 
+    }
+
+    .rag-demo-widget .lane-wrap { 
+      display: grid; 
+      grid-template-columns: repeat(3, 1fr); 
+      height: 100%; 
+    }
+
+    .rag-demo-widget .lane { 
+      position: relative; 
+      padding: 18px; 
+      border-right: 1px dashed #203152; 
+      overflow: visible; 
+    }
+
+    .rag-demo-widget .lane:last-child { 
+      border-right: none; 
+    }
+
+    .rag-demo-widget .lane h2 { 
+      font-size: 16px; 
+      margin: 0 0 6px; 
+      color: #000000; 
+      font-weight: 600; 
+    }
+
+    .rag-demo-widget .lane .hint { 
+      font-size: 12px; 
+      color: var(--muted); 
+    }
+
+    .rag-demo-widget .dock { 
+      position: absolute; 
+      left: 12px; 
+      right: 12px; 
+      top: 96px; 
+      height: 140px; 
+      border-radius: 12px; 
+      border: 1px dashed #28406d; 
+      background: rgba(255,255,255,0.02); 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      z-index: 1; 
+    }
+
+    .rag-demo-widget .lane .content { 
+      position: absolute; 
+      top: 250px; 
+      left: 12px; 
+      right: 12px; 
+      bottom: 12px; 
+      border-radius: 12px; 
+      padding: 0px; 
+      background: rgba(255,255,255,0.02); 
+      border: 1px solid #1a2744; 
+      overflow: auto; 
+      z-index: 1; 
+      opacity: 0; 
+      transform: translateY(20px); 
+      transition: all 0.6s ease; 
+    }
+
+    .rag-demo-widget .lane .content.visible { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+
+    .rag-demo-widget .arrow { 
+      position: absolute; 
+      top: 50%; 
+      transform: translateY(-50%); 
+      font-size: 22px; 
+      color: #335899; 
+      opacity: 0.9; 
+      z-index: 2; 
+    }
+
+    .rag-demo-widget .arrow.a1 { 
+      left: calc(33.333% - 12px); 
+    }
+
+    .rag-demo-widget .arrow.a2 { 
+      left: calc(66.666% - 12px); 
+    }
+
+    .rag-demo-widget .card { 
+      position: absolute; 
+      width: min(12vw, 300px); 
+      max-height: min(40vh, 120px); 
+      background: #f5e7f0; 
+      border: 1px solid #2b4a83; 
+      border-radius: 14px; 
+      padding: 0px 4px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,.45);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+      line-height: 1; 
+      white-space: pre-wrap; 
+      word-wrap: break-word; 
+      z-index: 10; 
+      overflow: auto; 
+      pointer-events: auto; 
+      transition: transform 0.6s ease; 
+      color: var(--text); 
+      top: 0px; 
+      left: 0px; 
+      font-size: clamp(11px, 2.5vw, 14px); 
+    }
+
+    .rag-demo-widget .card .tag { 
+      display: inline-block; 
+      font-size: clamp(10px, 2vw, 12px); 
+      padding: 3px 8px; 
+      border-radius: 999px; 
+      border: 1px solid #2e559a; 
+      background: #0f1f44; 
+      color: #d5e4ff; 
+      margin-bottom: 6px; 
+    }
+
+    @media (max-width: 850px) {
+      .rag-demo-widget .card .tag { 
+        display: none; 
+      }
+    }
+
+    .rag-demo-widget .pulse { 
+      animation: rag-pulse 1s ease-in-out 2; 
+    }
+
+    @keyframes rag-pulse { 
+      0%, 100% { box-shadow: 0 0 0 0 rgba(122,162,255,.0); } 
+      50% { box-shadow: 0 0 0 12px rgba(122,162,255,.08); } 
+    }
+
+    .rag-demo-widget .btns { 
+      display: flex; 
+      gap: 10px; 
+      margin-top: 14px; 
+    }
+
+    .rag-demo-widget button { 
+      padding: 10px 14px; 
+      border-radius: 12px; 
+      border: 1px solid #2a3e69; 
+      background: linear-gradient(180deg,#6b3e57,#6b3e57); 
+      color: #faf4f8; 
+      cursor: pointer; 
+      font-weight: 600; 
+      letter-spacing: .2px; 
+    }
+
+    .rag-demo-widget button.secondary { 
+      background: #6b3e57; 
+      color: #faf4f8; 
+    }
+
+    .rag-demo-widget button:disabled { 
+      opacity: .5; 
+      cursor: not-allowed; 
+    }
+
+    .rag-demo-widget .doc { 
+      padding: 2px 2px; 
+      background: #f5e7f0; 
+      border: 1px solid #20345e; 
+      border-radius: 2px; 
+      margin-bottom: 2px; 
+      font-size: clamp(11px, 2.5vw, 14px); 
+    }
+
+    .rag-demo-widget .llm-output { 
+      font-size: 14px; 
+      padding: 10px 12px; 
+      border-radius: 10px; 
+      background: #f5e7f0; 
+      border: 1px solid #27406f; 
+    }
+
+    .rag-demo-widget .muted { 
+      color: var(--muted); 
+    }
+
+    .rag-demo-widget ::-webkit-scrollbar { 
+      height: 12px; 
+      width: 12px; 
+    }
+
+    .rag-demo-widget ::-webkit-scrollbar-thumb { 
+      background: #6b3e57; 
+      border-radius: 8px; 
+      border: 3px solid transparent; 
+      background-clip: content-box; 
+    }
+
+    .rag-demo-widget ::-webkit-scrollbar-track { 
+      background: transparent; 
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .rag-demo-widget {
+        padding: 16px;
+      }
+      
+      .rag-demo-widget .board {
+        height: 400px;
+      }
+      
+      .rag-demo-widget .card {
+        width: min(35vw, 250px);
+        max-height: min(30vh, 100px);
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rag-demo-widget" id="ragDemoWidget">
+    <div class="board" id="board">
+      <div class="lane-wrap">
+        <section class="lane" id="lane-prompt">
+          <h2>📝 User Prompt</h2>
+          <div class="hint">Start here</div>
+          <div class="dock" id="dock-prompt"></div>
+          <div class="content" aria-live="polite"></div>
+        </section>
+
+        <div class="arrow a1">→</div>
+
+        <section class="lane" id="lane-rag">
+          <h2>🧭 RAG</h2>
+          <div class="hint muted">Retrieves relevant documents</div>
+          <div class="dock" id="dock-rag"></div>
+          <div class="content" id="ragContent"></div>
+        </section>
+
+        <div class="arrow a2">→</div>
+
+        <section class="lane" id="lane-llm">
+          <h2>🤖 LLM</h2>
+          <div class="hint muted">Generates the final answer</div>
+          <div class="dock" id="dock-llm"></div>
+          <div class="content" id="llmContent"></div>
+        </section>
+      </div>
+
+      <div class="card" id="card" aria-live="polite">
+        <div class="tag" id="cardTag">Original Prompt</div>
+        <div id="cardText">What is the weather like in brisbane today?</div>
+      </div>
+    </div>
+
+    <div class="btns">
+      <button id="nextBtn">Next step ▷</button>
+      <button class="secondary" id="resetBtn" disabled>Reset</button>
+    </div>
+  </div>
+
+  <script>
+    // Encapsulated RAG Demo functionality
+    (function(widgetId) {
+      const widget = document.getElementById(widgetId);
+      if (!widget) return;
+
+      const card = widget.querySelector('#card');
+      const nextBtn = widget.querySelector('#nextBtn');
+      const resetBtn = widget.querySelector('#resetBtn');
+      const dockPrompt = widget.querySelector('#dock-prompt');
+      const dockRag = widget.querySelector('#dock-rag');
+      const dockLlm = widget.querySelector('#dock-llm');
+      const ragContent = widget.querySelector('#ragContent');
+      const llmContent = widget.querySelector('#llmContent');
+      const cardTag = widget.querySelector('#cardTag');
+      const cardText = widget.querySelector('#cardText');
+
+      const retrievedDocs = [
+        "Result: BOM forecast indicates 23–29°C with a chance of afternoon showers and light easterly winds.",
+        "Result: Cloud cover increasing by late afternoon; UV index very high around midday.",
+        "Result: Humidity moderate; brief showers possible near the coast, becoming fine by evening."
+      ];
+
+      const makeEnrichedPrompt = (docs) => [
+        "What is the weather like in brisbane today?",
+        "",
+        "Use the following documents to inform your response:",
+        ...docs.map(d => `{${d}}`)
+      ].join("\n");
+
+      const summarised = "warm, partly cloudy with a chance of brief afternoon showers and light easterly winds";
+
+      let stage = 1;
+
+      function centerCardOver(el) {
+        const board = widget.querySelector('#board');
+        const b = board.getBoundingClientRect();
+        const r = el.getBoundingClientRect();
+        const c = card.getBoundingClientRect();
+        const targetX = (r.left - b.left) + (r.width/2) - (c.width/2);
+        const targetY = (r.top - b.top) + (r.height/2) - (c.height/2);
+        card.style.transform = `translate(${Math.round(targetX)}px, ${Math.round(targetY)}px)`;
+      }
+
+      function showContent(el, html) {
+        el.innerHTML = html;
+        el.classList.add('visible');
+      }
+
+      function clearContent(el) {
+        el.innerHTML = '';
+        el.classList.remove('visible');
+      }
+
+      function typeDocs(docs, idx = 0) {
+        if (idx === 0) clearContent(ragContent);
+        if (idx >= docs.length) return;
+        const wrap = document.createElement('div');
+        wrap.className = 'doc';
+        ragContent.appendChild(wrap);
+        let i = 0;
+        const timer = setInterval(() => {
+          wrap.textContent += docs[idx][i++];
+          if (i >= docs[idx].length) {
+            clearInterval(timer);
+            setTimeout(() => typeDocs(docs, idx + 1), 200);
+          }
+        }, 10);
+        setTimeout(() => ragContent.classList.add('visible'), 100);
+      }
+
+      function setButtons() {
+        resetBtn.disabled = false;
+        nextBtn.disabled = false;
+        nextBtn.textContent = (stage < 4) ? 'Next step ▷' : 'Run LLM ▷';
+      }
+
+      function goToStage(s) {
+        stage = s;
+        setButtons();
+
+        if (stage === 1) {
+          cardTag.textContent = 'Original Prompt';
+          cardText.textContent = 'What is the weather like in brisbane today?';
+          card.classList.add('pulse');
+          centerCardOver(dockPrompt);
+          clearContent(ragContent);
+          clearContent(llmContent);
+        }
+
+        if (stage === 2) {
+          centerCardOver(dockRag);
+          card.classList.remove('pulse');
+          cardTag.textContent = 'RAG: Retrieving…';
+          cardText.textContent = 'What is the weather like in brisbane today?';
+          typeDocs(retrievedDocs);
+        }
+
+        if (stage === 3) {
+          cardTag.textContent = 'Enriched Prompt';
+          cardText.textContent = makeEnrichedPrompt(retrievedDocs);
+          card.classList.add('pulse');
+          centerCardOver(dockRag);
+          showContent(ragContent, retrievedDocs.map(d => `<div class="doc">${d}</div>`).join(''));
+        }
+
+        if (stage === 4) {
+          centerCardOver(dockLlm);
+          card.classList.remove('pulse');
+          cardTag.textContent = 'LLM: Consuming…';
+          cardText.textContent = makeEnrichedPrompt(retrievedDocs);
+          setTimeout(() => {
+            showContent(llmContent, `<div class="llm-output"><strong>Answer:</strong> The weather in Brisbane will be like ${summarised} today!</div>`);
+          }, 450);
+        }
+      }
+
+      // Event listeners
+      window.addEventListener('load', () => centerCardOver(dockPrompt));
+      window.addEventListener('resize', () => centerCardOver(stage <= 1 ? dockPrompt : stage <= 3 ? dockRag : dockLlm));
+
+      nextBtn.addEventListener('click', () => {
+        if (stage < 4) goToStage(stage + 1);
+        else goToStage(4);
+      });
+      
+      resetBtn.addEventListener('click', () => goToStage(1));
+
+      // Initialize
+      goToStage(1);
+    })('ragDemoWidget');
+
+    // Global embedding function for external use
+    window.createRAGDemo = function(containerId, options = {}) {
+      const container = document.getElementById(containerId);
+      if (!container) {
+        console.error(`Container with id "${containerId}" not found`);
+        return;
+      }
+      
+      // Clone the widget HTML
+      const widgetHTML = document.querySelector('.rag-demo-widget').cloneNode(true);
+      const uniqueId = 'ragDemo_' + Math.random().toString(36).substr(2, 9);
+      widgetHTML.id = uniqueId;
+      
+      // Clear container and add widget
+      container.innerHTML = '';
+      container.appendChild(widgetHTML);
+      
+      // Initialize the new widget (the script will auto-initialize based on the ID)
+      return uniqueId;
+    };
+  </script>
+</body>
+</html>

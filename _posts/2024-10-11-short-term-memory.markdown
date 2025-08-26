@@ -3,7 +3,7 @@ layout: default
 title:  "Short-Term Memory" 
 tags: limits
 before: time-capsule
-after: values
+after: RAG
 ---
 
 # **Short-Term Memory**

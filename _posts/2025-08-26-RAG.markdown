@@ -1,0 +1,66 @@
+---
+layout: default
+title:  "DIY LLM" 
+tags: limits
+before: short-term-memory
+after: values
+---
+
+# **DIY LLM**
+
+---
+
+> Ever wondered how so many startups can have their own custom LLMs?
+
+Amidst relentless news of the latest GPT-this or DeepSeek-that, you’ll see plenty of small AI startups announcing their own "custom model" that might do something specific, like give you financial advice (FinanceGPT - Unleashing The Power of AI in Financial Analysis) or give you historical sports facts (Sports GPT-Free Sports History & Records Insight). There might even be services that advertise the ability to "chat to your own data!" {Build A Custom AI Chatbot Using Your Own Data Easily, Chat With Your Own Data - Lettria}, generates custom study notes (AI PDF Summarizer Built for Students Works for Long PDFs Knowt), or assists specifically with your research (Research Paper Summarizer: Quick, Accurate Summaries in Seconds with AI). But knowing how expensive and time-consuming it is to train and serve these models, how do these small startups train their own?
+
+The short answer is that often, they actually don’t - they’ll be using stock ChatGPT, Claude, Gemini or some other established large model in the background. The key difference is the inclusion of an additional system, which allows for Retrieval-Augmented Generation, or RAG for short.
+
+---
+
+## **What is a RAG?**
+A RAG is a large language model whose Generated response is Augmented by relevant information that is Retrieved from a custom database (hence why it's called Retrieval-Augmented Generation). 
+ 
+Say, for example, you are asking an LLM what the weather will be like today - something an LLM wouldn’t know. What a RAG could do is inject the relevant information into the input for the LLM, which then allows the LLM to use this information to answer the question. It does this by searching through information in a database based on your chat input, and simply adds it in as additional text for the LLM to refer to. In this case, it might find today's weather report off the internet, add that text to the bottom of your chat input, and then (hopefully) this helps the LLM generate an accurate response.
+
+{% include RAG_viz.html %}
+
+Generally, when small startups have their own RAG setup, they will put a lot of effort into curating a focused and well-designed text database for a retrieval function to search through - maybe it’s a comprehensive sports almanac, or maybe it’s a live-updating stock market RSS feed. Google, Microsoft and OpenAI, on the other hand, will connect their large language models to the entire internet through a RAG!
+
+---
+
+## **Why use a RAG?**
+The idea of using RAGs to augment an LLM was initially intended to "plug holes" in the LLM's base knowledge, particularly given the knowledge cutoff of training data {link to time capsule}. This could be used by LLMs to answer things like “who is the current president of the United States?” or “how many children has Elon Musk had?” more accurately, given that the answer will likely change as time moves on. However, a RAG could also be used to augment, specialise, or direct the response of an LLM as well. For example, if you wanted a chatbot that specialised in a niche topic area like Socio-Technical Studies (or STS for short), you could attach a specialised textbook as a database for a RAG. Or, if you were deploying an LLM into a client-facing role and wanted it to respond with a specific tone, you could attach something like a style guide or a customer service handbook to a RAG.
+ 
+## **Limitations**
+There are limitations to this approach, however. For one, the number of documents you can inject into a RAG is inherently limited by the length of the context window, and the suitability/power of the search engine (think Bing vs Google) affects the quality of injected documents. 
+
+Less obviously though, and perhaps unintuitively, the way the RAG is built means that a model would not be able to glean "summary" data of the entire dataset, like how many entries are in this dataset, or what topic areas are covered by the whole database, et cetera. This is because the LLM would never be able to see the whole dataset at once - only ever the pieces of information given to it at the time it is responding to the question.
+ 
+Also consider how suitable the LLM would be for interpreting the injected texts - imagine giving a year 10 high school maths student a postgraduate textbook on advanced linear algebra! There will only be so much that an LLM (or a poor high school student) will be able to specifically understand - if it is not fine-tuned to be a specialist in that area, it might struggle to make sense of the provided data!
+
+Below is a simple RAG widget which takes the first 5 search results from Google and injects them into each user input. The non-RAG LLM response is on the left, while the RAG response is on the right. Have a play, and note the differences in response, where the RAG seems to be helping, or more interestingly where the RAG seems to be hindering!
+
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
+></script>
+
+<gradio-app src="https://willsh1997-widget-rag.hf.space"></gradio-app>
+
+**Note:** the raw RAG input is purposefully exposed to you in this widget for transparency - in real deployments, the chat history will look identical!
+
+---
+
+## **Reflections**
+* What AI products have you interacted with recently that might’ve been a RAG without you knowing?
+* How could you imagine using this for your own use cases?
+* What kind of data would be good for a RAG? What would be bad?
+* How does this differ from a traditional search engine? Why might you use a RAG instead of just a search engine?
+
+---
+
+## **Recommended learning**
+* QUT-GenAI-Lab/local_rag_workshop: development for local RAG workshop being run by QUT GenAI lab - local RAG chat app developed by the QUT GenAI lab that lets you build your own RAGs with Ollama
+* Vector search for dummies - a simple explanation of one of the more popular methods of document retrieval in RAGs: vector search
+
