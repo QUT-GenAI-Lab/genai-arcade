@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAG Process Demo - Embeddable</title>
+  <title>RAG Process Demo - Fixed</title>
   <style>
-    /* Scoped styles for the RAG demo widget */
     .rag-demo-widget {
       --bg: #efc0df;
       --panel: #efc0df;
@@ -20,52 +19,33 @@
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
       background: radial-gradient(1200px 600px at 15% -10%, #efc0df 0%, #efc0df 40%, #efc0df 100%);
       color: var(--text);
-      padding: 24px;
+      padding: 20px;
       border-radius: var(--radius);
-      max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
+      margin: 0;
       position: relative;
+      min-height: 400px;
+      box-sizing: border-box;
+      /* Add these for zoom stability */
+      transform-origin: top left;
+      contain: layout style paint;
     }
 
     .rag-demo-widget * { 
       box-sizing: border-box; 
     }
 
-    .rag-demo-widget h1 { 
-      margin: 0 0 10px; 
-      font-size: 28px; 
-      letter-spacing: 0.2px; 
-    }
-
-    .rag-demo-widget p.lead { 
-      margin: 0 0 22px; 
-      color: var(--muted); 
-    }
-
-    .rag-demo-widget .stagebar { 
-      display: flex; 
-      gap: 16px; 
-      align-items: center; 
-      margin-bottom: 16px; 
-    }
-
-    .rag-demo-widget .pill { 
-      padding: 6px 12px; 
-      background: #0f1628; 
-      border: 1px solid #1e2a43; 
-      border-radius: 999px; 
-      color: var(--muted); 
-      font-size: 12px; 
-    }
-
     .rag-demo-widget .board { 
       position: relative; 
-      height: 480px; 
+      height: 400px;
       border: 1px solid #1f2a44; 
       border-radius: var(--radius); 
       background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.0)); 
       box-shadow: var(--shadow); 
       overflow: hidden; 
+      /* Force hardware acceleration for smoother zoom */
+      transform: translateZ(0);
+      will-change: transform;
     }
 
     .rag-demo-widget .lane-wrap { 
@@ -76,7 +56,7 @@
 
     .rag-demo-widget .lane { 
       position: relative; 
-      padding: 18px; 
+      padding: 12px; 
       border-right: 1px dashed #203152; 
       overflow: visible; 
     }
@@ -86,24 +66,24 @@
     }
 
     .rag-demo-widget .lane h2 { 
-      font-size: 16px; 
-      margin: 0 0 6px; 
+      font-size: 14px; 
+      margin: 0 0 4px; 
       color: #000000; 
       font-weight: 600; 
     }
 
     .rag-demo-widget .lane .hint { 
-      font-size: 12px; 
+      font-size: 11px; 
       color: var(--muted); 
     }
 
     .rag-demo-widget .dock { 
       position: absolute; 
-      left: 12px; 
-      right: 12px; 
-      top: 96px; 
-      height: 140px; 
-      border-radius: 12px; 
+      left: 8px; 
+      right: 8px; 
+      top: 15%; 
+      height: 25%; 
+      border-radius: 8px; 
       border: 1px dashed #28406d; 
       background: rgba(255,255,255,0.02); 
       display: flex; 
@@ -113,13 +93,16 @@
     }
 
     .rag-demo-widget .lane .content { 
+      display: flex;
+      flex-direction: column;
       position: absolute; 
-      top: 250px; 
-      left: 12px; 
-      right: 12px; 
-      bottom: 12px; 
-      border-radius: 12px; 
-      padding: 0px; 
+      width: 90%; 
+      top: 42%; 
+      left: 8px; 
+      right: 8px; 
+      bottom: 8px; 
+      border-radius: 8px; 
+      padding: 6px; 
       background: rgba(255,255,255,0.02); 
       border: 1px solid #1a2744; 
       overflow: auto; 
@@ -138,60 +121,69 @@
       position: absolute; 
       top: 50%; 
       transform: translateY(-50%); 
-      font-size: 22px; 
+      font-size: 18px; 
       color: #335899; 
       opacity: 0.9; 
       z-index: 2; 
     }
 
     .rag-demo-widget .arrow.a1 { 
-      left: calc(33.333% - 12px); 
+      left: calc(33.333% - 9px); 
     }
 
     .rag-demo-widget .arrow.a2 { 
-      left: calc(66.666% - 12px); 
+      left: calc(66.666% - 9px); 
     }
 
     .rag-demo-widget .card { 
       position: absolute; 
-      width: min(12vw, 300px); 
-      max-height: min(40vh, 120px); 
+      width: 25%; 
+      max-height: 15%; 
       background: #f5e7f0; 
       border: 1px solid #2b4a83; 
-      border-radius: 14px; 
-      padding: 0px 4px; 
+      border-radius: 12px; 
+      padding: 6px; 
       box-shadow: 0 10px 30px rgba(0,0,0,.45);
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
-      line-height: 1; 
+      line-height: 1.1; 
       white-space: pre-wrap; 
       word-wrap: break-word; 
       z-index: 10; 
       overflow: auto; 
       pointer-events: auto; 
-      transition: transform 0.6s ease; 
+      transition: transform 0.3s ease; 
       color: var(--text); 
       top: 0px; 
       left: 0px; 
-      font-size: clamp(11px, 2.5vw, 14px); 
+      font-size: 11px;
+      display: flex;
+      flex-direction: column;
+      /* Zoom stability improvements */
+      transform-origin: center center;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
     }
 
     .rag-demo-widget .card .tag { 
       display: inline-block; 
-      font-size: clamp(10px, 2vw, 12px); 
-      padding: 3px 8px; 
-      border-radius: 999px; 
+      font-size: 9px; 
+      padding: 2px 4px; 
+      border-radius: 4px; 
       border: 1px solid #2e559a; 
       background: #0f1f44; 
       color: #d5e4ff; 
-      margin-bottom: 6px; 
+      margin-bottom: 3px; 
+      flex-shrink: 0;
+      align-self: flex-start;
     }
-
-    @media (max-width: 850px) {
-      .rag-demo-widget .card .tag { 
-        display: none; 
-      }
+    
+    .rag-demo-widget .card #cardText {
+      flex: 1;
+      overflow: auto;
+      font-size: inherit;
+      line-height: 1.1;
+      margin: 0;
     }
-
     .rag-demo-widget .pulse { 
       animation: rag-pulse 1s ease-in-out 2; 
     }
@@ -203,19 +195,22 @@
 
     .rag-demo-widget .btns { 
       display: flex; 
-      gap: 10px; 
-      margin-top: 14px; 
+      gap: 8px; 
+      margin-top: 12px; 
+      flex-wrap: wrap;
     }
 
     .rag-demo-widget button { 
-      padding: 10px 14px; 
-      border-radius: 12px; 
+      padding: 8px 12px; 
+      border-radius: 8px; 
       border: 1px solid #2a3e69; 
       background: linear-gradient(180deg,#6b3e57,#6b3e57); 
       color: #faf4f8; 
       cursor: pointer; 
       font-weight: 600; 
       letter-spacing: .2px; 
+      font-size: 12px;
+      min-width: 80px;
     }
 
     .rag-demo-widget button.secondary { 
@@ -229,20 +224,26 @@
     }
 
     .rag-demo-widget .doc { 
-      padding: 2px 2px; 
+      padding: 4px 6px; 
       background: #f5e7f0; 
       border: 1px solid #20345e; 
-      border-radius: 2px; 
-      margin-bottom: 2px; 
-      font-size: clamp(11px, 2.5vw, 14px); 
+      border-radius: 4px; 
+      margin-bottom: 4px; 
+      font-size: 11px; 
+      line-height: 1.3;
+      word-break: break-word;
+      flex-shrink: 0;
     }
 
     .rag-demo-widget .llm-output { 
-      font-size: 14px; 
-      padding: 10px 12px; 
-      border-radius: 10px; 
+      font-size: 11px; 
+      padding: 8px 10px; 
+      border-radius: 8px; 
       background: #f5e7f0; 
       border: 1px solid #27406f; 
+      line-height: 1.4;
+      word-break: break-word;
+      flex-shrink: 0;
     }
 
     .rag-demo-widget .muted { 
@@ -250,14 +251,14 @@
     }
 
     .rag-demo-widget ::-webkit-scrollbar { 
-      height: 12px; 
-      width: 12px; 
+      height: 8px; 
+      width: 8px; 
     }
 
     .rag-demo-widget ::-webkit-scrollbar-thumb { 
       background: #6b3e57; 
-      border-radius: 8px; 
-      border: 3px solid transparent; 
+      border-radius: 6px; 
+      border: 2px solid transparent; 
       background-clip: content-box; 
     }
 
@@ -266,19 +267,67 @@
     }
 
     /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .rag-demo-widget {
-        padding: 16px;
+    @media (max-width: 900px) {
+      .rag-demo-widget .board {
+        height: 350px;
       }
       
+      .rag-demo-widget .dock {
+        top: 12%;
+        height: 20%;
+      }
+      
+      .rag-demo-widget .lane .content {
+        top: 35%;
+      }
+    }
+
+    @media (max-width: 480px) {
       .rag-demo-widget .board {
-        height: 400px;
+        height: 300px;
+      }
+      
+      .rag-demo-widget .lane {
+        padding: 8px;
+      }
+      
+      .rag-demo-widget .lane h2 {
+        font-size: 12px;
+      }
+      
+      .rag-demo-widget .lane .hint {
+        font-size: 10px;
+      }
+      
+      .rag-demo-widget .dock {
+        top: 10%;
+        height: 18%;
+        left: 4px;
+        right: 4px;
+      }
+      
+      .rag-demo-widget .lane .content {
+        top: 30%;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
       }
       
       .rag-demo-widget .card {
-        width: min(35vw, 250px);
-        max-height: min(30vh, 100px);
-        font-size: 12px;
+        width: 100px;
+        max-height: 70px;
+        font-size: 9px;
+        padding: 4px;
+      }
+      
+      .rag-demo-widget .card .tag {
+        font-size: 8px;
+        padding: 1px 4px;
+        margin-bottom: 2px;
+      }
+      
+      .rag-demo-widget .arrow {
+        display: none;
       }
     }
   </style>
@@ -360,13 +409,38 @@
       let stage = 1;
 
       function centerCardOver(el) {
+        if (!el || !card) return;
+        
         const board = widget.querySelector('#board');
-        const b = board.getBoundingClientRect();
-        const r = el.getBoundingClientRect();
-        const c = card.getBoundingClientRect();
-        const targetX = (r.left - b.left) + (r.width/2) - (c.width/2);
-        const targetY = (r.top - b.top) + (r.height/2) - (c.height/2);
-        card.style.transform = `translate(${Math.round(targetX)}px, ${Math.round(targetY)}px)`;
+        if (!board) return;
+        
+        // Use requestAnimationFrame to ensure measurements are accurate
+        requestAnimationFrame(() => {
+          const boardRect = board.getBoundingClientRect();
+          const targetRect = el.getBoundingClientRect();
+          
+          // Calculate relative positions within the board
+          const relativeX = targetRect.left - boardRect.left;
+          const relativeY = targetRect.top - boardRect.top;
+          
+          // Center the card over the target
+          const targetCenterX = relativeX + (targetRect.width / 2);
+          const targetCenterY = relativeY + (targetRect.height / 2);
+          
+          const cardCenterX = targetCenterX - (card.offsetWidth / 2);
+          const cardCenterY = targetCenterY - (card.offsetHeight / 2);
+          
+          // Constrain to board bounds with some padding
+          const padding = 5;
+          const maxX = board.offsetWidth - card.offsetWidth - padding;
+          const maxY = board.offsetHeight - card.offsetHeight - padding;
+          
+          const finalX = Math.max(padding, Math.min(cardCenterX, maxX));
+          const finalY = Math.max(padding, Math.min(cardCenterY, maxY));
+          
+          // Use 3D transform for better performance and zoom stability
+          card.style.transform = `translate3d(${Math.round(finalX)}px, ${Math.round(finalY)}px, 0)`;
+        });
       }
 
       function showContent(el, html) {
@@ -410,13 +484,13 @@
           cardTag.textContent = 'Original Prompt';
           cardText.textContent = 'What is the weather like in brisbane today?';
           card.classList.add('pulse');
-          centerCardOver(dockPrompt);
+          setTimeout(() => centerCardOver(dockPrompt), 100);
           clearContent(ragContent);
           clearContent(llmContent);
         }
 
         if (stage === 2) {
-          centerCardOver(dockRag);
+          setTimeout(() => centerCardOver(dockRag), 100);
           card.classList.remove('pulse');
           cardTag.textContent = 'RAG: Retrieving…';
           cardText.textContent = 'What is the weather like in brisbane today?';
@@ -427,12 +501,12 @@
           cardTag.textContent = 'Enriched Prompt';
           cardText.textContent = makeEnrichedPrompt(retrievedDocs);
           card.classList.add('pulse');
-          centerCardOver(dockRag);
+          setTimeout(() => centerCardOver(dockRag), 100);
           showContent(ragContent, retrievedDocs.map(d => `<div class="doc">${d}</div>`).join(''));
         }
 
         if (stage === 4) {
-          centerCardOver(dockLlm);
+          setTimeout(() => centerCardOver(dockLlm), 100);
           card.classList.remove('pulse');
           cardTag.textContent = 'LLM: Consuming…';
           cardText.textContent = makeEnrichedPrompt(retrievedDocs);
@@ -442,9 +516,32 @@
         }
       }
 
+      // Enhanced resize handler with debouncing and better timing
+      let resizeTimeout;
+      function handleResize() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          const currentDock = stage <= 1 ? dockPrompt : stage <= 3 ? dockRag : dockLlm;
+          centerCardOver(currentDock);
+        }, 150);
+      }
+
+      // Better initialization timing
+      function initialize() {
+        setTimeout(() => {
+          centerCardOver(dockPrompt);
+          goToStage(1);
+        }, 200);
+      }
+
       // Event listeners
-      window.addEventListener('load', () => centerCardOver(dockPrompt));
-      window.addEventListener('resize', () => centerCardOver(stage <= 1 ? dockPrompt : stage <= 3 ? dockRag : dockLlm));
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initialize);
+      } else {
+        initialize();
+      }
+      
+      window.addEventListener('resize', handleResize);
 
       nextBtn.addEventListener('click', () => {
         if (stage < 4) goToStage(stage + 1);
@@ -453,8 +550,6 @@
       
       resetBtn.addEventListener('click', () => goToStage(1));
 
-      // Initialize
-      goToStage(1);
     })('ragDemoWidget');
 
     // Global embedding function for external use
@@ -474,7 +569,23 @@
       container.innerHTML = '';
       container.appendChild(widgetHTML);
       
-      // Initialize the new widget (the script will auto-initialize based on the ID)
+      // Re-initialize the script for the new widget
+      setTimeout(() => {
+        const newWidget = document.getElementById(uniqueId);
+        if (newWidget) {
+          // Execute the widget initialization code
+          const script = document.createElement('script');
+          script.textContent = `
+            (function(widgetId) {
+              // Insert the same initialization code here but with the new widgetId
+              // This is a simplified version - in practice you'd want to extract the init function
+              console.log('Initializing RAG demo for:', widgetId);
+            })('${uniqueId}');
+          `;
+          document.head.appendChild(script);
+        }
+      }, 100);
+      
       return uniqueId;
     };
   </script>
