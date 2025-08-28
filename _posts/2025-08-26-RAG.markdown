@@ -12,7 +12,9 @@ after: values
 
 > Ever wondered how so many startups can have their own custom LLMs?
 
-Amidst relentless news of the latest GPT-this or DeepSeek-that, you’ll see plenty of small AI startups announcing their own "custom model" that might do something specific, like [give you financial advice](https://financegpt.uk/) or give you [historical sports facts](https://www.yeschat.ai/gpts-9t55R1psKYC-Sports-GPT). There might even be services that advertise the ability to ["chat to your](https://customgpt.ai/build-a-custom-ai-chatbot-using-your-own-data/) [own data!"](https://www.lettria.com/platform-stories/lettria-private-gpt), [generates custom study notes](https://knowt.com/ai-pdf-summarizer), or [assists specifically with your research](https://paperguide.ai/research-paper-summarizer/). But knowing how expensive and time-consuming it is to train and serve these models, how do these small startups train their own?
+You've seen the headlines: GPT-this, DeepSeek-that, and endless announcements from small AI startups claiming they've built their own "custom model". These are advertised to [give you financial advice](https://financegpt.uk/) or give you [historical sports facts](https://www.yeschat.ai/gpts-9t55R1psKYC-Sports-GPT). There might even be services that advertise the ability to ["chat to your](https://customgpt.ai/build-a-custom-ai-chatbot-using-your-own-data/) [own data!"](https://www.lettria.com/platform-stories/lettria-private-gpt), [generates custom study notes](https://knowt.com/ai-pdf-summarizer), or [assists specifically with your research](https://paperguide.ai/research-paper-summarizer/). 
+
+But here's the thing: training and serving these models costs millions and takes months. So how are tiny startups pulling this off?
 
 The short answer is that often, they actually don’t - they’ll be using stock ChatGPT, Claude, Gemini or some other established large model in the background. The key difference is the inclusion of an additional system, which allows for Retrieval-Augmented Generation, or RAG for short.
 
@@ -31,12 +33,16 @@ Generally, when small startups have their own RAG setup, they will put a lot of 
 ---
 
 ## **Why use a RAG?**
-The idea of using RAGs to augment an LLM was initially intended to "plug holes" in the LLM's base knowledge, particularly given the knowledge cutoff of training data {link to time capsule}. This could be used by LLMs to answer things like “who is the current president of the United States?” or “how many children has Elon Musk had?” more accurately, given that the answer will likely change as time moves on. However, a RAG could also be used to augment, specialise, or direct the response of an LLM as well. For example, if you wanted a chatbot that specialised in a niche topic area like Socio-Technical Studies (or STS for short), you could attach a specialised textbook as a database for a RAG. Or, if you were deploying an LLM into a client-facing role and wanted it to respond with a specific tone, you could attach something like a style guide or a customer service handbook to a RAG.
+The idea of using RAGs was initially intended to "plug holes" in the LLM's base knowledge, particularly given the knowledge cutoff of training data [link to time capsule]. This could be used by LLMs to answer things like "who is the current premier of Queensland?" or "what's the latest interest rate?" more accurately, given that the answer will likely change as time moves on.
+
+But RAGs can do more than just fill knowledge gaps. They can also specialise or guide the response of an LLM.
+
+If you're building a chatbot for a specific audience and want it to respond with a certain tone, you could attach a style guide or service handbook to a RAG. The model then draws from that guidance to match your intended voice.
 
 ---
  
 ## **Limitations**
-There are limitations to this approach, however. For one, the number of documents you can inject into a RAG is inherently limited by the length of the context window, and the suitability/power of the search engine (think Bing vs Google) affects the quality of injected documents. 
+There are limitations to this approach, however. For one, the number of documents you can use with a RAG is inherently limited by the length of the context window, and the suitability/power of the search engine (think Bing vs Google) affects the quality of injected documents. 
 
 Less obviously though, and perhaps unintuitively, the way the RAG is built means that a model would not be able to glean "summary" data of the entire dataset, like how many entries are in this dataset, or what topic areas are covered by the whole database, et cetera. This is because the LLM would never be able to see the whole dataset at once - only ever the pieces of information given to it at the time it is responding to the question.
  
