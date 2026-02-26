@@ -35,7 +35,8 @@ This "neutral point" is like taking every image the model has ever seen and find
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-neutral-sd-dev.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-neutral-sd.hf.space"></gradio-app>
+
 
 ---
 

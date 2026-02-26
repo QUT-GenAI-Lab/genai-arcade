@@ -50,7 +50,7 @@ Most of the time, the model will choose "cat," but it might also pick "dog" or e
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-next-token-predictor.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-next-word-predictor.hf.space"></gradio-app>
 
 
 ---

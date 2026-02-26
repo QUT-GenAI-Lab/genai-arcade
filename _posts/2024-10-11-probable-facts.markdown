@@ -43,6 +43,6 @@ In the right column, try to reframe that statement using a different way of esta
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.12.0/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-probable-fact-examples.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-probable-fact-examples.hf.space"></gradio-app>
 
 

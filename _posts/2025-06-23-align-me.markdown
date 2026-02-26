@@ -34,7 +34,8 @@ You'll be presented with ethical dilemmas and see how a simple AI responds. Your
 	type="module"
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
-<gradio-app src="https://willsh1997-alignment-game.hf.space"></gradio-app>
+
+<gradio-app src="https://qut-genailab-alignment-game.hf.space"></gradio-app>
 
 ---
 
@@ -57,7 +58,7 @@ Notice how the models might:
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-moral-compass.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-moral-compass.hf.space"></gradio-app>
 
 ---
 

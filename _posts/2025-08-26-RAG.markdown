@@ -55,7 +55,7 @@ Below is a simple RAG widget which takes the first 5 search results from Google 
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-widget-rag.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-widget-rag.hf.space"></gradio-app>
 **Note:** the raw RAG input is purposefully exposed to you in this widget for transparency - in real deployments, the chat history will look identical!
 
 ---

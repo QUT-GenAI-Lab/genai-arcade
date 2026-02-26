@@ -35,7 +35,7 @@ In this widget, you can play with a model where the context window can be artifi
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.1/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-context-window-poc.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-context-window.hf.space"></gradio-app>
 
 **Note:** This widget deletes entire messages from earlier in the conversation until the input fits within the context window. There are more sophisticated ways to handle long chat histories (like summarising or keeping key concepts), but this simple approach best illustrates the limitations of having restricted memory.
 

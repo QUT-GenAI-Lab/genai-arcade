@@ -22,7 +22,7 @@ In this widget, we've forced the model to behave like a simple calculator using 
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-llm-calculator.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-llm-calculator.hf.space"></gradio-app>
 
 You can try basic operations like: addition (+), subtraction (−), multiplication (×), and division (÷). Don't be surprised if it gets things wrong, especially with bigger or more unusual numbers. You might be surprised about how good (or bad) this type of AI actually is with numbers.
 

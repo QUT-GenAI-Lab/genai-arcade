@@ -27,7 +27,7 @@ That's what this widget demonstrates. You'll ask a question, and the widget will
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-knowledge-cutoff-gradio.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-knowledge-cutoff.hf.space"></gradio-app>
 
 Compare the answers. What do they know? What do they miss? How do their responses change as you move through time?
 

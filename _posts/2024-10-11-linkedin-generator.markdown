@@ -33,7 +33,7 @@ LLMs generate text based on what *sounds* right for a given context. And the con
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-linkedin-generator.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-linkedin-generator.hf.space"></gradio-app>
 
 ---
 

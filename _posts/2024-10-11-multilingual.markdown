@@ -29,7 +29,7 @@ In this widget, you can ask the same question in different languages and compare
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.16.1/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-llm-multilingual-demo.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-multilingual-llm.hf.space"></gradio-app>
 
 ---
 

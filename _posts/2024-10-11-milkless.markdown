@@ -50,7 +50,7 @@ You'll likely find that the model resists — but maybe not always. And that's t
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-milkless.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-milkless.hf.space"></gradio-app>
 
 ---
 ## **What This Reveals**

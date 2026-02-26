@@ -26,7 +26,7 @@ In this widget, we calculate the real carbon footprint of your AI prompts. Type 
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-carbon-footprint.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-carbon-footprint.hf.space"></gradio-app>
 
 
 ---

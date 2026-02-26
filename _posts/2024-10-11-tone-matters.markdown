@@ -25,7 +25,7 @@ In this widget, you can type a prompt and see how the model responds when your i
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
 ></script>
 
-<gradio-app src="https://willsh1997-politeness-demo.hf.space"></gradio-app>
+<gradio-app src="https://qut-genailab-llm-politeness.hf.space"></gradio-app>
 
 ---
 
