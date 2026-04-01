@@ -2,261 +2,361 @@
 type: default
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta property="og:title" content="GenAI Arcade">
-	<meta property="og:description" content="Welcome to the GenAI Arcade - your refreshingly honest way to learn about AI! Skip the jargon and doomsday scenarios. Instead, poke, test, and play with AI through interactive games that reveal what it can (and can't) actually do.">
-	<meta property="og:image" content="{{ '/assets/img/screenshot.png' | absolute_url }}">
-	  
-	<!-- Meta descriptions for SEO -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta property="og:title" content="GenAI Arcade" />
+    <meta
+      property="og:description"
+      content="Welcome to the GenAI Arcade - your refreshingly honest way to learn about AI! Skip the jargon and doomsday scenarios. Instead, poke, test, and play with AI through interactive games that reveal what it can (and can't) actually do."
+    />
+    <meta
+      property="og:image"
+      content="{{ '/assets/img/screenshot.png' | absolute_url }}"
+    />
+
+    <!-- Meta descriptions for SEO -->
     {% if page.description %}
-        <meta name="description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}" />
     {% elsif page.excerpt %}
-        <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    <meta
+      name="description"
+      content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"
+    />
     {% else %}
-        <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.description }}" />
     {% endif %}
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="{{ page.url | absolute_url }}">
-	
-    <link rel="stylesheet" href="{{ '/assets/css/atom-one-light.css' | relative_url }}">
-    {% if page.title or page.title == 'me' %}
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" type="text/css" href="{{ '/assets/css/002.css' | relative_url }}">
-    {% else %}
-        <title>{{ site.name }}</title>
-        <link rel="stylesheet" type="text/css" href="{{ '/assets/css/001.css' | relative_url }}">
-    {% endif %}
-    <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css' | relative_url }}">
-    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
-    <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
-    <script src="{{ '/assets/js/highlight.pack.js' | relative_url }}"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="default_title">
-            <img src="{{ '/assets/img/mycomputer.png' | relative_url }}" />
-            {% if page.tag %}
-                <h1>{{ page.tag }}</h1>
-            {% else %}
-                <h1>{{ site.name }}</h1>
-            {% endif %}
-        </div>
-        {% include topbar.html %}
-        <div class="tag_list">
-            <ul id="tag-list">
-                <li><a href="{{ '/' | relative_url}}" ><img src="{{ '/assets/img/home.png' | relative_url }}" />Home</a> <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
-                    <ul>
-                        <!-- hardcoding some links to stuff - check older commits for the "for loop" that generates tags-->
-                        <li>
-                            <a href="{{ '/20250521/how-to'  | relative_url  }}" title="How To?">
-                                <img src="{{ '/assets/img/file.ico' | relative_url }}" />
-                                How to use the Arcade
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ '/tag/understanding/'  | relative_url  }}" title="Understanding">
-                                <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                                Understanding
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ '/tag/training/'  | relative_url  }}" title="Training">
-                                <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                                Training
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ '/tag/limits/'  | relative_url  }}" title="AI explainer">
-                                <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                                Limits
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ '/tag/values/'  | relative_url  }}" title="AI explainer">
-                                <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                                Values
-                            </a>
-                        </li>
-                        <!-- hardcoding some links to stuff -->
-                        <li>
-                            <a href="{{ '20250520/about-us'  | relative_url  }}" title="About us">
-                                <img src="{{ '/assets/img/file.ico' | relative_url }}" />
-                                About us
-                            </a>
-                        </li>
-			<li>
-                            <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=o1IL3MVo90SIHZOD2IULlg299bJk06hCg2Lg7NOKG1pUOUtWMVVFSlM5QUhGWTZUU0tOU01CUkQ2TC4u&route=shorturl" title="Feedback">
-                                <img src="{{ '/assets/img/file.ico' | relative_url }}" />
-                                Feedback
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="post_list">
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
-            
-            {% unless page.date%}
-				{% if page.title == 'About' or page.title == '404...' %}
-				{% else %}
-    				{% if layout.type == 'tag-landing' %}
-                        <ul>
-                        	{% for post in site.tags[page.tag] %}
-                        		<li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
-                        	{% endfor %}
-                        </ul>
-                    {% endif %}
-				{% endif %}
-             {% else %}
-                {% assign current_tag = page.tags[0] %}
-                <ul>                
-                    {% if current_tag != 'genai-arcade' %}
-                        {% for post in site.posts %}
-                            {% if post.tags[0] == current_tag %}
-                                <li><a href="{{  post.url | relative_url }}" title="{{ post.title }}"><img src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}' title="{{ post.title }}" />{{ post.title }}</a></li> <!-- if else logic for different icons for different post types -->
-                            {% endif %}
-                        {% endfor %}
-                    {% endif %}
-                </ul>
-            
-			{% endunless %}
-        </div>
-        <div class="post_total">
-            {% if page.tag %}
-                <div class="left">{{ site.tags[page.tag] | size }} object(s)</div>
-            {% else %}
-                <div class="left">0 object(s)</div>
-            {% endif %}
-            <div class="right">&nbsp;</div>
-        </div>
-    </div>
-    
-    <div class="navbar">
-        <!-- Home Button -->
-        <a href="{{ '/' | relative_url }}" style="width: 156px;">
-            <div class="btn" style="height: 40px; width: 100%;">
-                <span class="fa fa-home"></span>
-                <span class="btn-text">Home</span>
-            </div>
-        </a>
-        
-        <!-- Previous/Back Button -->
-        {% if page.before %}
-            {% if page.before != 'first' %}
-                {% if page.before == '/' %}
-                    <a href="{{ '/' | relative_url }}" style="width: 318px;">
-                        <div class="btn" style="height: 40px; width: 100%;">
-                            <span class="fa fa-hand-o-left"></span>
-                            <span class="btn-text">Previous</span>
-                        </div>
-                    </a>
-                {% else %}
-                    {% assign postlist = site.posts | concat: site.pages %}
-                    {% assign post = postlist | where: "slug", page.before | first %}
-                    <a href="{{ post.url | relative_url }}" style="width: 318px;">
-                        <div class="btn" style="height: 40px; width: 100%;">
-                            <span class="fa fa-hand-o-left"></span>
-                            <span class="btn-text">Previous</span>
-                        </div>
-                    </a>
-                {% endif %}
-            {% else %}
-                <!-- Disabled Previous Button -->
-                <div class="btn-wrapper" style="width: 318px;">
-                    <div class="btn btn-disabled" style="height: 40px; width: 100%;">
-                        <span class="fa fa-hand-o-left"></span>
-                        <span class="btn-text">Previous</span>
-                    </div>
-                </div>
-            {% endif %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/atom-one-light.css' | relative_url }}"
+    />
+    {% if page.title or page.title == 'me' %}
+    <title>{{ page.title }}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/assets/css/002.css' | relative_url }}"
+    />
+    {% else %}
+    <title>{{ site.name }}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/assets/css/001.css' | relative_url }}"
+    />
+    {% endif %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/font-awesome.min.css' | relative_url }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ '/assets/img/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="{{ '/assets/img/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <script src="{{ '/assets/js/highlight.pack.js' | relative_url }}"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body data-page-url="{{ page.url }}" data-page-tags="{{ page.tags }}">
+    <div class="wrapper">
+      <div class="default_title">
+        <img src="{{ '/assets/img/mycomputer.png' | relative_url }}" />
+        {% if page.tag %}
+        <h1>{{ page.tag }}</h1>
         {% else %}
-            <!-- Disabled Previous Button when no page.before exists -->
-            <div class="btn-wrapper" style="width: 318px;">
-                <div class="btn btn-disabled" style="height: 40px; width: 100%;">
-                    <span class="fa fa-hand-o-left"></span>
-                    <span class="btn-text">Previous</span>
-                </div>
-            </div>
+        <h1>{{ site.name }}</h1>
         {% endif %}
-        
-        <!-- Next/Forward Button -->
-        {% if page.after %}
-            {% if page.after != 'last' %}
-                {% assign postlist = site.posts | concat: site.pages %}
-                {% assign post = postlist | where: "slug", page.after | first %}
-                <a href="{{ post.url | relative_url }}" style="width: 318px;">
-                    <div class="btn" style="height: 40px; width: 100%;">
-                        <span class="fa fa-hand-o-right"></span>
-                        <span class="btn-text">Next</span>
-                    </div>
+      </div>
+      {% include topbar.html %}
+      <div class="tag_list">
+        <ul id="tag-list">
+          <li>
+            <a
+              href="{{ '/' | relative_url}}"
+              title="Home"
+              class="{% if page.url == '/' %}active{% endif %}"
+              ><img src="{{ '/assets/img/home.png' | relative_url }}" />Home</a
+            >
+            <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
+            <ul>
+              <!-- hardcoding some links to stuff - check older commits for the "for loop" that generates tags-->
+              <li>
+                <a
+                  href="{{ '/20250521/how-to'  | relative_url  }}"
+                  title="How To?"
+                  class="{% if page.url == '/20250521/how-to' %}active{% endif %}"
+                >
+                  <img src="{{ '/assets/img/file.ico' | relative_url }}" />
+                  How to use the Arcade
                 </a>
-            {% else %}
-                <!-- Disabled Next Button -->
-                <div class="btn-wrapper" style="width: 318px;">
-                    <div class="btn btn-disabled" style="height: 40px; width: 100%;">
-                        <span class="fa fa-hand-o-right"></span>
-                        <span class="btn-text">Next</span>
-                    </div>
-                </div>
-            {% endif %}
+              </li>
+              <li>
+                <a
+                  href="{{ '/tag/understanding/'  | relative_url  }}"
+                  title="Understanding"
+                  class="{% if page.tag == 'understanding' or page.tags contains 'understanding' %}active{% endif %}"
+                >
+                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
+                  Understanding
+                </a>
+              </li>
+              <li>
+                <a
+                  href="{{ '/tag/training/'  | relative_url  }}"
+                  title="Training"
+                  class="{% if page.tag == 'training' or page.tags contains 'training' %}active{% endif %}"
+                >
+                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
+                  Training
+                </a>
+              </li>
+              <li>
+                <a
+                  href="{{ '/tag/limits/'  | relative_url  }}"
+                  title="AI explainer"
+                  class="{% if page.tag == 'limits' or page.tags contains 'limits' %}active{% endif %}"
+                >
+                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
+                  Limits
+                </a>
+              </li>
+              <li>
+                <a
+                  href="{{ '/tag/values/'  | relative_url  }}"
+                  title="AI explainer"
+                  class="{% if page.tag == 'values' or page.tags contains 'values' %}active{% endif %}"
+                >
+                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
+                  Values
+                </a>
+              </li>
+              <!-- hardcoding some links to stuff -->
+              <li>
+                <a
+                  href="{{ '20250520/about-us'  | relative_url  }}"
+                  title="About us"
+                  class="{% if page.url == '/20250520/about-us' %}active{% endif %}"
+                >
+                  <img src="{{ '/assets/img/file.ico' | relative_url }}" />
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=o1IL3MVo90SIHZOD2IULlg299bJk06hCg2Lg7NOKG1pUOUtWMVVFSlM5QUhGWTZUU0tOU01CUkQ2TC4u&route=shorturl"
+                  title="Feedback"
+                >
+                  <img src="{{ '/assets/img/file.ico' | relative_url }}" />
+                  Feedback
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="post_list">
+        {% unless page.date%} {% if page.title == 'About' or page.title ==
+        '404...' %} {% else %} {% if layout.type == 'tag-landing' %}
+        <ul>
+          {% for post in site.tags[page.tag] %}
+          <li>
+            <a href="{{  post.url | relative_url }}" title="{{ post.title }}">
+              <img
+                src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}'
+                title="{{ post.title }}"
+              />
+              {{ post.title }}
+            </a>
+          </li>
+          <!-- if else logic for different icons for different post types -->
+          {% endfor %}
+        </ul>
+        {% endif %} {% endif %} {% else %} {% assign current_tag = page.tags[0]
+        %}
+        <ul>
+          {% if current_tag != 'genai-arcade' %} {% for post in site.posts %} {%
+          if post.tags[0] == current_tag %}
+          <li>
+            <a
+              href="{{  post.url | relative_url }}"
+              class="{% if post.url == page.url %}active{% endif %}"
+              title="{{ post.title }}"
+              ><img
+                src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}'
+                title="{{ post.title }}"
+              />{{ post.title }}</a
+            >
+          </li>
+          <!-- if else logic for different icons for different post types -->
+          {% endif %} {% endfor %} {% endif %}
+        </ul>
+
+        {% endunless %}
+      </div>
+      <div class="post_total">
+        {% if page.tag %}
+        <div class="left">{{ site.tags[page.tag] | size }} object(s)</div>
         {% else %}
-            <!-- Disabled Next Button when no page.after exists -->
-            <div class="btn-wrapper" style="width: 318px;">
-                <div class="btn btn-disabled" style="height: 40px; width: 100%;">
-                    <span class="fa fa-hand-o-right"></span>
-                    <span class="btn-text">Next</span>
-                </div>
-            </div>
+        <div class="left">0 object(s)</div>
         {% endif %}
+        <div class="right">&nbsp;</div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <!-- Home Button -->
+      <a href="{{ '/' | relative_url }}" style="width: 156px">
+        <div class="btn" style="height: 40px; width: 100%">
+          <span class="fa fa-home"></span>
+          <span class="btn-text">Home</span>
+        </div>
+      </a>
+
+      <!-- Previous/Back Button -->
+      {% if page.before %} {% if page.before != 'first' %} {% if page.before ==
+      '/' %}
+      <a href="{{ '/' | relative_url }}" style="width: 318px">
+        <div class="btn" style="height: 40px; width: 100%">
+          <span class="fa fa-hand-o-left"></span>
+          <span class="btn-text">Previous</span>
+        </div>
+      </a>
+      {% else %} {% assign postlist = site.posts | concat: site.pages %} {%
+      assign post = postlist | where: "slug", page.before | first %}
+      <a href="{{ post.url | relative_url }}" style="width: 318px">
+        <div class="btn" style="height: 40px; width: 100%">
+          <span class="fa fa-hand-o-left"></span>
+          <span class="btn-text">Previous</span>
+        </div>
+      </a>
+      {% endif %} {% else %}
+      <!-- Disabled Previous Button -->
+      <div class="btn-wrapper" style="width: 318px">
+        <div class="btn btn-disabled" style="height: 40px; width: 100%">
+          <span class="fa fa-hand-o-left"></span>
+          <span class="btn-text">Previous</span>
+        </div>
+      </div>
+      {% endif %} {% else %}
+      <!-- Disabled Previous Button when no page.before exists -->
+      <div class="btn-wrapper" style="width: 318px">
+        <div class="btn btn-disabled" style="height: 40px; width: 100%">
+          <span class="fa fa-hand-o-left"></span>
+          <span class="btn-text">Previous</span>
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Next/Forward Button -->
+      {% if page.after %} {% if page.after != 'last' %} {% assign postlist =
+      site.posts | concat: site.pages %} {% assign post = postlist | where:
+      "slug", page.after | first %}
+      <a href="{{ post.url | relative_url }}" style="width: 318px">
+        <div class="btn" style="height: 40px; width: 100%">
+          <span class="fa fa-hand-o-right"></span>
+          <span class="btn-text">Next</span>
+        </div>
+      </a>
+      {% else %}
+      <!-- Disabled Next Button -->
+      <div class="btn-wrapper" style="width: 318px">
+        <div class="btn btn-disabled" style="height: 40px; width: 100%">
+          <span class="fa fa-hand-o-right"></span>
+          <span class="btn-text">Next</span>
+        </div>
+      </div>
+      {% endif %} {% else %}
+      <!-- Disabled Next Button when no page.after exists -->
+      <div class="btn-wrapper" style="width: 318px">
+        <div class="btn btn-disabled" style="height: 40px; width: 100%">
+          <span class="fa fa-hand-o-right"></span>
+          <span class="btn-text">Next</span>
+        </div>
+      </div>
+      {% endif %}
     </div>
     <div class="content">
-        <div class="post_title">
-            <img src="{{ '/assets/img/warning.png' | relative_url }}" />
-            <h1>COMMUNITY NOTE</h1>
-        </div>
-        <div style="text-align: center; padding: 0 0 2% 0;">
-            <br>
-        The execution backend of this website is currently being migrated to a new system. Some widgets may not work correctly!
-            &nbsp;
-            <br />
-        </div>    
+      <div class="post_title">
+        <img src="{{ '/assets/img/warning.png' | relative_url }}" />
+        <h1>COMMUNITY NOTE</h1>
+      </div>
+      <div style="text-align: center; padding: 0 0 2% 0">
+        <br />
+        The execution backend of this website is currently being migrated to a
+        new system. Some widgets may not work correctly! &nbsp;
+        <br />
+      </div>
     </div>
     {% if page.title %}
-        <div class="content">
-            <div class="post_title">
-                <img src="{{ '/assets/img/file.png' | relative_url }}" />
-                <h1>{{  page.title  }}</h1>
-                <a href="{{ '/' | relative_url }}">
-                    <div class="btn"><span class="fa fa-times"></span></div>
-                </a>
-                <div class="btn"><span class="fa fa-window-maximize"></span></div>
-                <div class="btn"><span class="fa fa-window-minimize"></span></div>
-            </div>
-            <ul class="topbar">
-            
-            </ul>
-            <div class="post_content">
-                {{ content }}
-                {% if page.title %}{% endif %}
-                {% include pagenav.html %}
-            </div>
-        </div>
+    <div class="content">
+      <div class="post_title">
+        <img src="{{ '/assets/img/file.png' | relative_url }}" />
+        <h1>{{ page.title }}</h1>
+        <a href="{{ '/' | relative_url }}">
+          <div class="btn"><span class="fa fa-times"></span></div>
+        </a>
+        <div class="btn"><span class="fa fa-window-maximize"></span></div>
+        <div class="btn"><span class="fa fa-window-minimize"></span></div>
+      </div>
+      <ul class="topbar"></ul>
+      <div class="post_content">
+        {{ content }} {% if page.title %}{% endif %} {% include pagenav.html %}
+      </div>
+    </div>
     {% endif %}
     <script src="{{ '/assets/js/001.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/002.js' | relative_url }}"></script>
     <div class="footer">
-        <p>If you want to learn more about the GenAI Arcade tool, contact Dr Kevin Witzenberger: kevin.witzenberger@qut.edu.au, Research Fellow at QUT’s GenAI Lab OR William He <william.he[at]qut.edu.au>, Machine Learning Engineer at QUT’s GenAI Lab.</william.he</kevin.witzenberger</p>
-	<p><strong>Content License:</strong> All written content, images, and research data on this site are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a></p>
-        <p><strong>Code License:</strong> All code, scripts, and software are licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License v3.0 (GPLv3)</a></p>
-	    <p>Windows 95 theme created by <a href="http://github.com/h01000110" target="_blank">h01000110 (hi)</a> | Code licensed under <a href="https://github.com/h01000110/h01000110.github.io/blob/master/LICENSE" target="_blank">MIT License</a></p>
+      <p>
+        If you want to learn more about the GenAI Arcade tool, contact Dr Kevin
+        Witzenberger: kevin.witzenberger@qut.edu.au, Research Fellow at QUT’s
+        GenAI Lab OR William He: william.he@qut.edu.au, Machine Learning
+        Engineer at QUT’s GenAI Lab.
+      </p>
+      <p>
+        <strong>Content License:</strong> All written content, images, and
+        research data on this site are licensed under
+        <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/"
+          target="_blank"
+          >Creative Commons Attribution-NonCommercial 4.0 International (CC
+          BY-NC 4.0)</a
+        >
+      </p>
+      <p>
+        <strong>Code License:</strong> All code, scripts, and software are
+        licensed under
+        <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank"
+          >GNU General Public License v3.0 (GPLv3)</a
+        >
+      </p>
+      <p>
+        Windows 95 theme created by
+        <a href="http://github.com/h01000110" target="_blank">h01000110 (hi)</a>
+        | Code licensed under
+        <a
+          href="https://github.com/h01000110/h01000110.github.io/blob/master/LICENSE"
+          target="_blank"
+          >MIT License</a
+        >
+      </p>
     </div>
-</body>
+  </body>
 </html>
