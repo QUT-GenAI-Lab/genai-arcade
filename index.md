@@ -1,8 +1,6 @@
 ---
-layout: default
+layout: game
 title:  "GenAI Arcade"
-before: first
-after: how-to
 ---
 
 # GenAI Arcade: Explore, Play, and Understand AI

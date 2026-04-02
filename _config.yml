@@ -29,6 +29,11 @@ url: "https://genai-arcade.net" # "http://willsh97.github.io" # the base hostnam
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
+collections:
+# Custom games collection to properly organise the games instead of relying on posts. Posts should be kept for dated content.
+  games:
+    output: true
+
 # Build settings
 plugins:
   - jekyll-feed
