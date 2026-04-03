@@ -1,6 +1,7 @@
 ---
 layout: default
-title:  "DIY LLM"
+title:  DIY LLM
+summary: Explore how Retrieval-Augmented Generation (RAG) powers practical AI apps by combining a base LLM with task-specific retrievable data and the limitations of this approach.
 ---
 
 # **DIY LLM**

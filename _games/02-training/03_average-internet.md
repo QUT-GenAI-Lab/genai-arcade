@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Average Internet"
----
+summary: "Explore the neutral point of a visual image model and explore what its most dominant visual patterns reveal about the training dataset for an image generator."
 
 # **The Average Internet**
 

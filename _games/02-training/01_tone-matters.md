@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Tone Matters"
----
+summary: "Ask the same question in different tones, see how the model responds, and learn what that says about the data it was trained on."
 
 # **Tone Matters**
 

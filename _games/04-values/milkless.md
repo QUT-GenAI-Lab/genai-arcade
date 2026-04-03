@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Milkless"
----
+summary: "This is a thought-provoking challenge where you explore how language models handle safety restrictions by engaging with an AI that has been instructed not to talk about milk."
 
 # **Milkless**
 

@@ -1,6 +1,7 @@
 ---
 layout: tag
 title: "Limits"
+summary: Games about AI’s boundaries and constraints
 ---
 
 # Limits

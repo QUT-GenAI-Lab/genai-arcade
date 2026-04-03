@@ -1,0 +1,18 @@
+<!-- Get the index.md pages of the games -->
+{% assign all_tags = site.games | where: "layout", "tag" %} {% for tag in
+all_tags %} {% assign current_tag = tag.tags[0] %} {% assign sub_pages =
+site.games | where: "tags", current_tag %}
+<strong><a href="{{ tag.url | relative_url }}">{{ tag.title }}</a></strong>
+<ul>
+  {% for page in sub_pages %}
+  <!-- Ignore index.md pages -->
+  {% if page.url != tag.url %}
+  <li>
+    <strong
+      ><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong
+    >
+    - {{ page.summary }}
+  </li>
+  {% endif %} {% endfor %}
+</ul>
+{% endfor %}

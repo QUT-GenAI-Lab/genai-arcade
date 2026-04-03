@@ -1,8 +1,7 @@
 ---
 layout: default
 title:  "Sort of Calculator"
-before: word-by-word
-after: linkedin-generator
+summary: "Explore why generative AI struggles with maths, and what that tells us about the difference between knowing a fact and predicting a pattern."
 ---
 
 # Sort of Calculator

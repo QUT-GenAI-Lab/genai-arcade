@@ -1,12 +1,7 @@
 ---
 layout: default
 title:  "Word by Word"
-before: understanding
-after: calculator
----
-
-# Word by Word
-
+summary: "Learn how a language model understands what you say and how to respond, not by checking what’s true, but by guessing what sounds most likely."
 ---
 
 > Ever wondered why AI sometimes makes up facts that sound completely believable, even if they aren't true?

@@ -1,6 +1,7 @@
 ---
 layout: tag
 title: Values
+summary: Games about choices in AI systems
 ---
 
 # **Values**
