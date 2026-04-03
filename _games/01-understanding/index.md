@@ -1,5 +1,4 @@
 ---
-layout: tag
 title: "Understanding"
 summary: Games about how AI “understands” things
 ---

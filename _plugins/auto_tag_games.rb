@@ -34,7 +34,13 @@ module Jekyll
           # Ensure we don't add the tag twice if it's already there
           unless game.data['tags'].include?(subfolder_tag)
             game.data['tags'] << subfolder_tag
-            Jekyll.logger.info "GameTagInjector:", "Added tag '#{subfolder_tag}' to #{game.basename}"
+            # Jekyll.logger.info "GameTagInjector:", "Added tag '#{subfolder_tag}' to #{game.basename}"
+          end
+
+          # If the game itself is named 'index.md', we add 'layout: tag'
+          if game.basename == 'index.md'
+            game.data['layout'] = 'tag'
+            # Jekyll.logger.info "GameTagInjector:", "Set layout 'tag' for #{game.basename} in #{subfolder_tag}"
           end
         end
       end

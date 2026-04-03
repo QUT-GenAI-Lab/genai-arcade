@@ -1,5 +1,4 @@
 ---
-layout: tag
 title: Training
 summary: Games about what AI can learn from data
 ---
