@@ -1,9 +1,6 @@
 ---
-layout: default
+layout: game
 title:  "Time Capsule"
-tags: limits
-before: environment
-after: short-term-memory
 ---
 
 # **Time Capsules**

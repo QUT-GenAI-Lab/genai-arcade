@@ -1,9 +1,6 @@
 ---
-layout: default
+layout: game
 title:  "Align Me"
-tags: values
-before: values
-after: milkless
 ---
 
 # **Align Me**

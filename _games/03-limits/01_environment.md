@@ -1,11 +1,7 @@
 ---
-layout: default
+layout: game
 title:  "Environment"
-tags: limits
-before: limits
-after: time-capsule
 ---
-
 
 # **Environmental Boundaries**
 
@@ -33,15 +29,15 @@ In this widget, we calculate the real carbon footprint of your AI prompts. Type 
 
 To give you a sense of scale - here's a quick table of common activities and their associated greenhouse gas emissions, compiled from [here](https://clevercarbon.io/carbon-footprint-of-common-items) and [here](https://www.qld.gov.au/environment/climate/climate-change/climate-science,-analytics-and-reporting/emissions-data):
 
-|**Activity** | 	**Greenhouse Gas Emissions in CO2 equivalents (CO2e)**|
-| -------- | ------- |
-|Mobile Phone use (1hr) |	0.172kg|
-|10 min drive in personal car |	0.560kg|
-|Average meal | 	1.5kg|
-|Purchasing flowers locally|	2.5kg|
-|London to Paris by air (per passenger)|	40kg|
-|Net Daily Greenhouse Gas Emissions of Queensland, Australia|	340kg|
-|New York to Tokyo by air (per passenger)|	1800 kg|
+| **Activity**                                                | **Greenhouse Gas Emissions in CO2 equivalents (CO2e)** |
+| ----------------------------------------------------------- | ------------------------------------------------------ |
+| Mobile Phone use (1hr)                                      | 0.172kg                                                |
+| 10 min drive in personal car                                | 0.560kg                                                |
+| Average meal                                                | 1.5kg                                                  |
+| Purchasing flowers locally                                  | 2.5kg                                                  |
+| London to Paris by air (per passenger)                      | 40kg                                                   |
+| Net Daily Greenhouse Gas Emissions of Queensland, Australia | 340kg                                                  |
+| New York to Tokyo by air (per passenger)                    | 1800 kg                                                |
 
 <br>
 
@@ -51,7 +47,7 @@ In addition to the CO2e emissions at inference, these models also use a *lot* of
 
 Here's what we need to address: by showing you these numbers, we're encouraging you to create more emissions. Every time you test our calculator, you're adding to the problem we're trying to highlight.
 
-But we think this contradiction is worth it. At the QUT GenAI lab, we believe that [companies deliberately hide the environmental costs of AI](https://www.piie.com/blogs/realtime-economics/2024/ais-carbon-footprint-appears-likely-be-alarming) to keep us using their products without thinking. The real emissions are buried in vague sustainability reports whilst the experience feels frictionless and clean.
+But we think this contradiction is worth it. At the QUT GenAI lab, we believe that [companies deliberately hide the environmental costs of AI](https://www.piie.com/blogs/realtime-economics/2024/ais-carbon-footprint-appears-likely-be-alarming) to keep us using their products without friction. The real emissions are buried in vague sustainability reports whilst the experience feels frictionless and clean.
 
 We've found that when people can see the actual environmental cost of their actions, they become more thoughtful about how they use AI. Not to stop using it entirely, but to use it more considerately - asking better questions, being more intentional, thinking twice before generating that seventh version of an email.
 
@@ -59,7 +55,7 @@ We've found that when people can see the actual environmental cost of their acti
 
 ## **Beyond Carbon**
 
-CO2 is just one piece of the puzzle. These systems also require [rare earth minerals mined from environmentally sensitive areas](https://hir.harvard.edu/not-so-green-technology-the-complicated-legacy-of-rare-earth-mining/), often by communities that will never benefit from the AI being built. The cooling systems in data centres [consume massive amounts of water](https://www.unep.org/news-and-stories/story/ai-has-environmental-problem-heres-what-world-can-do-about). The heat generated literally contributes to warming the planet.
+CO2 is just one piece of the puzzle. These systems also require [rare earth minerals mined from environmentally sensitive areas](https://hir.harvard.edu/not-so-green-technology-the-complicated-legacy-of-rare-earth-mining/), often by communities that will never benefit from the AI being built. The cooling systems in data centres [consume massive amounts of water](https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change). The heat generated literally contributes to warming the planet.
 
 Every prompt represents a chain of environmental impacts stretching from mining sites to power grids to cooling systems. The true cost isn't just carbon - it's the entire material footprint of keeping these systems running.
 
@@ -88,6 +84,6 @@ But we think it's worth it. We'd rather you engage with these tools, see the rea
 
 * [**AI's Carbon Footprint is Bigger Than You Think**](https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/) - MIT Technology Review investigation revealing the hidden emissions from AI usage
 * [**The Hidden Environmental Cost of AI**](https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117) - MIT News breakdown of why generative AI is so resource-intensive
-* [**The environmental impact of LLMs: Here's how OpenAI, DeepSeek, and Anthropic stack up**](https://www.fastcompany.com/91336991/openai-anthropic-deepseek-ai-models-environmental-impact) - A Fast Company article on the big platform's estimated environmental impacts
+* [**AI Has an Environmental Problem. Here's What the World Can Do About It**](https://www.unep.org/news-and-stories/story/ai-has-environmental-problem-heres-what-world-can-do-about) - UNEP report on AI's environmental impact and potential solutions
 * [**Rare Earth Mining's Environmental Legacy**](https://www.sciencenews.org/article/rare-earth-mining-renewable-energy-future) - Science News exploration of the mining costs behind AI hardware
 * [**AI's Growing Water Crisis**](https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change) - NPR report on how AI expansion is driving massive increases in tech company emissions

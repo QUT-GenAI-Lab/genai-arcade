@@ -1,9 +1,6 @@
 ---
-layout: default
+layout: game
 title:  "Tone Matters"
-tags: training
-before: average-internet
-after: multilingual
 ---
 
 # **Tone Matters**
@@ -12,7 +9,7 @@ after: multilingual
 
 > Ever wondered why you get different answers if you ask AI something using a formal vs casual style? That's because the way you ask makes the LLM recall different language patterns in the training data, and those patterns come with different facts, tones, and assumptions built in.
 
-When you talk to an AI, the way you phrase your prompt can change the kind of answer you get, even if you're asking the same thing. If your prompt sounds very *formal*, the model will look for patterns that match formal writing, such as those found in academic papers or official documents. On the other hand, if your prompt is casual, it might pull from patterns found in message boards, social media, or everyday conversation. The same can be said about sounding *rude* or *polite* styles*.* 
+When you talk to an AI, the way you phrase your prompt can change the kind of answer you get, even if you're asking the same thing. If your prompt sounds very *formal*, the model will look for patterns that match formal writing, such as those found in academic papers or official documents. On the other hand, if your prompt is casual, it might pull from patterns found in message boards, social media, or everyday conversation. The same can be said about sounding *rude* or *polite* styles*.
 
 And here's the twist: different styles of writing often come with different *facts*, *assumptions*, or *tones*. The same question might lead to very different answers depending on how you ask it.
 
@@ -37,7 +34,7 @@ Compare the results. What changes? What stays the same? Are you able to find a q
 
 ## Why Does This Happen?
 
-LLMs learn from patterns in human writing. Rude requests often appeared alongside dismissive or curt responses in their training data, and polite requests were more likely to be paired with helpful, detailed answers. The model isn't is just following the conversational patterns it learned. 
+LLMs learn from patterns in human writing. Rude requests often appeared alongside dismissive or curt responses in their training data, and polite requests were more likely to be paired with helpful, detailed answers. The model isn't is just following the conversational patterns it learned.
 
 This means the model responds not just to *what* you ask, but *how* you ask it.
 
