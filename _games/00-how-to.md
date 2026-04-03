@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: default
 title:  "How to use the Arcade"
 tags: genai-arcade
 ---

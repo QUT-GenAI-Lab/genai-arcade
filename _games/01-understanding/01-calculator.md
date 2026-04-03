@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: default
 title:  "Sort of Calculator"
 before: word-by-word
 after: linkedin-generator

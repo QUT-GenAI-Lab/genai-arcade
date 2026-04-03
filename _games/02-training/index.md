@@ -1,5 +1,5 @@
 ---
-layout: game-tag
+layout: tag
 title: Training
 ---
 

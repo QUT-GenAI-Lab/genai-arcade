@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: default
 title:  "Word by Word"
 before: understanding
 after: calculator

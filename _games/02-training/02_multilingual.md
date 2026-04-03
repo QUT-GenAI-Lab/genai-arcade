@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: default
 title:  "Speak my Language"
 ---
 

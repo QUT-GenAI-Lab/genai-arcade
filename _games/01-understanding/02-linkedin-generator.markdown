@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: default
 title:  "LinkedIn Generator"
 before: calculator
 after: training

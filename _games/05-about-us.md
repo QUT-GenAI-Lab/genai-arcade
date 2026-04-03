@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: default
 title:  "About Us"
 tags: genai-arcade
 ---
