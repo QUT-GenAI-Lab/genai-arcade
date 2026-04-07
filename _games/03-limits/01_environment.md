@@ -2,8 +2,9 @@
 layout: default
 title:  "Environment"
 summary: "Explore the environmental cost of using GenAI."
+---
 
-# **Environmental Boundaries**
+# Environmental Boundaries
 
 ---
 

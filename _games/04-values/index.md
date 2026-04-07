@@ -3,7 +3,7 @@ title: Values
 summary: Games about choices in AI systems
 ---
 
-# **Values**
+# Values
 
 If *Understanding* is about how a model can understand, then *Values* are about what it should do with that.
 

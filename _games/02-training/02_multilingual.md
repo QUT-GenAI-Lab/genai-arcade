@@ -2,8 +2,9 @@
 layout: default
 title:  "Speak my Language"
 summary: "Test the model’s ability to understand different languages, and explore the politics of which ones it handles well, and which it doesn’t and why it seems to know different things."
+---
 
-# **Speak My Language**
+# Speak My Language
 
 ---
 

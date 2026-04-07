@@ -2,10 +2,9 @@
 layout: default
 title:  "Align Me"
 summary: "Judge AI responses to ethical dilemmas and see how your feedback reshapes what the model says next."
-
-# **Align Me**
-
 ---
+
+# Align Me
 
 > Ever wondered how AI learns what's "right" and "wrong"?
 

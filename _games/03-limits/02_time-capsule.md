@@ -2,8 +2,9 @@
 layout: default
 title:  "Time Capsule"
 summary: "Understand that models are a snapshot in time. When it was trained has implications for what the model can and cannot know."
+---
 
-# **Time Capsules**
+# Time Capsules
 
 ---
 

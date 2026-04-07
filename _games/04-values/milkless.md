@@ -2,10 +2,9 @@
 layout: default
 title:  "Milkless"
 summary: "This is a thought-provoking challenge where you explore how language models handle safety restrictions by engaging with an AI that has been instructed not to talk about milk."
-
-# **Milkless**
-
 ---
+
+# Milkless
 
 > What happens when a language model is trained not to talk about something, even something as seemingly harmless as milk?
 

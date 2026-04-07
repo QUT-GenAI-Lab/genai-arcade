@@ -6,6 +6,8 @@ summary: "Explore why generative AI struggles with maths, and what that tells us
 
 # Sort of Calculator
 
+---
+
 > Ever asked AI to do simple maths and watched it confidently get the wrong answer?
 
 That's because LLMs aren't actually very good calculators - they're just really good at pretending to be.

@@ -4,7 +4,9 @@ title:  "LinkedIn Generator"
 summary: "See how generative AI excels at producing content for contexts where everything sounds the same already, and what that reveals about its strengths and limits."
 ---
 
-# **LinkedIn Generator**
+# LinkedIn Generator
+
+---
 
 > Ever noticed how LinkedIn posts have all started to sound the same? "Thrilled to announce…" "Humbled to have been part of…" "Grateful for this opportunity…"
 

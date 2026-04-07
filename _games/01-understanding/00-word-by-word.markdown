@@ -4,6 +4,10 @@ title:  "Word by Word"
 summary: "Learn how a language model understands what you say and how to respond, not by checking what’s true, but by guessing what sounds most likely."
 ---
 
+# Word by Word
+
+---
+
 > Ever wondered why AI sometimes makes up facts that sound completely believable, even if they aren't true?
 
 It's because underneath all that apparent intelligence is something surprisingly simple: a guessing game.
