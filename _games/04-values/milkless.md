@@ -1,10 +1,7 @@
 ---
 layout: default
 title:  "Milkless"
-tags: values
-before: align-me
-after: about-us
----
+summary: "This is a thought-provoking challenge where you explore how language models handle safety restrictions by engaging with an AI that has been instructed not to talk about milk."
 
 # **Milkless**
 
@@ -53,6 +50,7 @@ You'll likely find that the model resists — but maybe not always. And that's t
 <gradio-app src="https://qut-genailab-milkless.hf.space"></gradio-app>
 
 ---
+
 ## **What This Reveals**
 
 This experiment demonstrates how [algorithmic governance operates through "soft" control mechanisms](https://fedsoc.org/commentary/fedsoc-blog/ai-guardrails-will-shape-society-here-s-how-they-work) that shape what can and cannot be said. Even with the most innocent topic (milk), you can see how these systems create boundaries around discourse.

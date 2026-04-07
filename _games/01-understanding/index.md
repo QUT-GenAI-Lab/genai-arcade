@@ -1,11 +1,6 @@
 ---
-layout: tag
-tag: understanding
-permalink: /tag/understanding/
-title: Understanding
-slug: understanding
-before: how-to
-after: word-by-word
+title: "Understanding"
+summary: Games about how AI “understands” things
 ---
 
 # Understanding 

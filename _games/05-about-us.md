@@ -2,8 +2,6 @@
 layout: default
 title:  "About Us"
 tags: genai-arcade
-before: milkless
-after: last
 ---
 
 # About Us

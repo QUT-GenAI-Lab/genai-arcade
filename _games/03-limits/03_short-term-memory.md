@@ -1,10 +1,7 @@
 ---
 layout: default
 title:  "Short-Term Memory" 
-tags: limits
-before: time-capsule
-after: RAG
----
+summary: "Explore how much information a model can hold in its ‘memory’ at once, and why it sometimes ‘forgets’ things you just told it."
 
 # **Short-Term Memory**
 

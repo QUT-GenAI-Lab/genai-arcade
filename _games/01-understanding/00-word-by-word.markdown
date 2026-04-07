@@ -1,13 +1,7 @@
 ---
 layout: default
 title:  "Word by Word"
-tags: understanding
-before: understanding
-after: calculator
----
-
-# Word by Word
-
+summary: "Learn how a language model understands what you say and how to respond, not by checking what’s true, but by guessing what sounds most likely."
 ---
 
 > Ever wondered why AI sometimes makes up facts that sound completely believable, even if they aren't true?
@@ -30,12 +24,12 @@ But the LLM doesn't always choose the most likely token option. Instead, it choo
 
 Here's an example: "**At the animal shelter, the child chose to adopt a [..]**"
 
-| Token  | Probability | Explanation                        |
-|--------|-------------|-----------------------------------|
-| cat    | 40%         | Most likely based on training data |
+| Token  | Probability | Explanation                           |
+| ------ | ----------- | ------------------------------------- |
+| cat    | 40%         | Most likely based on training data    |
 | dog    | 30%         | Also common, but slightly less likely |
-| lizard | 20%         | Less likely, but still possible    |
-| cactus | 10%         | Very unusual, but not impossible   |
+| lizard | 20%         | Less likely, but still possible       |
+| cactus | 10%         | Very unusual, but not impossible      |
 
 <br>
 

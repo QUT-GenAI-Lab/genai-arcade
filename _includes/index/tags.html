@@ -1,0 +1,9 @@
+<ul>
+  {% assign tags = site.games | where: "layout", "tag" %} {% for tag in tags %}
+  {% assign current_tag = tag.tags[0] %}
+  <li>
+    <a href="{{ tag.url | relative_url }}"><strong>{{ tag.title }}</strong></a>
+    - {{ tag.summary }}
+  </li>
+  {% endfor %}
+</ul>

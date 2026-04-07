@@ -1,11 +1,6 @@
 ---
-layout: tag
-tag: values
-permalink: /tag/values/
 title: Values
-slug: values
-before: short-term-memory
-after: align-me
+summary: Games about choices in AI systems
 ---
 
 # **Values**

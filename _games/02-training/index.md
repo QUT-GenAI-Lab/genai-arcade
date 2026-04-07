@@ -1,11 +1,6 @@
 ---
-layout: tag
-tag: training
-permalink: /tag/training/
-before: linkedin-generator
-after: average-internet
 title: Training
-slug: training
+summary: Games about what AI can learn from data
 ---
 
 # Training

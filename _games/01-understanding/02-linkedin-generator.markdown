@@ -1,9 +1,7 @@
 ---
 layout: default
 title:  "LinkedIn Generator"
-tags: understanding
-before: calculator
-after: training
+summary: "See how generative AI excels at producing content for contexts where everything sounds the same already, and what that reveals about its strengths and limits."
 ---
 
 # **LinkedIn Generator**

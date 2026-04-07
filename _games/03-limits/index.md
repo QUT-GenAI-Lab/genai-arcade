@@ -1,11 +1,6 @@
 ---
-layout: tag
-tag: limits
-permalink: /tag/limits/
-title: Limits
-slug: limits
-before: multilingual
-after: environment
+title: "Limits"
+summary: Games about AI’s boundaries and constraints
 ---
 
 # Limits

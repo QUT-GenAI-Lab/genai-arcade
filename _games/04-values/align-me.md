@@ -1,10 +1,7 @@
 ---
 layout: default
 title:  "Align Me"
-tags: values
-before: values
-after: milkless
----
+summary: "Judge AI responses to ethical dilemmas and see how your feedback reshapes what the model says next."
 
 # **Align Me**
 
