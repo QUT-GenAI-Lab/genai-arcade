@@ -73,6 +73,8 @@ type: game
     <script>
       hljs.initHighlightingOnLoad();
     </script>
+
+    {% assign current_tag = page.tags[0] %}
   </head>
   <body
     data-page-url="{{ page.url }}"
@@ -82,8 +84,8 @@ type: game
     <div class="wrapper">
       <div class="default_title">
         <img src="{{ '/assets/img/mycomputer.png' | relative_url }}" />
-        {% if page.tag %}
-        <h1>{{ page.tag }}</h1>
+        {% if current_tag and current_tag != 'genai-arcade' %}
+        <h1>{{ current_tag }}</h1>
         {% else %}
         <h1>{{ site.name }}</h1>
         {% endif %}
@@ -128,47 +130,6 @@ type: game
                 </a>
               </li>
               {% endif %} {% endfor %}
-
-              <!-- <li>
-                <a
-                  href="{{ '/tag/understanding/'  | relative_url  }}"
-                  title="Understanding"
-                  class="{% if page.tag == 'understanding' or page.tags contains 'understanding' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Understanding
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{{ '/tag/training/'  | relative_url  }}"
-                  title="Training"
-                  class="{% if page.tag == 'training' or page.tags contains 'training' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Training
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{{ '/tag/limits/'  | relative_url  }}"
-                  title="AI explainer"
-                  class="{% if page.tag == 'limits' or page.tags contains 'limits' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Limits
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{{ '/tag/values/'  | relative_url  }}"
-                  title="AI explainer"
-                  class="{% if page.tag == 'values' or page.tags contains 'values' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Values
-                </a>
-              </li> -->
               <!-- hardcoding some links to stuff -->
               <li>
                 <a
@@ -184,8 +145,6 @@ type: game
         </ul>
       </div>
       <div class="post_list">
-        {% assign current_tag = page.tags[0] %}
-
         <ul>
           {% if current_tag != 'genai-arcade' %} {% assign sorted_games =
           site.games | sort: "order" %} {% for post in sorted_games %}
@@ -209,8 +168,8 @@ type: game
         </ul>
       </div>
       <div class="post_total">
-        {% if page.tag %}
-        <div class="left">{{ site.tags[page.tag] | size }} object(s)</div>
+        {% if current_tag %}
+        <div class="left">{{ site.tags[current_tag] | size }} object(s)</div>
         {% else %}
         <div class="left">0 object(s)</div>
         {% endif %}

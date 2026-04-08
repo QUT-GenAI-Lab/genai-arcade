@@ -12,6 +12,7 @@
         width: max-content;
       "
     >
+      {% if page.before.url %}
       <a
         href="{{ page.before.url | relative_url }}"
         class="{% unless page.before.url %}disabled{% endunless %}"
@@ -19,13 +20,14 @@
         ◀ Previous {% if page.before.title %} ({{ page.before.title }}) {% endif
         %}
       </a>
-
+      {% endif %} {% if page.after.url %}
       <a
         href="{{ page.after.url | relative_url }}"
         class="{% unless page.after.url %}disabled{% endunless %}"
       >
         Next ▶ {% if page.after.title %} ({{ page.after.title }}) {% endif %}
       </a>
+      {% endif %}
     </div>
   </div>
 </div>
