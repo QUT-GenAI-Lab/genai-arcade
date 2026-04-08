@@ -1,0 +1,42 @@
+---
+layout: default
+title:  "About Us"
+tags: genai-arcade
+---
+
+# About Us
+
+---
+
+This site was created by the **Generative AI Lab** at **Queensland University of Technology (QUT)**.
+
+The QUT GenAI Lab is a research initiative that brings together technical expertise in computer science and AI, humanities expertise in culture and media, and social science expertise in organisations and technology. We have a strong focus on developing tools and methods to uplift the public’s understanding and unlock the capabilities of generative AI. But we know that these capabilities can only be created at the intersection of people and machines, and by engaging with the knowledge or lived experience of specific communities.
+
+Led by **Distinguished Professor Jean Burgess**, the lab is home to a vibrant team of researchers, engineers, and students, hosted by the QUT [Digital Media Research Centre](https://research.qut.edu.au/dmrc). 
+
+In our work, we take a holistic approach to generative AI technologies. We look not only at their technical aspects, but also at how people use them, in what real-world contexts, and with what impacts on society. 
+
+---
+
+## Why We Built This
+
+We created this site to help people explore how generative AI works, what it can and can’t do, and why that matters.
+
+Generative AI is often presented as magical or mysterious. But when you understand how it works, you can ask better questions, use it more effectively, and think more critically about its role in society.
+
+This site is part of our mission to make AI literacy accessible, engaging, and empowering.
+
+
+---
+
+## What We Do
+
+We believe the future of generative AI isn’t just about how powerful the models are, it’s also about how people use them.
+
+At the GenAI Lab, we focus on reimagining human skills and machine capabilities together. We research new ways of working with generative AI, and we design interactive tools, workshops, and explainers to help people understand and shape these technologies.
+
+Our goal is to empower the public to become active participants in the development and use of AI, not just passive users. We want people to see themselves as part of the future of generative technologies.
+
+Learn more about our work at the [QUT Generative AI Lab](https://research.qut.edu.au/genailab) 
+
+If you want to learn more about the GenAI Arcade tool, contact: [Dr Kevin Witzenberger](mailto:kevin.witzenberger@qut.edu.au), Research Fellow at QUT's GenAI Lab. 

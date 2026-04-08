@@ -695,3 +695,7 @@ ul.topbar {
     z-index: 1;
   }
 }
+
+a.disabled {
+  pointer-events: none;
+}

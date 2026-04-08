@@ -6,7 +6,10 @@ google_verification: null
 
 # File management
 include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
+exclude:
+  - README.md
+  - LICENSE
+  - docs # Internal documentation
 
 # Sass
 sass:
@@ -28,6 +31,11 @@ permalink: /:year:month:day/:title
 url: "https://genai-arcade.net" # "http://willsh97.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
+
+collections:
+# Custom games collection to properly organise the games instead of relying on posts. Posts should be kept for dated content.
+  games:
+    output: true
 
 # Build settings
 plugins:

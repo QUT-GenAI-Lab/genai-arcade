@@ -1,0 +1,9 @@
+{
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.liquid-vscode",
+    "editor.formatOnSave": true
+  },
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  }
+}

@@ -1,5 +1,5 @@
 ---
-type: default
+type: game
 ---
 
 <!doctype html>
@@ -73,13 +73,19 @@ type: default
     <script>
       hljs.initHighlightingOnLoad();
     </script>
+
+    {% assign current_tag = page.tags[0] %}
   </head>
-  <body data-page-url="{{ page.url }}" data-page-tags="{{ page.tags }}">
+  <body
+    data-page-url="{{ page.url }}"
+    data-page-tags="{{ page.tags }}"
+    data-page-order="{{ page.order }}"
+  >
     <div class="wrapper">
       <div class="default_title">
         <img src="{{ '/assets/img/mycomputer.png' | relative_url }}" />
-        {% if page.tag %}
-        <h1>{{ page.tag }}</h1>
+        {% if current_tag and current_tag != 'genai-arcade' %}
+        <h1>{{ current_tag }}</h1>
         {% else %}
         <h1>{{ site.name }}</h1>
         {% endif %}
@@ -96,68 +102,35 @@ type: default
             >
             <!-- hardcoding the C: link to go to the genai-arcade tag. Was originally something like "{{ '/' | relative_url}}" -->
             <ul>
-              <!-- hardcoding some links to stuff - check older commits for the "for loop" that generates tags-->
+              {% for game in site.games %} {% if game.tags contains
+              'genai-arcade' %}
               <li>
                 <a
-                  href="{{ '/20250521/how-to'  | relative_url  }}"
-                  title="How To?"
-                  class="{% if page.url == '/20250521/how-to' %}active{% endif %}"
+                  href="{{ game.url  | relative_url  }}"
+                  title="{{ game.title }}"
+                  data-game-tags="{{ game.tags }}"
+                  data-page-tags="{{ page.tags }}"
+                  class="{% if page.url == game.url %}active{% endif %}"
                 >
                   <img src="{{ '/assets/img/file.ico' | relative_url }}" />
-                  How to use the Arcade
+                  {{ game.title }}
                 </a>
               </li>
+              {% endif %} {% if game.layout contains 'tag' %}
               <li>
                 <a
-                  href="{{ '/tag/understanding/'  | relative_url  }}"
-                  title="Understanding"
-                  class="{% if page.tag == 'understanding' or page.tags contains 'understanding' %}active{% endif %}"
+                  href="{{ game.url  | relative_url  }}"
+                  title="{{ game.title }}"
+                  data-game-tags="{{ game.tags }}"
+                  data-page-tags="{{ page.tags }}"
+                  class="{% if page.tags == game.tags %}active{% endif %}"
                 >
                   <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Understanding
+                  {{ game.title }}
                 </a>
               </li>
-              <li>
-                <a
-                  href="{{ '/tag/training/'  | relative_url  }}"
-                  title="Training"
-                  class="{% if page.tag == 'training' or page.tags contains 'training' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Training
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{{ '/tag/limits/'  | relative_url  }}"
-                  title="AI explainer"
-                  class="{% if page.tag == 'limits' or page.tags contains 'limits' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Limits
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{{ '/tag/values/'  | relative_url  }}"
-                  title="AI explainer"
-                  class="{% if page.tag == 'values' or page.tags contains 'values' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/folder.ico' | relative_url }}" />
-                  Values
-                </a>
-              </li>
+              {% endif %} {% endfor %}
               <!-- hardcoding some links to stuff -->
-              <li>
-                <a
-                  href="{{ '20250520/about-us'  | relative_url  }}"
-                  title="About us"
-                  class="{% if page.url == '/20250520/about-us' %}active{% endif %}"
-                >
-                  <img src="{{ '/assets/img/file.ico' | relative_url }}" />
-                  About us
-                </a>
-              </li>
               <li>
                 <a
                   href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=o1IL3MVo90SIHZOD2IULlg299bJk06hCg2Lg7NOKG1pUOUtWMVVFSlM5QUhGWTZUU0tOU01CUkQ2TC4u&route=shorturl"
@@ -172,13 +145,18 @@ type: default
         </ul>
       </div>
       <div class="post_list">
-        {% unless page.date%} {% if page.title == 'About' or page.title ==
-        '404...' %} {% else %} {% if layout.type == 'tag-landing' %}
         <ul>
-          {% for post in site.tags[page.tag] %}
+          {% if current_tag != 'genai-arcade' %} {% assign sorted_games =
+          site.games | sort: "order" %} {% for post in sorted_games %}
+          <!-- List the pages of the same tag, except for the index.md (with layout tag) -->
+          {% if post.tags contains current_tag and post.layout != 'tag' %}
           <li>
-            <a href="{{  post.url | relative_url }}" title="{{ post.title }}">
-              <img
+            <a
+              href="{{  post.url | relative_url }}"
+              class="{% if post.url == page.url %}active{% endif %}"
+              title="{{ post.title }}"
+              data-post-order="{{ post.order }}"
+              ><img
                 src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}'
                 title="{{ post.title }}"
               />
@@ -186,33 +164,12 @@ type: default
             </a>
           </li>
           <!-- if else logic for different icons for different post types -->
-          {% endfor %}
-        </ul>
-        {% endif %} {% endif %} {% else %} {% assign current_tag = page.tags[0]
-        %}
-        <ul>
-          {% if current_tag != 'genai-arcade' %} {% for post in site.posts %} {%
-          if post.tags[0] == current_tag %}
-          <li>
-            <a
-              href="{{  post.url | relative_url }}"
-              class="{% if post.url == page.url %}active{% endif %}"
-              title="{{ post.title }}"
-              ><img
-                src='{% if post.tags[0] == "genai-arcade" %} {{ "/assets/img/file.ico" | relative_url}} {% else %}  {{ "/assets/img/arcade.ico" | relative_url}} {% endif %}'
-                title="{{ post.title }}"
-              />{{ post.title }}</a
-            >
-          </li>
-          <!-- if else logic for different icons for different post types -->
           {% endif %} {% endfor %} {% endif %}
         </ul>
-
-        {% endunless %}
       </div>
       <div class="post_total">
-        {% if page.tag %}
-        <div class="left">{{ site.tags[page.tag] | size }} object(s)</div>
+        {% if current_tag %}
+        <div class="left">{{ site.tags[current_tag] | size }} object(s)</div>
         {% else %}
         <div class="left">0 object(s)</div>
         {% endif %}
@@ -230,67 +187,39 @@ type: default
       </a>
 
       <!-- Previous/Back Button -->
-      {% if page.before %} {% if page.before != 'first' %} {% if page.before ==
-      '/' %}
-      <a href="{{ '/' | relative_url }}" style="width: 318px">
-        <div class="btn" style="height: 40px; width: 100%">
+      <a
+        href="{{ page.before.url | relative_url }}"
+        class="{% unless page.before.url %}disabled{% endunless %}"
+        style="width: 318px"
+      >
+        <div
+          class="btn {% unless page.before.url %}btn-disabled{% endunless %}"
+          style="height: 40px; width: 100%"
+        >
           <span class="fa fa-hand-o-left"></span>
-          <span class="btn-text">Previous</span>
+          <span class="btn-text">
+            Previous {% if page.before.title %} ({{ page.before.title }}) {%
+            endif %}
+          </span>
         </div>
       </a>
-      {% else %} {% assign postlist = site.posts | concat: site.pages %} {%
-      assign post = postlist | where: "slug", page.before | first %}
-      <a href="{{ post.url | relative_url }}" style="width: 318px">
-        <div class="btn" style="height: 40px; width: 100%">
-          <span class="fa fa-hand-o-left"></span>
-          <span class="btn-text">Previous</span>
-        </div>
-      </a>
-      {% endif %} {% else %}
-      <!-- Disabled Previous Button -->
-      <div class="btn-wrapper" style="width: 318px">
-        <div class="btn btn-disabled" style="height: 40px; width: 100%">
-          <span class="fa fa-hand-o-left"></span>
-          <span class="btn-text">Previous</span>
-        </div>
-      </div>
-      {% endif %} {% else %}
-      <!-- Disabled Previous Button when no page.before exists -->
-      <div class="btn-wrapper" style="width: 318px">
-        <div class="btn btn-disabled" style="height: 40px; width: 100%">
-          <span class="fa fa-hand-o-left"></span>
-          <span class="btn-text">Previous</span>
-        </div>
-      </div>
-      {% endif %}
 
       <!-- Next/Forward Button -->
-      {% if page.after %} {% if page.after != 'last' %} {% assign postlist =
-      site.posts | concat: site.pages %} {% assign post = postlist | where:
-      "slug", page.after | first %}
-      <a href="{{ post.url | relative_url }}" style="width: 318px">
-        <div class="btn" style="height: 40px; width: 100%">
+      <a
+        href="{{ page.after.url | relative_url }}"
+        class="{% unless page.after.url %}disabled{% endunless %}"
+        style="width: 318px"
+      >
+        <div
+          class="btn {% unless page.after.url %}btn-disabled{% endunless %}"
+          style="height: 40px; width: 100%"
+        >
           <span class="fa fa-hand-o-right"></span>
-          <span class="btn-text">Next</span>
+          <span class="btn-text"
+            >Next {% if page.after.title %} ({{ page.after.title }}) {% endif %}
+          </span>
         </div>
       </a>
-      {% else %}
-      <!-- Disabled Next Button -->
-      <div class="btn-wrapper" style="width: 318px">
-        <div class="btn btn-disabled" style="height: 40px; width: 100%">
-          <span class="fa fa-hand-o-right"></span>
-          <span class="btn-text">Next</span>
-        </div>
-      </div>
-      {% endif %} {% else %}
-      <!-- Disabled Next Button when no page.after exists -->
-      <div class="btn-wrapper" style="width: 318px">
-        <div class="btn btn-disabled" style="height: 40px; width: 100%">
-          <span class="fa fa-hand-o-right"></span>
-          <span class="btn-text">Next</span>
-        </div>
-      </div>
-      {% endif %}
     </div>
     <div class="content">
       <div class="post_title">
