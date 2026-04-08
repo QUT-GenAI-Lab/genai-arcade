@@ -49,9 +49,9 @@ The choices we make now, about which tools we use and what we use them for, will
 
 This tool was created by QUT's GenAI Lab. For questions or more information, contact: Dr Kevin Witzenberger - kevin.witzenberger@qut.edu.au, GenAI Lab Research Fellow. 
 
-Recommended Citation: Witzenberger, K., Burgess, J., He, W., & Snowswell, A. (2025). GenAI Arcade. QUT GenAI Lab. http://genai-arcade.net/. 
+Recommended Citation: Witzenberger, K., Burgess, J., He, W., & Snoswell, A. (2025). GenAI Arcade. QUT GenAI Lab. http://genai-arcade.net/. 
 
 ## Feedback
 
-Would you like to get invovled or have ideas for more games and important resources we have missed: [Let us know](https://forms.cloud.microsoft/r/f2g1aQh9WU) 
+Would you like to get involved or have ideas for more games and important resources we have missed: [Let us know](https://forms.cloud.microsoft/r/f2g1aQh9WU) 
 
