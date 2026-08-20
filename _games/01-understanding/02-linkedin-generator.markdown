@@ -28,7 +28,7 @@ LLMs generate text based on what *sounds* right for a given context. And the con
 
 ---
 
-<iframe src="https://widgets.genai-arcade.net/widgets/understanding/linkedin-generator?embed=true" title="LinkedIn Generator" style="border:0;width:100%;height: 575px;zoom: 0.925;"></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/understanding/linkedin-generator?embed=true" title="LinkedIn Generator" width="100%" height="575" style="border:0" loading="lazy"></iframe>
 
 ---
 

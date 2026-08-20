@@ -18,7 +18,7 @@ In this widget, you can type a prompt and see how the model responds when your i
 
 ---
 
-<iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/training/tone-matters?embed=true" title="Tone Matters" width="100%" height="700" style="border:0" loading="lazy"></iframe>
 
 ---
 

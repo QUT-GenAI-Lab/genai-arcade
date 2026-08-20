@@ -43,11 +43,7 @@ Most of the time, the model will choose "cat," but it might also pick "dog" or e
 
 ---
 
-<iframe 
-	src="https://widgets.genai-arcade.net/widgets/understanding/word-by-word?embed=true" 
-	title="Next Word Predictor" 
-	style="border:0;width:100%;height:700px;"
-></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/understanding/word-by-word?embed=true" title="Next Token Predictor" width="100%" height="700" style="border:0" loading="lazy"></iframe>
 
 ---
 
