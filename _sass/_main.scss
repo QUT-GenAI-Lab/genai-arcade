@@ -496,6 +496,14 @@ ul.topbar {
     margin-bottom: 15px;
   }
 }
+
+.post_content iframe[data-genai-arcade-embed] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}
+
 .hljs {
   background: #fff8ff;
 }
@@ -536,7 +544,8 @@ ul.topbar {
   }
 }
 @media only screen and (max-width: 400px) {
-  .post_content {
+  .post_content
+   {
     width: 97%;
   }
 }
@@ -607,6 +616,16 @@ ul.topbar {
     }
   }
 }
+
+// Lower margin on smaller screens to reduce whitespace
+@media only screen and (max-width: 480px) {
+  .wrapper,
+  .content,
+  .navbar {
+    width: 100%;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 16px;
 } /* this targets the default scrollbar (compulsory) */

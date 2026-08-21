@@ -17,7 +17,7 @@ In this widget, we've forced the model to behave like a simple calculator using 
 
 ---
 
-<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/understanding/llm-calculator?embed=true" title="LLM Calculator" width="100%" height="450" style="border:0" loading="lazy"></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/understanding/llm-calculator?embed=true" title="LLM Calculator" width="100%" height="450" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 You can try basic operations like: addition (+), subtraction (−), multiplication (×), and division (÷). Don't be surprised if it gets things wrong, especially with bigger or more unusual numbers. You might be surprised about how good (or bad) this type of AI actually is with numbers.
 

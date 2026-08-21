@@ -41,7 +41,7 @@ You'll likely find that the model resists — but maybe not always. And that's t
 
 ---
 
-<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/values/milkless?embed=true" title="Milkless" width="100%" height="675" style="border:0" loading="lazy"></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/values/milkless?embed=true" title="Milkless" width="100%" height="675" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 
