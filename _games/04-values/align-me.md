@@ -26,7 +26,7 @@ You'll be presented with ethical dilemmas and see how a simple AI responds. Your
 
 ---
 
-<iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/values/alignment-game?embed=true" title="The Alignment Game" width="100%" height="700" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 
@@ -44,7 +44,7 @@ Notice how the models might:
 
 ---
 
-<iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/values/moral-compass?embed=true" title="Moral Compass" width="100%" height="700" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 
