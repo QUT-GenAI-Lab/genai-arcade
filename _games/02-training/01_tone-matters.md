@@ -17,13 +17,10 @@ And here's the twist: different styles of writing often come with different *fac
 In this widget, you can type a prompt and see how the model responds when your input is rude versus polite.
 
 ---
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-llm-politeness.hf.space"></gradio-app>
+<iframe
+	src="https://qut-genailab-llm-politeness.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 ---
 

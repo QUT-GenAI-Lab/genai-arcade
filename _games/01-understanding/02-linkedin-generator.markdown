@@ -28,12 +28,10 @@ LLMs generate text based on what *sounds* right for a given context. And the con
 
 ---
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-linkedin-generator.hf.space"></gradio-app>
+<iframe
+	src="https://qut-genailab-linkedin-generator.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 ---
 

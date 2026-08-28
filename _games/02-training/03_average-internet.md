@@ -28,13 +28,10 @@ This "neutral point" is like taking every image the model has ever seen and find
 
 ---
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-neutral-sd.hf.space"></gradio-app>
-
+<iframe
+	src="https://qut-genailab-neutral-sd.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 ---
 

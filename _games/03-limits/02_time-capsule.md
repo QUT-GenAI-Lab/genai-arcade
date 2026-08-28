@@ -19,13 +19,10 @@ Sometimes, companies get around this by adding tools that let the model search t
 That's what this widget demonstrates. You'll ask a question, and the widget will send it to **three different models** — LLaMA (Feb 2023), LLaMA 2 (July 2023), and LLaMA 3 (April 2024) — each trained at a different point in time.
 
 ---
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-knowledge-cutoff.hf.space"></gradio-app>
+<iframe
+	src="https://qut-genailab-knowledge-cutoff.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 Compare the answers. What do they know? What do they miss? How do their responses change as you move through time?
 
