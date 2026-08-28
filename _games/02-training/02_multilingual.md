@@ -22,12 +22,10 @@ In this widget, you can ask the same question in different languages and compare
 
 ---
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.16.1/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-multilingual-llm.hf.space"></gradio-app>
+<iframe
+	src="https://qut-genailab-multilingual-llm.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 ---
 

@@ -40,13 +40,10 @@ In this widget, your challenge is to try and get the model to talk about milk â€
 You'll likely find that the model resists â€” but maybe not always. And that's the point.
 
 ---
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-milkless.hf.space"></gradio-app>
+<iframe
+	src="https://qut-genailab-milkless.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 ---
 

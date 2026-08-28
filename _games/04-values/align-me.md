@@ -25,13 +25,10 @@ You'll be presented with ethical dilemmas and see how a simple AI responds. Your
 * **Suggesting improvements** when you think the AI could do better
 
 ---
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-alignment-game.hf.space"></gradio-app>
+<iframe
+	src="https://qut-genailab-alignment-game.hf.space"
+    style="width: 100%; aspect-ratio: 3/5"
+></iframe>
 
 ---
 
@@ -48,13 +45,10 @@ Notice how the models might:
 * Reflect different cultural or philosophical perspectives
 
 ---
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.23.3/gradio.js"
-></script>
-
-<gradio-app src="https://qut-genailab-moral-compass.hf.space"></gradio-app>
+<iframe
+	src="https://qut-genailab-moral-compass.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 ---
 
