@@ -28,7 +28,7 @@ In this widget, you can play with a model where the context window can be artifi
 
 ---
 
-<iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/limits/context-window?embed=true" title="Context Window" width="100%" height="640" loading="lazy" data-genai-arcade-embed style="display:block;border:0"></iframe>
 
 **Note:** This widget deletes entire messages from earlier in the conversation until the input fits within the context window. There are more sophisticated ways to handle long chat histories (like summarising or keeping key concepts), but this simple approach best illustrates the limitations of having restricted memory.
 
