@@ -39,4 +39,4 @@ Our goal is to empower the public to become active participants in the developme
 
 Learn more about our work at the [QUT Generative AI Lab](https://research.qut.edu.au/genailab) 
 
-If you want to learn more about the GenAI Arcade tool, contact: [QUT's GenAI Lab](mailto:genailab@qut.edu.au).
+If you want to learn more about the GenAI Arcade tool, contact us by email: [GenAI Lab](mailto:genailab@qut.edu.au).
