@@ -4,7 +4,7 @@ title:  "Spot the Sycophant"
 summary: "This is a voice-enabled chatbot designed to demonstrate the difference between a 'good' and 'bad' chatbot to a primary school student."
 ---
 
-# Should I Hide My Mum's Slippers???
+# Should I Hide My Mum's Slippers?
 
 > When you're talking to a chatbot, does it always have your best interests in mind, or is it simply trying to keep you happy?
 
