@@ -30,6 +30,7 @@ This widget is an adapted version of a voice-based Chatbot used for research in 
     style="width: 100%; aspect-ratio: 1; zoom: 75%;"
 	src="https://qut-genailab-groq-voicechat-demo.hf.space"
 	frameborder="0"
+	allow="microphone"
 ></iframe>
 
 
