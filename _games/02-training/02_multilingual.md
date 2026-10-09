@@ -22,10 +22,7 @@ In this widget, you can ask the same question in different languages and compare
 
 ---
 
-<iframe
-	src="https://qut-genailab-multilingual-llm.hf.space"
-    style="width: 100%; aspect-ratio: 4/3"
-></iframe>
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/training/multilingual?embed=true" title="Multilingual" width="100%" height="700" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 

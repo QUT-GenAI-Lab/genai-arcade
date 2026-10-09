@@ -40,10 +40,8 @@ In this widget, your challenge is to try and get the model to talk about milk â€
 You'll likely find that the model resists â€” but maybe not always. And that's the point.
 
 ---
-<iframe
-	src="https://qut-genailab-milkless.hf.space"
-    style="width: 100%; aspect-ratio: 4/3"
-></iframe>
+
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/values/milkless?embed=true" title="Milkless" width="100%" height="675" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 

@@ -17,10 +17,8 @@ And here's the twist: different styles of writing often come with different *fac
 In this widget, you can type a prompt and see how the model responds when your input is rude versus polite.
 
 ---
-<iframe
-	src="https://qut-genailab-llm-politeness.hf.space"
-    style="width: 100%; aspect-ratio: 4/3"
-></iframe>
+
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/training/tone-matters?embed=true" title="Tone Matters" width="100%" height="700" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 

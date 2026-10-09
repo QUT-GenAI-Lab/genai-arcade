@@ -17,6 +17,7 @@ Every time you send a prompt to an AI model, real computers somewhere in the wor
 In this widget, we calculate the real carbon footprint of your AI prompts. Type in a question, see the grams of CO2 it produces. Watch the numbers add up with each interaction. Try asking the same thing in different ways - what is the largest or smallest CO2 output you can get while still getting the same essential answer.
 
 ---
+
 <iframe
 	src="https://qut-genailab-carbon-footprint.hf.space"
     style="width: 100%; aspect-ratio: 4/3"

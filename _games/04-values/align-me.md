@@ -25,10 +25,8 @@ You'll be presented with ethical dilemmas and see how a simple AI responds. Your
 * **Suggesting improvements** when you think the AI could do better
 
 ---
-<iframe
-	src="https://qut-genailab-alignment-game.hf.space"
-    style="width: 100%; aspect-ratio: 3/5"
-></iframe>
+
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/values/alignment-game?embed=true" title="The Alignment Game" width="100%" height="700" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 
@@ -45,10 +43,8 @@ Notice how the models might:
 * Reflect different cultural or philosophical perspectives
 
 ---
-<iframe
-	src="https://qut-genailab-moral-compass.hf.space"
-    style="width: 100%; aspect-ratio: 4/3"
-></iframe>
+
+<iframe src="https://d30wuokk9b26bz.cloudfront.net/widgets/values/moral-compass?embed=true" title="Moral Compass" width="100%" height="700" style="border:0" loading="lazy" data-genai-arcade-embed></iframe>
 
 ---
 
