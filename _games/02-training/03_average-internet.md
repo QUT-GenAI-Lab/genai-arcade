@@ -30,7 +30,6 @@ This "neutral point" is like taking every image the model has ever seen and find
 
 <iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
 
-
 ---
 
 **You can:**

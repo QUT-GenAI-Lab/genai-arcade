@@ -19,8 +19,10 @@ Sometimes, companies get around this by adding tools that let the model search t
 That's what this widget demonstrates. You'll ask a question, and the widget will send it to **three different models** — LLaMA (Feb 2023), LLaMA 2 (July 2023), and LLaMA 3 (April 2024) — each trained at a different point in time.
 
 ---
-
-<iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
+<iframe
+	src="https://qut-genailab-knowledge-cutoff.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 Compare the answers. What do they know? What do they miss? How do their responses change as you move through time?
 

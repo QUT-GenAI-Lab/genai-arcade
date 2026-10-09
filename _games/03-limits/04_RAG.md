@@ -47,8 +47,11 @@ Less obviously though, and perhaps unintuitively, the way the RAG is built means
 Also consider how suitable the LLM would be for interpreting the injected texts - imagine giving a year 10 high school maths student a postgraduate textbook on advanced linear algebra! There will only be so much that an LLM (or a poor high school student) will be able to specifically understand - if it is not fine-tuned to be a specialist in that area, it might struggle to make sense of the provided data!
 
 Below is a simple RAG widget which takes the first 5 search results from Google and injects them into each user input. The non-RAG LLM response is on the left, while the RAG response is on the right. Have a play, and note the differences in response, where the RAG seems to be helping, or more interestingly where the RAG seems to be hindering!
+<iframe
+	src="https://qut-genailab-widget-rag.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
-<iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
 **Note:** the raw RAG input is purposefully exposed to you in this widget for transparency - in real deployments, the chat history will look identical!
 
 ---

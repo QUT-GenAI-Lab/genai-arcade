@@ -18,8 +18,10 @@ In this widget, we calculate the real carbon footprint of your AI prompts. Type 
 
 ---
 
-<iframe src="https://widgets.genai-arcade.net/widgets/dev/placeholder?embed=true" title="Unavailable" style="border:0;width:100%;height:280px;"></iframe>
-
+<iframe
+	src="https://qut-genailab-carbon-footprint.hf.space"
+    style="width: 100%; aspect-ratio: 4/3"
+></iframe>
 
 ---
 
